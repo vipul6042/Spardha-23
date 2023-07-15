@@ -1,0 +1,300 @@
+{
+    "conveners": [
+      {
+        "post": "convener",
+        "name": "Akshay Thotange",
+        "phone": "9552092063",
+        "id": "https://www.facebook.com/akshay.thotange.73",
+        "mail": "thotange.akshayv.cer19@itbhu.ac.in",
+        "image": "/images/team/Akshay_Thotange.jpg",
+        "linkedin": "https://www.linkedin.com/in/akshay-thotange-abb9321a4"
+      },
+      {
+        "post": "co-convener",
+        "name": "Adarsh Tripathi",
+        "phone": "9918435900",
+        "id": "http://facebook.com/rtadarsh",
+        "mail": "adarsh.rtripathi.eee19@itbhu.ac.in",
+        "image": "/images/team/Adarsh_Tripathi.jpg",
+        "linkedin": "http://linkedin.com/in/rtadarsh"
+      },
+      {
+        "post": "co-convener",
+        "name": "Jaya Avinash",
+        "phone": "7995167691",
+        "id": "https://www.facebook.com/jayavinashyadav",
+        "mail": "mailto:naruboina.jayadav.min19@itbhu.ac.in",
+        "image": "/images/team/Jaya_Avinash.jpg",
+        "linkedin": "https://www.linkedin.com/in/jaya-avinash-716462238"
+      }
+    ],
+  "games and sports council": [
+    {
+      "post": "general secretary",
+      "name": "Amrendra Pratap Singh",
+      "phone": "9410166670",
+      "id": "https://www.facebook.com/Spardha.IIT.BHU/",
+      "mail": "apratapsingh.mec18@itbhu.ac.in",
+      "image": "/images/team/Amrendra_Pratap_Singh.png",
+      "linkedin": "https://www.linkedin.com/in/amrendra-pratap-singh/"
+    },
+    {
+      "post": "joint gen secretary",
+      "name": "Shivkaran Singh Ranawat ",
+      "phone": "88240180659",
+      "id": "https://www.facebook.com/shivkaran.ranawat.7",
+      "mail": "shivkarans.ranawat.phe19@itbhu.ac.in ",
+      "image": "/images/team/Shivkaran_Singh_Ranawat.jpg",
+      "linkedin": "https://in.linkedin.com/company/spardha"
+    }
+  ],
+  "publicity team": [
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    }
+  ],
+  "public relations team": [
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    }
+  ],
+  "marketing team": [
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    }
+  ],
+  "hospitality team": [
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    }
+  ],
+  "events and operations team": [
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    }
+  ],
+  "content writing team": [
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    }
+  ],
+  "technical team": [
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    }
+  ],
+  "creative design team": [
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    }
+  ],
+  "informals team": [
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    },
+    {
+      "name": "Spardha Member",
+      "phone": "123456789",
+      "id": "https://www.facebook.com/<your facebook id>",
+      "mail": "<your email address>",
+      "image": "/images/team/<your image name here with extension(png/jpg/webp)>"
+    }
+  ]
+}
