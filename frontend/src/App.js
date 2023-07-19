@@ -7,7 +7,6 @@ import { Suspense } from 'react/cjs/react.production.min';
 import ReactGA from 'react-ga';
 import InitializeReactGA from './helper/googleAnalytics.ts';
 import NotFound from './components/LandingPages/NotFound/NotFound';
-import HomeSlider from './components/LandingPages/HomeSlider/HomeSlider';
 
 const LandingPages = React.lazy(() =>
   import('./components/LandingPages/LandingPages')
@@ -92,7 +91,6 @@ function App() {
             path=""
             element={
               <Suspense fallback={<Preloader />}>
-                <HomeSlider />
                 <About />
               </Suspense>
             }
@@ -151,15 +149,6 @@ function App() {
               }
             />
           </Route>
-          <Route
-            exact
-            path="login"
-            element={
-              <Suspense fallback={<Preloader />}>
-                <Login />
-              </Suspense>
-            }
-          />
           <Route
             path="about"
             element={

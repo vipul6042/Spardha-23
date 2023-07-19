@@ -8,6 +8,7 @@ function LandingPages() {
   return (
     <>
       <Header />
+      <HomeSlider />
       <Outlet />
       <Footer />
     </>
