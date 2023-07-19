@@ -6,20 +6,19 @@ token.pickle
 
 # React
 # dependencies
-/node_modules
+node_modules
 /.pnp
 .pnp.js
-package-lock.json
 
 # testing
-/coverage
+coverage
 
 # vscode settings
 .vscode
 .env
 
 # production
-/build
+build
 
 # misc
 .DS_Store
