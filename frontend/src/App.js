@@ -40,6 +40,9 @@ const Register = React.lazy(() =>
 const Login = React.lazy(() =>
   import('./components/LandingPages/Register/Login/Login')
 );
+const PrivacyPolicy = React.lazy(() =>
+  import('./components/LandingPages/PrivacyPolicy/PrivacyPolicy')
+);
 const Forgot = React.lazy(() =>
   import('./components/LandingPages/Register/Forgot/Forgot')
 );
@@ -162,6 +165,14 @@ function App() {
             element={
               <Suspense fallback={<Preloader />}>
                 <Events />
+              </Suspense>
+            }
+          />
+          <Route
+            path="PrivacyPolicy"
+            element={
+              <Suspense fallback={<Preloader />}>
+                <PrivacyPolicy />
               </Suspense>
             }
           />
