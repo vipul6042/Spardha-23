@@ -1,10 +1,6 @@
 # Spardha-23
 Spardha is the annual sports festival of IIT (BHU), Varanasi. In its glorious history of over 36 years, Spardha has grown to become the largest and one of the most awaited sports festival of northern India where athletic competition is drawn from throughout the country
 
-## Approach Towards Building the Project
-In the project directory, you can run:
-
-
 ## Before You Begin
 Before you begin we recommend you read about the basic building blocks that assemble this website:
 - You can download this repo and can run locally but Dont put it on your github.
