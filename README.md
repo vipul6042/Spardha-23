@@ -36,13 +36,19 @@ Once you've downloaded the boilerplate and installed all the prerequisites, you'
 - Open the Frontend folder (Spardha-23 Project/frontend/) and open the folder in VS Code.
 - Open a new terminal by clicking the command (Ctrl + Shift + `) or clicking on Terminal : New Terminal in the nav-menu
 - To install the dependencies, run this in the application folder from the command-line:
-- `npm install`
+- ```
+  npm install
+  ```
 - Create a .env file in the current directory of the project using the touch command in your terminal
-- `touch .env`
+- ```bash
+  touch .env
+  ```
 - Get the .env variables name from the .env.example file and paste them in .env file
 - Remember to paste all the values into the .env file
 - To run the react - app, run the following command
-- `npm start`
+- ```bash
+  npm start
+  ```
 - The server will listen on PORT 3000 ( localhost:3000 )
 
 ### Get started with Backend
