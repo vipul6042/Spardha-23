@@ -62,6 +62,7 @@ class UsersSheet:
 
     @classmethod
     def get_user_row(cls, user):
+        print(cls)
         result = cls.sheet.values().get(spreadsheetId=spreadsheet_id, range=cls.RANGE_NAME).execute()
         rows = result.get('values', [])
         for i in  range(len(rows)):
@@ -78,12 +79,11 @@ class UsersSheet:
             row.append(conti.leader_contact_num)
             row.append(conti.num_of_boys)
             row.append(conti.num_of_girls)
-            # row.append(conti.num_of_officials)
             row.append(conti.num_of_coaches_pti)
             row.append(conti.num_of_faculty_members)
             row.append(conti.num_of_supporting_staff)
         except:
-            for i in range(7): row.append("")
+            for i in range(5): row.append("")
 
         games = []
         for team in Team.objects.filter(user=user).select_related('game'):

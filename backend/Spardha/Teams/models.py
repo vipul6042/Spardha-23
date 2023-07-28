@@ -2,6 +2,7 @@ from django.db import models
 from Authentication.models import UserAccount
 from django.core.validators import MinLengthValidator
 from django.contrib.postgres.fields import ArrayField
+# from django.contrib.mysql.fields import ArrayField
 
 
 class Game(models.Model):

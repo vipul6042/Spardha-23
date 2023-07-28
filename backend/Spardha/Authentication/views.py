@@ -23,10 +23,12 @@ from .utils import Util
 from rest_framework.authtoken.models import Token
 from django.shortcuts import redirect, get_object_or_404
 from django.http import Http404
-from Spardha.settings import BASE_URL_FRONTEND, SENDGRID_VERIFY_ACCOUNT_TEMP_ID, SENDGRID_RESET_ACCOUNT_TEMP_ID
+from Spardha.settings import BASE_URL_FRONTEND
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
-from scripts.user_registration import UsersSheet
+# from scripts.user_registration import UsersSheet
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
 
 token_param = openapi.Parameter('Authorization', openapi.IN_QUERY,
                                 description="Provide auth token", type=openapi.TYPE_STRING)
@@ -136,19 +138,18 @@ class RequestPasswordResetEmail(generics.GenericAPIView):
                 "password-reset-confirm", kwargs={"uidb64": uidb64, "token": token}
             )
             absurl = "https://" + current_site + relativeLink
-
-            Temp_Data = {
-                "userName": user.name,
-                "reset-link": absurl
-            }
+            email_body = f"""<h2> Spardha'21 </h2>
+                 <br> <strong> Hello {user.name}! </strong>
+                 <br> We have received a request to reset the password of your Spardha account. <br>
+                 Click the link below to proceed further: <br> <a href='{absurl}'>Reset</a> <br>
+                 If you have any questions, please contact us at 
+                 <a href='mailto:info@spardha.co.in'>info@spardha.co.in</a>"""
             data = {
+                # "email_body": email_body,
                 "to_mail": [user.email],
-                "template_id": SENDGRID_RESET_ACCOUNT_TEMP_ID,
-                "dynamic_template_data": Temp_Data
+                "email_subject": "Reset Your Spardha Password",
             }
-            # Util.send_email(data)
-            Util.send_email_sendgrid(data)
-
+            Util.send_email(data)
             return Response(
                 {"success": "Link has been sent by email to reset password"},
                 status=status.HTTP_200_OK,
@@ -244,7 +245,7 @@ class UserUpdateView(generics.GenericAPIView):
                 user.update(
                     institution_name=request.data["institution_name"],
                 )
-            UsersSheet.update_user(user.email)
+            # UsersSheet.update_user(user.email)
             return Response(
                 {"message": "Updated successfully!"}, status=status.HTTP_200_OK
             )
@@ -267,7 +268,7 @@ def send_verification_mail(user, request):
     }
     data = {
         "to_mail": [user.email],
-        "template_id": SENDGRID_VERIFY_ACCOUNT_TEMP_ID,
+        "template_id":"d-ba7d6cca06e0434abd4da324ee33633d",
         "dynamic_template_data": Temp_Data
     }
 
@@ -293,7 +294,7 @@ class RegisterView(generics.GenericAPIView):
             if user is None:
                 user = serializer.save()
                 create_auth_token(user=user)
-                UsersSheet.new_user(user)
+                # UsersSheet.new_user(user)
                 send_verification_mail(user, request)
                 return Response(
                     {"success": "Verification link has been sent by email!"},
@@ -313,13 +314,14 @@ class RegisterView(generics.GenericAPIView):
 
 def ActivateAccount(request, uidb64, token):
     id = smart_str(urlsafe_base64_decode(uidb64))
+    print(id)
     user = get_object_or_404(UserAccount, id=id)
     if not PasswordResetTokenGenerator().check_token(user, token):
         raise Http404
-    url = BASE_URL_FRONTEND + "/register/login"
+    url = f"{BASE_URL_FRONTEND}/register/login"
     user.is_active = True
     user.save()
-    UsersSheet.update_user(user.email)
+    # UsersSheet.update_user(user.email)
     return redirect(url)
 
 
@@ -386,7 +388,7 @@ class DeleteAccountView(generics.GenericAPIView):
             user.is_active = False
             user.is_deleted = True
             user.save()
-            UsersSheet.update_user(user.email)
+            # UsersSheet.update_user(user.email)
             return Response(
                 {"success": "Account deleted successfully!"}, status=status.HTTP_200_OK
             )

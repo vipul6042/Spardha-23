@@ -96,10 +96,14 @@ WSGI_APPLICATION = "Spardha.wsgi.application"
 
 DATABASES = {
     "default": {
-       'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': os.environ.get("DB_ENGINE"),
+        'NAME': os.environ.get("DB_NAME"),
+        'USER': os.environ.get("DB_USER"),
+        'PASSWORD': os.environ.get("DB_PASSWORD"),
+        'HOST': os.environ.get("DB_HOST"),
+        'PORT': os.environ.get("DB_PORT")
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -165,16 +169,17 @@ with open(os.path.join(BASE_DIR, "client_secret.json.aes"), "rb") as encrypted_f
         )
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = "smtp.zoho.com"
-EMAIL_PORT = 587
+EMAIL_HOST = os.environ.get("EMAIL_HOST")
+EMAIL_PORT = os.environ.get("EMAIL_PORT")
 DEFAULT_FROM_EMAIL = os.environ.get("EMAIL_HOST_USER")
+SENDGRID_VERIFY_ACCOUNT_TEMP_ID = os.environ.get("SENDGRID_VERIFY_ACCOUNT_TEMP_ID")
+SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
 EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
-EMAIL_HOST_USER_NAME = os.environ.get("EMAIL_HOST_USER_NAME")
+SENDGRID_RESET_ACCOUNT_TEMP_ID = os.environ.get("SENDGRID_RESET_ACCOUNT_TEMP_ID")
+EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
 BASE_URL_FRONTEND = os.environ.get("BASE_URL_FRONTEND")
-SENDGRID_VERIFY_ACCOUNT_TEMP_ID = os.environ.get("SENDGRID_VERIFY_ACCOUNT_TEMP_ID")
-SENDGRID_RESET_ACCOUNT_TEMP_ID = os.environ.get("SENDGRID_RESET_ACCOUNT_TEMP_ID")
-SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
+
 
 # Setup support for proxy headers
 USE_X_FORWARDED_HOST = True

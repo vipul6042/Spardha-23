@@ -9,7 +9,7 @@ from .serializers import (
 )
 from drf_yasg.utils import swagger_auto_schema
 from scripts.user_registration import UsersSheet
-from scripts.team_registration import TeamsSheet
+# from scripts.team_registration import TeamsSheet
 
 
 class AllGamesView(generics.ListAPIView):
@@ -58,9 +58,8 @@ class ContingentDetailView(generics.GenericAPIView):
                 "college_rep": college_rep.email,
                 "num_of_boys": integer,
                 "num_of_girls": integer,
+                "num_of_officials": integer,
                 "num_of_coaches_PTI": integer,
-                "num_of_faculty_members": integer,
-                "num_of_supporting_staff": integer,
                 "leader_name": ....,
                 "leader_contact_num": ....,
                 }""",
@@ -69,6 +68,7 @@ class ContingentDetailView(generics.GenericAPIView):
     def post(self, request):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
+        # print(serializer)
         contingent=serializer.save()
         UsersSheet.update_user(contingent.college_rep.email)
         return Response( status=status.HTTP_200_OK)
@@ -79,9 +79,8 @@ class ContingentDetailView(generics.GenericAPIView):
                 "college_rep": college_rep.email,
                 "num_of_boys": integer,
                 "num_of_girls": integer,
+                "num_of_officials": integer,
                 "num_of_coaches_PTI": integer,
-                "num_of_faculty_members": integer,
-                "num_of_supporting_staff": integer,
                 "leader_name": ....,
                 "leader_contact_num": ....,
                 }""",
@@ -147,7 +146,7 @@ class AllTeamsView(generics.ListAPIView):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         team=serializer.save(user=self.request.user)
-        TeamsSheet.new_team(team)
+        # TeamsSheet.new_team(team)
         UsersSheet.update_user(team.user.email)
         return Response({"success": "Team has been created"}, status=status.HTTP_200_OK)
 
@@ -172,7 +171,7 @@ class TeamView(generics.GenericAPIView):
             if "players" in request.data.keys():
                 team.players=request.data["players"]
             team.save()
-            TeamsSheet.update_team(team)
+            # TeamsSheet.update_team(team)
             return Response({"success":"Team Details Modified"}, status=status.HTTP_200_OK)
         except:
             return Response({"error":"Team not found"},status=status.HTTP_404_NOT_FOUND)
@@ -187,7 +186,7 @@ class TeamView(generics.GenericAPIView):
         game=Game.objects.get(name=game.split('_')[0],game_type=game.split('_')[1])
         team = Team.objects.filter(game=game, user=request.user)
         if team.exists():
-            TeamsSheet.delete_team(team[0])
+            # TeamsSheet.delete_team(team[0])
             user_email = team[0].user.email
             team.delete()
             UsersSheet.update_user(user_email)
