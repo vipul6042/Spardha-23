@@ -4,6 +4,7 @@ import {
   FaMapMarker,
   FaPhoneAlt,
   FaEnvelope,
+  FaLock,
   FaFacebookF,
   FaLinkedin,
   FaInstagram,
@@ -198,6 +199,22 @@ const Footer = () => {
                         href="mailto: convener.spardha@iitbhu.ac.in"
                       >
                         spardha@iitbhu.ac.in
+                      </a>
+                    </span>
+                  </div>
+                  <div>
+                    <span>
+                      <FaLock className={`${styles.icons}`}></FaLock>
+                      <a
+                        className={`${styles.text}`}
+                        style={{
+                          wordSpacing: '0.4em',
+                          textDecoration: 'none',
+                        }}
+                        href="https://spardha.org.in/PrivacyPolicy"
+                        target='blank'
+                      >
+                        Privacy Policy
                       </a>
                     </span>
                   </div>
