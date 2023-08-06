@@ -74,6 +74,7 @@ class ContingentSerializer(serializers.ModelSerializer):
 
     def save(self, **kwargs):
         data = self.validated_data
+        # print(data)
         college_rep = get_object_or_404(UserAccount, email=data["college_rep"])
         num_of_boys = data["num_of_boys"]
         num_of_girls = data["num_of_girls"]
@@ -95,6 +96,7 @@ class ContingentSerializer(serializers.ModelSerializer):
             leader_name=leader_name,
             leader_contact_num=leader_contact_num,
         )
+        # print(data)
         return contingent
 
     class Meta:
