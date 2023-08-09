@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-DEBUG = int(os.environ.get("DEBUG", "1"))
+DEBUG = int(config("DEBUG", "1"))
 
 if DEBUG:
     SECRET_KEY = "django-insecure-86qk#fplrgzvaj&o0nhbgf@^tx)gcg7+9d7#f#%hwsim1p+3ez"
@@ -96,12 +96,12 @@ WSGI_APPLICATION = "Spardha.wsgi.application"
 
 DATABASES = {
     "default": {
-        'ENGINE': os.environ.get("DB_ENGINE"),
-        'NAME': os.environ.get("DB_NAME"),
-        'USER': os.environ.get("DB_USER"),
-        'PASSWORD': os.environ.get("DB_PASSWORD"),
-        'HOST': os.environ.get("DB_HOST"),
-        'PORT': os.environ.get("DB_PORT")
+        'ENGINE': config("DB_ENGINE"),
+        'NAME': config("DB_NAME"),
+        'USER': config("DB_USER"),
+        'PASSWORD': config("DB_PASSWORD"),
+        'HOST': config("DB_HOST"),
+        'PORT': config("DB_PORT")
     }
 }
 
@@ -169,16 +169,16 @@ with open(os.path.join(BASE_DIR, "client_secret.json.aes"), "rb") as encrypted_f
         )
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = os.environ.get("EMAIL_HOST")
-EMAIL_PORT = os.environ.get("EMAIL_PORT")
-DEFAULT_FROM_EMAIL = os.environ.get("EMAIL_HOST_USER")
-SENDGRID_VERIFY_ACCOUNT_TEMP_ID = os.environ.get("SENDGRID_VERIFY_ACCOUNT_TEMP_ID")
-SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
-EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
-SENDGRID_RESET_ACCOUNT_TEMP_ID = os.environ.get("SENDGRID_RESET_ACCOUNT_TEMP_ID")
-EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
-EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
-BASE_URL_FRONTEND = os.environ.get("BASE_URL_FRONTEND")
+EMAIL_HOST = config("EMAIL_HOST")
+EMAIL_PORT = config("EMAIL_PORT")
+DEFAULT_FROM_EMAIL = config("EMAIL_HOST_USER")
+SENDGRID_VERIFY_ACCOUNT_TEMP_ID = config("SENDGRID_VERIFY_ACCOUNT_TEMP_ID")
+SENDGRID_API_KEY = config("SENDGRID_API_KEY")
+EMAIL_HOST_USER= config("EMAIL_HOST_USER")
+EMAIL_HOST_USER_NAME = config("EMAIL_HOST_USER_NAME")
+SENDGRID_RESET_ACCOUNT_TEMP_ID = config("SENDGRID_RESET_ACCOUNT_TEMP_ID")
+EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
+BASE_URL_FRONTEND = config("BASE_URL_FRONTEND")
 
 
 # Setup support for proxy headers
