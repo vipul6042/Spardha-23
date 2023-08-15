@@ -5,15 +5,21 @@
 </p>
 <h1 align="center"> Spardha'23 </h1>
 
-Spardha is the annual sports festival of IIT (BHU), Varanasi. In its glorious history of over 36 years, Spardha has grown to become the largest and one of the most awaited sports festival of northern India where athletic competition is drawn from throughout the country
+Spardha is the annual sports festival of IIT (BHU), Varanasi. In its glorious history of over 36 years, Spardha has grown to become the largest and one of the most awaited sports festivals of northern India, where athletic competition is drawn from throughout the country.
 
 ## Before You Begin
-Before you begin we recommend you read about the basic building blocks that assemble this website:
-- You can download this repo and can run locally but Dont put it on your github.
-- Download the repo and make a new branch (name should be related to feature on that you are working) then after making code changes push it on spardha repo and make pr.
-- Dont make any changes on master (locally also) whatever you want to do , make a new branch for that.
-- all branches after your PR Accept/Reject automatically deleted.
-- all PR would be made on dev branch not to direct master.
+Before you begin, we recommend you read about the basic building blocks that assemble this website:
+### Before making PR things to be check
+- Get pull from the master to resolve conflicts if there
+- Get pull from dev to resolve conflicts if there
+- Don't make PR direct to the production branch(master), instead make PR to development branch(dev)
+- After making PR wait and check, do all checks passed, and PR built successfully on Deployment Server
+### For Project setup
+- You can download this repo and run it locally but Don't put it on your GitHub.
+- Download the repo and make a new branch (the name should be related to the feature you are working on). Then after making code changes push it on the Spardha repo and make pr.
+- Don't make any changes on master (locally also). Whatever you want to do, make a new branch for that.
+- all branches after your PR Accept/Reject are automatically deleted.
+- all PR would be made on the dev branch, not to the direct master.
 
 
 
@@ -22,11 +28,11 @@ Make sure you have installed all of the following prerequisites on your developm
 - Git - Download & Install Git. OSX and Linux machines typically have this already installed.
 - VS Code - Download & Install VS Code, one of the most popular code - editor developed by Microsoft.
 
-### Frotend :
+### Frontend :
 - ReactJs,
    
 ### Backend:
-- Django,GoogleAPI's,MySQL
+- Django, GoogleAPI's,MySQL
 
 
 ## Get Started
@@ -35,7 +41,7 @@ Once you've downloaded the boilerplate and installed all the prerequisites, you'
 ### Get started with Frontend
 - Open the Frontend folder (Spardha-23 Project/frontend/) and open the folder in VS Code.
 - Open a new terminal by clicking the command (Ctrl + Shift + `) or clicking on Terminal : New Terminal in the nav-menu
-- To install the dependencies, run this in the application folder from the command-line:
+- To install the dependencies, run this in the application folder from the command line:
 - ```
   npm install
   ```
@@ -43,7 +49,7 @@ Once you've downloaded the boilerplate and installed all the prerequisites, you'
 - ```bash
   touch .env
   ```
-- Get the .env variables name from the .env.example file and paste them in .env file
+- Get the .env variables' names from the .env.example file and paste them into the .env file
 - Remember to paste all the values into the .env file
 - To run the react - app, run the following command
 - ```bash
@@ -55,18 +61,18 @@ Once you've downloaded the boilerplate and installed all the prerequisites, you'
 
 
 ### Working with repo:
-1. Clone the repo in which you have to work in your system.
-2. Create or do your work in other branch with relevant name.
+1. Clone the repo in which you must work in your system.
+2. Create or do your work in another branch with a relevant name.
 3. After completing your work, commit your changes and push them.
 4. Create a pull request (PR).
 
 ### Setting up the project(Backend) :
 
-1. Creating virtual environment:
+1. Creating a virtual environment:
 ```bash
 python -m venv venv
 ```
-2. Activate virtual environment
+2. Activate a virtual environment
 
 Linux:
 ```bash
@@ -80,7 +86,7 @@ Windows:
 ```bash
 pip install -r requirements.txt
 ```
-4. Move to main folder: 
+4. Move to the main folder: 
 ```bash
 cd Spardha
 ```
