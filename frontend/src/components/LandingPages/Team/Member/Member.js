@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Member.module.css';
-import { FaFacebookF, FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaInstagramSquare } from 'react-icons/fa';
 
 function Member({ post, name, phone, id, mail, image, linkedin }) {
   return (
@@ -36,7 +36,7 @@ function Member({ post, name, phone, id, mail, image, linkedin }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaFacebookF />
+                <FaInstagramSquare/>
               </a>
               <a
                 href={`mailto:${mail}`}
