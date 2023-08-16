@@ -35,7 +35,7 @@ function HomeSlider() {
                   </a>
                 </div>
                 <h1 className="mb-1 text-overflow-center spardha-21">
-                  Spardha&nbsp;2022
+                  Spardha&nbsp;2023
                 </h1>
                 <h2 className="text-overflow-center home-spardha-subheading">
                   IIT (BHU), Varanasi
@@ -115,7 +115,7 @@ function HomeSlider() {
                   </a>
                 </div>
                 <h1 className="mb-1 text-overflow-center spardha-21">
-                  Spardha&nbsp;2022
+                  Spardha&nbsp;2023
                 </h1>
                 <h2 className="text-overflow-center home-spardha-subheading">
                   IIT (BHU), Varanasi
@@ -193,7 +193,7 @@ function HomeSlider() {
                   </a>
                 </div>
                 <h1 className="mb-1 text-overflow-center spardha-21">
-                  Spardha&nbsp;2022
+                  Spardha&nbsp;2023
                 </h1>
                 <h2 className="text-overflow-center home-spardha-subheading">
                   IIT (BHU), Varanasi
@@ -272,7 +272,7 @@ function HomeSlider() {
                   </a>
                 </div>
                 <h1 className="mb-1 text-overflow-center spardha-21">
-                  Spardha&nbsp;2022
+                  Spardha&nbsp;2023
                 </h1>
                 <h2 className="text-overflow-center home-spardha-subheading">
                   IIT (BHU), Varanasi
