@@ -26,13 +26,13 @@ function HomeSlider() {
             >
               <div className="col-md-12 col-sm-12 col-12 ftco-animate text-center mt-5" style={{width:"78vw"}}>
                 <div id="row" className="">
-                  <a href="https://myrankers.com">
+                  {/* <a href="https://myrankers.com">
                     <img id="column1" src="/images/logo/powered.svg" alt="Rankers" />
-                  </a>
+                  </a> */}
                   <img id="columnLogo" src="/images/logo/spardha-white-home.png" alt="spardha" />
-                  <a href="https://iitiantrader.in/">
+                  {/* <a href="https://iitiantrader.in/">
                     <img id="column2" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
-                  </a>
+                  </a> */}
                 </div>
                 <h1 className="mb-1 text-overflow-center spardha-21">
                   Spardha&nbsp;2023
@@ -40,7 +40,7 @@ function HomeSlider() {
                 <h2 className="text-overflow-center home-spardha-subheading">
                   IIT (BHU), Varanasi
                 </h2>
-                <div id="rowM" className="">
+                {/* <div id="rowM" className="">
                   <a href="https://myrankers.com">
                     <img id="column1M" src="/images/logo/powered.svg" alt="Rankers" />
                   </a>
@@ -48,7 +48,7 @@ function HomeSlider() {
                   <a href="https://iitiantrader.in/">
                     <img id="column2M" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
                   </a>
-                </div>
+                </div> */}
                 <h2
                   className="text-overflow-center home-spardha-subheading"
                   style={{ color: '#fdcc07' }}
@@ -106,13 +106,13 @@ function HomeSlider() {
             >
               <div className="col-md-12 col-sm-12 col-12 ftco-animate text-center mt-5" style={{width:"78vw"}}>
                 <div id="row" className="">
-                  <a href="https://myrankers.com">
+                  {/* <a href="https://myrankers.com">
                     <img id="column1" src="/images/logo/powered.svg" alt="Rankers" />
-                  </a>
+                  </a> */}
                   <img id="columnLogo" src="/images/logo/spardha-white-home.png" alt="spardha" />
-                  <a href="https://iitiantrader.in/">
+                  {/* <a href="https://iitiantrader.in/">
                     <img id="column2" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
-                  </a>
+                  </a> */}
                 </div>
                 <h1 className="mb-1 text-overflow-center spardha-21">
                   Spardha&nbsp;2023
@@ -121,12 +121,12 @@ function HomeSlider() {
                   IIT (BHU), Varanasi
                 </h2>
                 <div id="rowM" className="">
-                  <a href="https://myrankers.com">
+                  {/* <a href="https://myrankers.com">
                     <img id="column1M" src="/images/logo/powered.svg" alt="Rankers" />
-                  </a>
-                  <a href="https://iitiantrader.in/">
+                  </a> */}
+                  {/* <a href="https://iitiantrader.in/">
                     <img id="column2M" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
-                  </a>
+                  </a> */}
                 </div>
                 <h2
                   className="text-overflow-center home-spardha-subheading"
@@ -184,13 +184,13 @@ function HomeSlider() {
             >
               <div className="col-md-12 col-sm-12 col-12 ftco-animate text-center mt-5" style={{width:"78vw"}}>
                 <div id="row" className="">
-                  <a href="https://myrankers.com">
+                  {/* <a href="https://myrankers.com">
                     <img id="column1" src="/images/logo/powered.svg" alt="Rankers" />
-                  </a>
+                  </a> */}
                   <img id="columnLogo" src="/images/logo/spardha-white-home.png" alt="spardha" />
-                  <a href="https://iitiantrader.in/">
+                  {/* <a href="https://iitiantrader.in/">
                     <img id="column2" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
-                  </a>
+                  </a> */}
                 </div>
                 <h1 className="mb-1 text-overflow-center spardha-21">
                   Spardha&nbsp;2023
@@ -263,13 +263,13 @@ function HomeSlider() {
             >
               <div className="col-md-12 col-sm-12 col-12 ftco-animate text-center mt-5" style={{width:"78vw"}}>
                 <div id="row" className="">
-                  <a href="https://myrankers.com">
+                  {/* <a href="https://myrankers.com">
                     <img id="column1" src="/images/logo/powered.svg" alt="Rankers" />
-                  </a>
+                  </a> */}
                   <img id="columnLogo" src="/images/logo/spardha-white-home.png" alt="spardha" />
-                  <a href="https://iitiantrader.in/">
+                  {/* <a href="https://iitiantrader.in/">
                     <img id="column2" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
-                  </a>
+                  </a> */}
                 </div>
                 <h1 className="mb-1 text-overflow-center spardha-21">
                   Spardha&nbsp;2023
@@ -278,12 +278,12 @@ function HomeSlider() {
                   IIT (BHU), Varanasi
                 </h2>
                 <div id="rowM" className="">
-                  <a href="https://myrankers.com">
+                  {/* <a href="https://myrankers.com">
                     <img id="column1M" src="/images/logo/powered.svg" alt="Rankers" />
                   </a>
                   <a href="https://iitiantrader.in/">
                     <img id="column2M" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
-                  </a>
+                  </a> */}
                 </div>
                 <h2
                   className="text-overflow-center home-spardha-subheading"
