@@ -143,7 +143,7 @@ class RequestPasswordResetEmail(generics.GenericAPIView):
                  <br> We have received a request to reset the password of your Spardha account. <br>
                  Click the link below to proceed further: <br> <a href='{absurl}'>Reset</a> <br>
                  If you have any questions, please contact us at 
-                 <a href='mailto:info@spardha.co.in'>info@spardha.co.in</a>"""
+                 <a href='mailto:info@spardha.org.in'>info@spardha.org.in</a>"""
             data = {
                 # "email_body": email_body,
                 "to_mail": [user.email],

@@ -79,7 +79,7 @@ const Sponsors = () => {
                 </a>
               </div>
               <div className="col-lg-3 col-md-3 col-4 pt-5 ">
-                <a href="https://spardha.co.in/sponsors" class="disabled">
+                <a href="https://spardha.org.in/sponsors" class="disabled">
                   <img
                     src="/images/sponsors/2022/ipsator.png"
                     className="img-fluid_sponsors img-sponsor"
@@ -115,7 +115,7 @@ const Sponsors = () => {
                 </a>
               </div>
               <div className="col-lg-3 col-md-3 col-4 pt-5 ">
-                <a href="https://spardha.co.in/sponsorus" class="disabled">
+                <a href="https://spardha.org.in/sponsorus" class="disabled">
                   <img
                     src="/images/sponsors/2022/cut-&-looks-.png"
                     className="img-fluid_sponsors img-sponsor"
@@ -124,7 +124,7 @@ const Sponsors = () => {
                 </a>
               </div>
               <div className="col-lg-3 col-md-3 col-4 pt-5 ">
-                <a href="https://spardha.co.in/sponsorus" class="disabled">
+                <a href="https://spardha.org.in/sponsorus" class="disabled">
                   <img
                     src="/images/sponsors/2022/DGPcafe.png"
                     className="img-fluid_sponsors img-sponsor"
@@ -160,7 +160,7 @@ const Sponsors = () => {
                 </a>
               </div>
               <div className="col-lg-3 col-md-3 col-4 pt-5 ">
-                <a href="https://spardha.co.in/sponsorus" class="disabled">
+                <a href="https://spardha.org.in/sponsorus" class="disabled">
                   <img
                     src="/images/sponsors/2022/Shri_rajbandhu.png"
                     className="img-fluid_sponsors img-sponsor"
@@ -169,7 +169,7 @@ const Sponsors = () => {
                 </a>
               </div>
               <div className="col-lg-3 col-md-3 col-4 pt-5 ">
-                <a href="https://spardha.co.in/sponsorus" class="disabled">
+                <a href="https://spardha.org.in/sponsorus" class="disabled">
                   <img
                     src="/images/sponsors/2022/VishalBakers.jpeg"
                     className="img-fluid_sponsors img-sponsor"
@@ -178,7 +178,7 @@ const Sponsors = () => {
                 </a>
               </div>
               <div className="col-lg-3 col-md-3 col-4 pt-5 ">
-                <a href="https://spardha.co.in/sponsoru" class="disabled">
+                <a href="https://spardha.org.in/sponsoru" class="disabled">
                   <img
                     src="/images/sponsors/2022/sandeep_sports.png"
                     className="img-fluid_sponsors img-sponsor"
@@ -187,7 +187,7 @@ const Sponsors = () => {
                 </a>
               </div>
               <div className="col-lg-3 col-md-3 col-4 pt-5 ">
-                <a href="https://spardha.co.in/sponsoru" class="disabled">
+                <a href="https://spardha.org.in/sponsoru" class="disabled">
                   <img
                     src="/images/sponsors/2022/Sankalan.jpeg"
                     className="img-fluid_sponsors img-sponsor"
@@ -197,7 +197,7 @@ const Sponsors = () => {
               </div>
 
               <div className="col-lg-3 col-md-3 col-4 pt-5 ">
-                <a href="https://spardha.co.in/sponsoru" class="disabled">
+                <a href="https://spardha.org.in/sponsoru" class="disabled">
                   <img
                     src="/images/sponsors/2022/laxmi_cycle.png"
                     className="img-fluid_sponsors img-sponsor"
@@ -206,7 +206,7 @@ const Sponsors = () => {
                 </a>
               </div>
               <div className="col-lg-3 col-md-3 col-4 pt-5 ">
-                <a href="https://spardha.co.in/sponsoru" class="disabled">
+                <a href="https://spardha.org.in/sponsoru" class="disabled">
                   <img
                     src="/images/sponsors/2022/englishmasala.jpg"
                     className="img-fluid_sponsors img-sponsor"
@@ -215,7 +215,7 @@ const Sponsors = () => {
                 </a>
               </div>
               <div className="col-lg-3 col-md-3 col-4 pt-5 ">
-                <a href="https://spardha.co.in/sponsoru" class="disabled">
+                <a href="https://spardha.org.in/sponsoru" class="disabled">
                   <img
                     src="/images/sponsors/2022/cafeDeCoop.jpeg"
                     className="img-fluid_sponsors img-sponsor"
@@ -224,7 +224,7 @@ const Sponsors = () => {
                 </a>
               </div>
               <div className="col-lg-3 col-md-3 col-4 pt-5 ">
-                <a href="https://spardha.co.in/sponsoru" class="disabled">
+                <a href="https://spardha.org.in/sponsoru" class="disabled">
                   <img
                     src="/images/sponsors/2022/aao_ji.png"
                     className="img-fluid_sponsors img-sponsor"
