@@ -149,7 +149,7 @@ const EventsDb = () => {
   const baseUrl = process.env.REACT_APP_BASE_URL;
   useEffect(() => {
     axios
-      .get(`${baseUrl}/teams/`, {
+      .get(`${baseUrl}teams/`, {
         headers: {
           Authorization: `Token ${token}`,
         },
@@ -233,7 +233,7 @@ const EventsDb = () => {
       }
     }
     axios
-      .put(`${baseUrl}/teams/${game}/`, data, {
+      .put(`${baseUrl}teams/${game}/`, data, {
         headers: {
           Authorization: `Token ${token}`,
         },

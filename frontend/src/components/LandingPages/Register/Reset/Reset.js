@@ -47,7 +47,7 @@ function Reset() {
 
     const baseUrl = process.env.REACT_APP_BASE_URL;
     axios
-      .patch(`${baseUrl}/auth/password_reset/update_password/`, {
+      .patch(`${baseUrl}auth/password_reset/update_password/`, {
         password: password1.value,
         token,
         uidb64,

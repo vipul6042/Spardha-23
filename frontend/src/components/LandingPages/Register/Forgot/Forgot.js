@@ -41,7 +41,7 @@ function Forgot() {
 
     const baseUrl = process.env.REACT_APP_BASE_URL;
     axios
-      .post(`${baseUrl}/auth/password_reset/email/`, {
+      .post(`${baseUrl}auth/password_reset/email/`, {
         email: email.value,
       })
       .then((res) => {
