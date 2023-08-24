@@ -53,7 +53,7 @@ function HomeSlider() {
                   className="text-overflow-center home-spardha-subheading"
                   style={{ color: '#fdcc07' }}
                 >
-                  Registrations are now closed
+                  13th - 15th october
                 </h2>
                 <div className="container mt-5 pt-3 home-large-screen">
                   <div className="row">
@@ -64,11 +64,11 @@ function HomeSlider() {
                     </div>
                     <div className="col-6 reg">
                       <HashLink
-                        // to="/register/signup#register"
-                        to="/register/login"
+                        to="/register/signup#register"
+                        // to="/register/login"
                         className="home-button"
                       >
-                        {/* REGISTER&nbsp;/&nbsp;LOGIN */}LOGIN
+                        REGISTER&nbsp;/&nbsp;LOGIN
                       </HashLink>
                     </div>
                   </div>
@@ -79,11 +79,11 @@ function HomeSlider() {
                 <div className="home-small-screen container">
                   <div className="reg">
                     <HashLink
-                      // to="/register/signup#register"
-                      to="/register/login"
+                      to="/register/signup#register"
+                      // to="/register/login"
                       className="home-button"
                     >
-                      {/* REGISTER&nbsp;/&nbsp;LOGIN */}LOGIN
+                      REGISTER&nbsp;/&nbsp;LOGIN
                     </HashLink>
                   </div>
                   <div className="ca">
@@ -132,7 +132,7 @@ function HomeSlider() {
                   className="text-overflow-center home-spardha-subheading"
                   style={{ color: '#fdcc07' }}
                 >
-                  Registrations are now closed
+                   13th - 15th october
                 </h2>
                 <div className="container mt-5 pt-3 home-large-screen">
                   <div className="row">
@@ -143,11 +143,11 @@ function HomeSlider() {
                     </div>
                     <div className="col-6 reg">
                       <HashLink
-                        // to="/register/signup#register"
-                        to="/register/login"
+                        to="/register/signup#register"
+                        // to="/register/login"
                         className="home-button"
                       >
-                        {/* REGISTER&nbsp;/&nbsp;LOGIN */}LOGIN
+                        REGISTER&nbsp;/&nbsp;LOGIN
                       </HashLink>
                     </div>
                   </div>
@@ -161,7 +161,7 @@ function HomeSlider() {
                       to="/register/signup#register"
                       className="home-button"
                     >
-                      {/* REGISTER&nbsp;/&nbsp; */}LOGIN
+                      REGISTER&nbsp;/&nbsp;LOGIN
                     </HashLink>
                   </div>
                   <div className="ca">
@@ -210,7 +210,7 @@ function HomeSlider() {
                   className="text-overflow-center home-spardha-subheading"
                   style={{ color: '#fdcc07' }}
                 >
-                  Registrations are now closed
+                   13th - 15th october
                 </h2>
                 <div className="container mt-5 pt-3 home-large-screen">
                   <div className="row">
@@ -221,11 +221,11 @@ function HomeSlider() {
                     </div>
                     <div className="col-6 reg">
                       <HashLink
-                        // to="/register/signup#register"
-                        to="/register/login"
+                        to="/register/signup#register"
+                        // to="/register/login"
                         className="home-button"
                       >
-                        {/* REGISTER&nbsp;/&nbsp;LOGIN */}LOGIN
+                        REGISTER&nbsp;/&nbsp;LOGIN
                       </HashLink>
                     </div>
                   </div>
@@ -236,11 +236,11 @@ function HomeSlider() {
                 <div className="home-small-screen container">
                   <div className="reg">
                     <HashLink
-                      // to="/register/signup#register"
-                      to="/register/login"
+                      to="/register/signup#register"
+                      // to="/register/login"
                       className="home-button"
                     >
-                        {/* REGISTER&nbsp;/&nbsp;LOGIN */}LOGIN
+                        REGISTER&nbsp;/&nbsp;LOGIN
                     </HashLink>
                   </div>
                   <div className="ca">
@@ -289,7 +289,7 @@ function HomeSlider() {
                   className="text-overflow-center home-spardha-subheading"
                   style={{ color: '#fdcc07' }}
                 >
-                  Registrations are now closed
+                  13th - 15th october
                 </h2>
                 <div className="container mt-5 pt-3 home-large-screen">
                   <div className="row">
@@ -300,11 +300,11 @@ function HomeSlider() {
                     </div>
                     <div className="col-6 reg">
                       <HashLink
-                        // to="/register/signup#register"
-                        to="/register/login"
+                        to="/register/signup#register"
+                        // to="/register/login"
                         className="home-button"
                       >
-                        {/* REGISTER&nbsp;/&nbsp;LOGIN */}LOGIN
+                        REGISTER&nbsp;/&nbsp;LOGIN
                       </HashLink>
                     </div>
                   </div>
@@ -315,11 +315,11 @@ function HomeSlider() {
                 <div className="home-small-screen container">
                   <div className="reg">
                     <HashLink
-                      // to="/register/signup#register"
-                      to="/register/login"
+                      to="/register/signup#register"
+                      // to="/register/login"
                       className="home-button"
                     >
-                        {/* REGISTER&nbsp;/&nbsp;LOGIN */}LOGIN
+                        REGISTER&nbsp;/&nbsp;LOGIN
                     </HashLink>
                   </div>
                   <div className="ca">
