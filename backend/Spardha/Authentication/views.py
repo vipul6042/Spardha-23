@@ -29,7 +29,7 @@ from drf_yasg import openapi
 # from scripts.user_registration import UsersSheet
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
-from Spardha.settings import CURRENT_URL_BACKEND, SENDGRID_TEMPLATE_ID
+from Spardha.settings import CURRENT_URL_BACKEND, SENDGRID_VERIFY_ACCOUNT_TEMP_ID
 
 token_param = openapi.Parameter('Authorization', openapi.IN_QUERY,
                                 description="Provide auth token", type=openapi.TYPE_STRING)
@@ -274,7 +274,7 @@ def send_verification_mail(user, request):
     }
     data = {
         "to_mail": [user.email],
-        "template_id": SENDGRID_TEMPLATE_ID,
+        "template_id": SENDGRID_VERIFY_ACCOUNT_TEMP_ID,
         "dynamic_template_data": Temp_Data
     }
 
