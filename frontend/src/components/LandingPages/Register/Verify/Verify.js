@@ -42,7 +42,7 @@ function Verify() {
 
     const baseUrl = process.env.REACT_APP_BASE_URL;
     axios
-      .post(`${baseUrl}/auth/verify/`, {
+      .post(`${baseUrl}auth/verify/`, {
         email: email.value,
       })
       .then((res) => {

@@ -54,7 +54,7 @@ function EventsEdit() {
   const baseUrl = process.env.REACT_APP_BASE_URL;
   useEffect(() => {
     axios
-      .get(`${baseUrl}/teams/`, {
+      .get(`${baseUrl}teams/`, {
         headers: {
           Authorization: `Token ${token}`,
         },
@@ -79,7 +79,7 @@ function EventsEdit() {
     else setShowMixedSpinner(true);
     if (games[game]) {
       axios
-        .delete(`${baseUrl}/teams/${game}/`, {
+        .delete(`${baseUrl}teams/${game}/`, {
           headers: {
             Authorization: `Token ${token}`,
           },
@@ -103,7 +103,7 @@ function EventsEdit() {
     } else {
       axios
         .post(
-          `${baseUrl}/teams/`,
+          `${baseUrl}teams/`,
           { game },
           {
             headers: {

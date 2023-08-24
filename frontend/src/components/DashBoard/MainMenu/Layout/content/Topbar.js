@@ -25,7 +25,7 @@ const Topbar = ({ toggleSidebar }) => {
 
   useEffect(() => {
     axios
-      .get(`${baseUrl}/auth/update/`, {
+      .get(`${baseUrl}auth/update/`, {
         headers: {
           Authorization: `Token ${token}`,
         },
@@ -40,7 +40,7 @@ const Topbar = ({ toggleSidebar }) => {
       });
 
     axios
-      .get(`${baseUrl}/teams/`, {
+      .get(`${baseUrl}teams/`, {
         headers: {
           Authorization: `Token ${token}`,
         },

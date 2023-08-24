@@ -54,7 +54,7 @@ function Login() {
 
     const baseUrl = process.env.REACT_APP_BASE_URL;
     axios
-      .post(`${baseUrl}/auth/login/`, {
+      .post(`${baseUrl}auth/login/`, {
         username: username.value,
         password: password.value,
       })
