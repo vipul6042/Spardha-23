@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "drf_yasg",
     "corsheaders",
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE = [
@@ -179,7 +180,8 @@ EMAIL_HOST_USER_NAME = config("EMAIL_HOST_USER_NAME")
 SENDGRID_RESET_ACCOUNT_TEMP_ID = config("SENDGRID_RESET_ACCOUNT_TEMP_ID")
 EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
 BASE_URL_FRONTEND = config("BASE_URL_FRONTEND")
-
+CURRENT_URL_BACKEND = config("CURRENT_URL_BACKEND")
+SENDGRID_TEMPLATE_ID = config("SENDGRID_TEMPLATE_ID")
 
 # Setup support for proxy headers
 USE_X_FORWARDED_HOST = True

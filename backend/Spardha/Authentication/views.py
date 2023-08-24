@@ -29,9 +29,15 @@ from drf_yasg import openapi
 # from scripts.user_registration import UsersSheet
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
+from Spardha.settings import CURRENT_URL_BACKEND, SENDGRID_TEMPLATE_ID
 
 token_param = openapi.Parameter('Authorization', openapi.IN_QUERY,
                                 description="Provide auth token", type=openapi.TYPE_STRING)
+
+def get_current_site(*args, **kwargs):
+    class Site:
+        domain = CURRENT_URL_BACKEND
+    return Site
 
 
 class LoginView(generics.GenericAPIView):
@@ -268,7 +274,7 @@ def send_verification_mail(user, request):
     }
     data = {
         "to_mail": [user.email],
-        "template_id":"d-ba7d6cca06e0434abd4da324ee33633d",
+        "template_id": SENDGRID_TEMPLATE_ID,
         "dynamic_template_data": Temp_Data
     }
 
