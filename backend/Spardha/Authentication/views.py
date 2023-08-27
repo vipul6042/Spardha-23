@@ -30,6 +30,7 @@ from drf_yasg import openapi
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
 from Spardha.settings import CURRENT_URL_BACKEND, SENDGRID_VERIFY_ACCOUNT_TEMP_ID
+from Services import discord_logger
 
 token_param = openapi.Parameter('Authorization', openapi.IN_QUERY,
                                 description="Provide auth token", type=openapi.TYPE_STRING)
@@ -227,6 +228,7 @@ class UserUpdateView(generics.GenericAPIView):
             }
             return Response(content, status=status.HTTP_200_OK)
         except serializers.get_error_detail:
+            discord_logger.send_message(str(serializers.get_error_detail))
             return Response(
                 {"error": "An error occurred!"}, status=status.HTTP_403_FORBIDDEN
             )
