@@ -291,18 +291,18 @@ const Athletics = (props) => {
                     >
                       <b>CAPTAIN</b>
                       <br />
-                      Rohit Diwakar
+                   	  Tagaram Kiran Kumar
                       <br />
                       8827687934
                       <br />
-                      rohit.diwakar.ece19@itbhu.ac.in
+                      tagaram.kirankumar.cer20@itbhu.ac.in	
                       <br />
                       <br />
-                      Anshika Singh <b>(W)</b>
+                      Anchal Dhar <b>(W)</b>
                       <br />
                       7985967630
                       <br />
-                      anshika.singh.phy19@itbhu.ac.in
+                      anchal.dhar.mec21@itbhu.ac.in
                       <br />
                       <br />
                       <b>VICE-CAPTAIN</b>
@@ -439,17 +439,17 @@ const Badminton = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Sayan Ghosh <br />
+                    Rishi Kaushik <br />
                     7602961003
                     <br />
-                    sayan.ghosh.cd.mat19@itbhu.ac.in
+                    rishi.kaushik.eee21@itbhu.ac.in	
                     <br />
                     <br />
-                    Anshul Sahai <b>(W)</b>
+                    Manisha Bishnoi<b>(W)</b>
                     <br />
                     91668498500
                     <br />
-                    anshul.sahai.che19@itbhu.ac.in
+                    manisha.bishnoi.mec21@itbhu.ac.in	 
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -578,17 +578,17 @@ const Basketball = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Aryan Shukla <br />
+                    Pratyaksh Sharma <br />
                     8171354203
                     <br />
-                    aryanshukla.mat18@itbhu.ac.in
+                    pratyaksh.sharma.civ21@itbhu.ac.in	
                     <br />
                     <br />
-                    Arya Kumari <b>(W)</b>
+                    Chhaya umbarkar  <b>(W)</b>
                     <br />
                     8409372829
                     <br />
-                    aryakumari.mst18@itbhu.ac.in
+                    chhaya.umbarkar.mst20@itbhu.ac.in
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -711,17 +711,17 @@ const Boxing = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Ankur Minj <br />
+                    Suyash Baloni <br />
                     9171946273
                     <br />
-                    ankur.minj.min19@itbhu.ac.in
+                    suyash.baloni.bme20@itbhu.ac.in	 
                     <br />
                     <br />
-                    Smriti Sharma <b>(W)</b>
+                    Saloni Agrawal <b>(W)</b>
                     <br />
                     8303077445
                     <br />
-                    smriti.sharma.ece19@itbhu.ac.in
+                    saloni.agrawal.mat20@itbhu.ac.in	 
                     <br />
                     <br />
                     <br />
@@ -839,10 +839,10 @@ const Chess = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Mack Mohan Verma <br />
+                    Harshraj Joshi  <br />
                     9548338599
                     <br />
-                    mack.mohanverma.mec19@itbhu.ac.in
+                    harshraj.joshi.che21@itbhu.ac.in
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -1225,10 +1225,10 @@ const Football = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Ritwik Singh <br />
+                    Soham Nandy <br />
                     9549847995
                     <br />
-                    ritviksingh.phy18@itbhu.ac.in
+                    soham.nandy.cd.mst21@itbhu.ac.in
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -1355,10 +1355,10 @@ const Handball = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Sharath Ram <br />
+                    Patel Avi <br />
                     8072714518
                     <br />
-                    sharath.ramsb.mst19@itbhu.ac.in
+                    patelavi.nihilkumar.mec21@itbhu.ac.in	
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -1487,10 +1487,10 @@ const Hockey = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Raghubir <br />
+                    Abhishek Meena <br />
                     6265573271
                     <br />
-                    raghubir.student.phe19@itbhu.ac.in
+                    abhishek.meena.mec19@itbhu.ac.in	
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -1615,17 +1615,17 @@ const Kabbadi = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Sateesh Kumar <br />
+                    Peddinti Sai siva kumar <br />
                     7354388062
                     <br />
-                    sateesh.kumar.bme19@itbhu.ac.in
+                    peddinti.saiskumar.cer19@itbhu.ac.in
                     <br />
                     <br />
-                    Keloth Tejaswini <b>(W)</b>
+                    Kodurupaka Mallika <b>(W)</b>
                     <br />
                     9177574613
                     <br />
-                    keloth.tejaswini.min20@itbhu.ac.in
+                    kodurupaka.mallika.mec21@itbhu.ac.in	
                     <br />
                     <br />
                     <br />
@@ -1754,18 +1754,18 @@ const Khokho = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Rahul Lakra
+                    yandapalli gireesh reddy
                     <br />
                     8877441658
                     <br />
-                    rahul.lakra.min19@itbhu.ac.in
+                    ygireesh.reddy.eee21@itbhu.ac.in
                     <br />
                     <br />
-                    Tejswinee Karwar <b>(W)</b>
+                    Saloni Sharma <b>(W)</b>
                     <br />
                     7770880674
                     <br />
-                    tejswinee.karwar.met19@itbhu.ac.in
+                    saloni.sharma.civ22@itbhu.ac.in	
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -2028,10 +2028,10 @@ const Squash = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    B Rohith Netha <br />
+                    Hemank Vats<br />
                     8331891203
                     <br />
-                    brohith.netha.mec19@itbhu.ac.in
+                    hemank.vats.apd20@itbhu.ac.in	
                     <br />
                     <br />
                     <br />
@@ -2154,17 +2154,17 @@ const TableTennis = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Sachin Arya <br />
+                    Yashwardhan Sable <br />
                     7073524926
                     <br />
-                    sachinarya.mec18@iitbhu.ac.in
+                    yashwardhan.sable.phy20@itbhu.ac.in
                     <br />
                     <br />
-                    Kajal Pathriyal <b>(W)</b>
+                    Guddaji Sri Prada <b>(W)</b>
                     <br />
                     8127141299
                     <br />
-                    kajal.pathriyal.eee19@itbhu.ac.in
+                    guddaji.sriprada.cse20@itbhu.ac.in	
                     <br />
                     <br />
                     <br />
@@ -2281,17 +2281,17 @@ const Taekwondo = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Suraj Gupta <br />
+                    Divyanshu Bharti <br />
                     7737877228
                     <br />
-                    suraj.gupta.che19@itbhu.ac.in
+                    divyanshu.bharti.chy21@itbhu.ac.in	
                     <br />
                     <br />
-                    Anjali. C <b>(W)</b>
+                    Sameeksha Murdia <b>(W)</b>
                     <br />
                     9207970160
                     <br />
-                    anjalic.civ18@itbhu.ac.in
+                    sameeksha.murdia.phy20@itbhu.ac.in	
                     <br />
                     <br />
                     <br />
@@ -2547,16 +2547,16 @@ const Volleyball = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Shivkaran Singh Ranawat <br />
+                    Pawan Kumar <br />
                     8824018065
                     <br />
-                    shivkarans.ranawat.phe19@itbhu.ac.in <br />
+                    pawan.kumar.ece20@itbhu.ac.in	<br />
                     <br />
-                    Yashika lamba <b>(W)</b>
+                    Boddu Bhavana <b>(W)</b>
                     <br />
                     8076365550
                     <br />
-                    yashika.lamba.phe19@itbhu.ac.in
+                    boddu.bhavana.mec20@itbhu.ac.in 
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -2687,10 +2687,10 @@ const WeightLifting = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Pulkit Khandelwal <br />
+                    Harsh Agrawal <br />
                     6350078788
                     <br />
-                    pkhandelwal.civ18@itbhu.ac.in
+                    harshagrawal789789@gmail.com	
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
