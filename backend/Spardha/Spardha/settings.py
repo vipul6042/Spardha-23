@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "Authentication",
     "Teams",
     "Manager",
+    "Documents",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
