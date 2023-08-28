@@ -199,12 +199,12 @@ function HomeSlider() {
                   IIT (BHU), Varanasi
                 </h2>
                 <div id="rowM" className="">
-                  <a href="https://myrankers.com">
+                  {/* <a href="https://myrankers.com">
                     <img id="column1M" src="/images/logo/powered.svg" alt="Rankers" />
                   </a>
                   <a href="https://iitiantrader.in/">
                     <img id="column2M" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
-                  </a>
+                  </a> */}
                 </div>
                 <h2
                   className="text-overflow-center home-spardha-subheading"
