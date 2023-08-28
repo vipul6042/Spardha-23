@@ -1,28 +1,28 @@
 import React from 'react';
 import styles from './Events.module.css';
 import rules from './rules.jpg';
-import trophy from './trophy.jpg';
+// import trophy from './trophy.jpg';
 import contacts from './contacts.jpg';
 import { FaTimes } from 'react-icons/fa';
-import AthleticsPDF from './AthleticsPDF.pdf';
-import BadmintonPDF from './BadmintonPDF.pdf';
-import BasketballPDF from './BasketballPDF.pdf';
-import BoxingPDF from './BoxingPDF.pdf';
-import CricketPDF from './CricketPDF.pdf';
-import ChessPDF from './ChessPDF.pdf';
+import AthleticsPDF from './athletics.pdf';
+import BadmintonPDF from './badminton.pdf';
+import BasketballPDF from './basketball.pdf';
+import BoxingPDF from './boxing.pdf';
+import CricketPDF from './cricket.pdf';
+import ChessPDF from './chess.pdf';
 import CyclingPDF from './CyclingPDF.pdf';
-import FootballPDF from './FootballPDF.pdf';
-import HandballPDF from './HandBallPDF.pdf';
-import HockeyPDF from './HockeyPDF.pdf';
-import KabbadiPDF from './KabbadiPDF.pdf';
-import KhoKhoPDF from './KhoKhoPDF.pdf';
-import PowerliftingPDF from './PowerliftingPDF.pdf';
-import SquashPDF from './SquashPDF.pdf';
-import TableTennisPDF from './TableTennisPDF.pdf';
-import TennisPDF from './TennisPDF.pdf';
-import VolleyballPDF from './VolleyBallPDF.pdf';
-import WeightliftingPDF from './WeightliftingPDF.pdf';
-import TaekwondoPDF from './TaekwondoPDF.pdf';
+import FootballPDF from './football.pdf';
+import HandballPDF from './handball.pdf';
+import HockeyPDF from './hockey.pdf';
+import KabbadiPDF from './kabbadi.pdf';
+import KhoKhoPDF from './khokho.pdf';
+import PowerliftingPDF from './powerlifting.pdf';
+import SquashPDF from './squash.pdf';
+import TableTennisPDF from './tabletennis.pdf';
+import TennisPDF from './tennis.pdf';
+import VolleyballPDF from './volleyball.pdf';
+import WeightliftingPDF from './weightlifting.pdf';
+import TaekwondoPDF from './taekwondo.pdf';
 
 // const Aqautics = (props) => {
 //   return (
@@ -238,7 +238,7 @@ const Athletics = (props) => {
               </div>
             </div>
 
-            <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+            {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
               <div className={`${styles.event_block}`}>
                 <div className={`${styles.winner_box} ${styles.info}`}>
                   <div className={`${styles.image}`}>
@@ -271,7 +271,7 @@ const Athletics = (props) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
               <div className={`${styles.event_block}`}>
@@ -291,18 +291,18 @@ const Athletics = (props) => {
                     >
                       <b>CAPTAIN</b>
                       <br />
-                   	  Tagaram Kiran Kumar
+                      Rohit Diwakar
                       <br />
                       8827687934
                       <br />
-                      tagaram.kirankumar.cer20@itbhu.ac.in	
+                      rohit.diwakar.ece19@itbhu.ac.in
                       <br />
                       <br />
-                      Anchal Dhar <b>(W)</b>
+                      Anshika Singh <b>(W)</b>
                       <br />
                       7985967630
                       <br />
-                      anchal.dhar.mec21@itbhu.ac.in
+                      anshika.singh.phy19@itbhu.ac.in
                       <br />
                       <br />
                       <b>VICE-CAPTAIN</b>
@@ -389,7 +389,7 @@ const Badminton = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -419,7 +419,7 @@ const Badminton = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -439,17 +439,17 @@ const Badminton = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Rishi Kaushik <br />
+                    Sayan Ghosh <br />
                     7602961003
                     <br />
-                    rishi.kaushik.eee21@itbhu.ac.in	
+                    sayan.ghosh.cd.mat19@itbhu.ac.in
                     <br />
                     <br />
-                    Manisha Bishnoi<b>(W)</b>
+                    Anshul Sahai <b>(W)</b>
                     <br />
                     91668498500
                     <br />
-                    manisha.bishnoi.mec21@itbhu.ac.in	 
+                    anshul.sahai.che19@itbhu.ac.in
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -528,7 +528,7 @@ const Basketball = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -558,7 +558,7 @@ const Basketball = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -578,17 +578,17 @@ const Basketball = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Pratyaksh Sharma <br />
+                    Aryan Shukla <br />
                     8171354203
                     <br />
-                    pratyaksh.sharma.civ21@itbhu.ac.in	
+                    aryanshukla.mat18@itbhu.ac.in
                     <br />
                     <br />
-                    Chhaya umbarkar  <b>(W)</b>
+                    Arya Kumari <b>(W)</b>
                     <br />
                     8409372829
                     <br />
-                    chhaya.umbarkar.mst20@itbhu.ac.in
+                    aryakumari.mst18@itbhu.ac.in
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -664,7 +664,7 @@ const Boxing = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -691,7 +691,7 @@ const Boxing = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -711,17 +711,17 @@ const Boxing = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Suyash Baloni <br />
+                    Ankur Minj <br />
                     9171946273
                     <br />
-                    suyash.baloni.bme20@itbhu.ac.in	 
+                    ankur.minj.min19@itbhu.ac.in
                     <br />
                     <br />
-                    Saloni Agrawal <b>(W)</b>
+                    Smriti Sharma <b>(W)</b>
                     <br />
                     8303077445
                     <br />
-                    saloni.agrawal.mat20@itbhu.ac.in	 
+                    smriti.sharma.ece19@itbhu.ac.in
                     <br />
                     <br />
                     <br />
@@ -791,7 +791,7 @@ const Chess = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -819,7 +819,7 @@ const Chess = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -839,10 +839,10 @@ const Chess = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Harshraj Joshi  <br />
+                    Mack Mohan Verma <br />
                     9548338599
                     <br />
-                    harshraj.joshi.che21@itbhu.ac.in
+                    mack.mohanverma.mec19@itbhu.ac.in
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -921,7 +921,7 @@ const Cricket = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -949,7 +949,7 @@ const Cricket = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -1050,7 +1050,7 @@ const Cycling = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -1077,7 +1077,7 @@ const Cycling = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -1177,7 +1177,7 @@ const Football = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -1205,7 +1205,7 @@ const Football = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -1225,10 +1225,10 @@ const Football = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Soham Nandy <br />
+                    Ritwik Singh <br />
                     9549847995
                     <br />
-                    soham.nandy.cd.mst21@itbhu.ac.in
+                    ritviksingh.phy18@itbhu.ac.in
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -1307,7 +1307,7 @@ const Handball = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -1335,7 +1335,7 @@ const Handball = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -1355,10 +1355,10 @@ const Handball = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Patel Avi <br />
+                    Sharath Ram <br />
                     8072714518
                     <br />
-                    patelavi.nihilkumar.mec21@itbhu.ac.in	
+                    sharath.ramsb.mst19@itbhu.ac.in
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -1438,7 +1438,7 @@ const Hockey = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -1467,7 +1467,7 @@ const Hockey = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -1487,10 +1487,10 @@ const Hockey = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Abhishek Meena <br />
+                    Raghubir <br />
                     6265573271
                     <br />
-                    abhishek.meena.mec19@itbhu.ac.in	
+                    raghubir.student.phe19@itbhu.ac.in
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -1568,7 +1568,7 @@ const Kabbadi = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -1595,7 +1595,7 @@ const Kabbadi = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -1615,17 +1615,17 @@ const Kabbadi = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Peddinti Sai siva kumar <br />
+                    Sateesh Kumar <br />
                     7354388062
                     <br />
-                    peddinti.saiskumar.cer19@itbhu.ac.in
+                    sateesh.kumar.bme19@itbhu.ac.in
                     <br />
                     <br />
-                    Kodurupaka Mallika <b>(W)</b>
+                    Keloth Tejaswini <b>(W)</b>
                     <br />
                     9177574613
                     <br />
-                    kodurupaka.mallika.mec21@itbhu.ac.in	
+                    keloth.tejaswini.min20@itbhu.ac.in
                     <br />
                     <br />
                     <br />
@@ -1701,7 +1701,7 @@ const Khokho = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -1734,7 +1734,7 @@ const Khokho = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -1754,18 +1754,18 @@ const Khokho = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    yandapalli gireesh reddy
+                    Rahul Lakra
                     <br />
                     8877441658
                     <br />
-                    ygireesh.reddy.eee21@itbhu.ac.in
+                    rahul.lakra.min19@itbhu.ac.in
                     <br />
                     <br />
-                    Saloni Sharma <b>(W)</b>
+                    Tejswinee Karwar <b>(W)</b>
                     <br />
                     7770880674
                     <br />
-                    saloni.sharma.civ22@itbhu.ac.in	
+                    tejswinee.karwar.met19@itbhu.ac.in
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -1849,7 +1849,7 @@ const Powerlifting = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -1877,7 +1877,7 @@ const Powerlifting = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -1980,7 +1980,7 @@ const Squash = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -2008,7 +2008,7 @@ const Squash = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -2028,10 +2028,10 @@ const Squash = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Hemank Vats<br />
+                    B Rohith Netha <br />
                     8331891203
                     <br />
-                    hemank.vats.apd20@itbhu.ac.in	
+                    brohith.netha.mec19@itbhu.ac.in
                     <br />
                     <br />
                     <br />
@@ -2107,7 +2107,7 @@ const TableTennis = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -2134,7 +2134,7 @@ const TableTennis = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -2154,17 +2154,17 @@ const TableTennis = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Yashwardhan Sable <br />
+                    Sachin Arya <br />
                     7073524926
                     <br />
-                    yashwardhan.sable.phy20@itbhu.ac.in
+                    sachinarya.mec18@iitbhu.ac.in
                     <br />
                     <br />
-                    Guddaji Sri Prada <b>(W)</b>
+                    Kajal Pathriyal <b>(W)</b>
                     <br />
                     8127141299
                     <br />
-                    guddaji.sriprada.cse20@itbhu.ac.in	
+                    kajal.pathriyal.eee19@itbhu.ac.in
                     <br />
                     <br />
                     <br />
@@ -2234,7 +2234,7 @@ const Taekwondo = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -2261,7 +2261,7 @@ const Taekwondo = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -2281,17 +2281,17 @@ const Taekwondo = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Divyanshu Bharti <br />
+                    Suraj Gupta <br />
                     7737877228
                     <br />
-                    divyanshu.bharti.chy21@itbhu.ac.in	
+                    suraj.gupta.che19@itbhu.ac.in
                     <br />
                     <br />
-                    Sameeksha Murdia <b>(W)</b>
+                    Anjali. C <b>(W)</b>
                     <br />
                     9207970160
                     <br />
-                    sameeksha.murdia.phy20@itbhu.ac.in	
+                    anjalic.civ18@itbhu.ac.in
                     <br />
                     <br />
                     <br />
@@ -2361,7 +2361,7 @@ const Tennis = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -2388,7 +2388,7 @@ const Tennis = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -2494,7 +2494,7 @@ const Volleyball = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -2527,7 +2527,7 @@ const Volleyball = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -2547,16 +2547,16 @@ const Volleyball = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Pawan Kumar <br />
+                    Shivkaran Singh Ranawat <br />
                     8824018065
                     <br />
-                    pawan.kumar.ece20@itbhu.ac.in	<br />
+                    shivkarans.ranawat.phe19@itbhu.ac.in <br />
                     <br />
-                    Boddu Bhavana <b>(W)</b>
+                    Yashika lamba <b>(W)</b>
                     <br />
                     8076365550
                     <br />
-                    boddu.bhavana.mec20@itbhu.ac.in 
+                    yashika.lamba.phe19@itbhu.ac.in
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
@@ -2639,7 +2639,7 @@ const WeightLifting = (props) => {
             </div>
           </div>
 
-          <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+          {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
               <div className={`${styles.winner_box} ${styles.info}`}>
                 <div className={`${styles.image}`}>
@@ -2667,7 +2667,7 @@ const WeightLifting = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
             <div className={`${styles.event_block}`}>
@@ -2687,10 +2687,10 @@ const WeightLifting = (props) => {
                   >
                     <b>CAPTAIN</b>
                     <br />
-                    Harsh Agrawal <br />
+                    Pulkit Khandelwal <br />
                     6350078788
                     <br />
-                    harshagrawal789789@gmail.com	
+                    pkhandelwal.civ18@itbhu.ac.in
                     <br />
                     <br />
                     <b>VICE-CAPTAIN</b>
