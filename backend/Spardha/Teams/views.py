@@ -73,7 +73,7 @@ def serialized_data(contingent):
 class AllContingentView(generics.GenericAPIView):
     serializer_class = AllContingentSerializer
     def get(self, request):
-        if request.user.is_admin:
+        if request.user.is_staff:
             #* The below line fetches all the teams and the game associated with the team. It optimizes the speed of queries by decreasing N queries into a single query
             contingents = Contingent.objects.prefetch_related('college_rep__team_set__game').all()
             data = [serialized_data(contingent) for contingent in contingents]
