@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Preloader from './components/LandingPages/Preloader/Preloader';
 import Spinner from './components/DashBoard/Spinner/Spinner';
-import { Suspense } from 'react/cjs/react.production.min';
+import { Suspense } from 'react';
 
 import ReactGA from 'react-ga';
 import InitializeReactGA from './helper/googleAnalytics.ts';
