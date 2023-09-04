@@ -6,6 +6,7 @@ from .serializers import (
     TeamSerializer,
     TeamUpdateSerializer,
     AllContingentSerializer,
+    AllContingentSerializer,
     ContingentSerializer,
 )
 from drf_yasg.utils import swagger_auto_schema
@@ -13,7 +14,7 @@ from scripts.user_registration import UsersSheet
 from drf_yasg import openapi
 # from scripts.team_registration import TeamsSheet
 
-token_param = openapi.Parameter('Authorization', openapi.IN_HEADER, description="Token ...", type=openapi.TYPE_STRING)
+token_param = openapi.Parameter('Authorization', openapi.IN_HEADER, description="Token <YourToken>", type=openapi.TYPE_STRING)
 
 class AllGamesView(generics.ListAPIView):
     serializer_class = GameSerializer
@@ -88,6 +89,44 @@ class AllContingentView(generics.GenericAPIView):
             return Response(serializer.validated_data, status=status.HTTP_200_OK)
         else:
             return Response({"error": "You are not allowed to access this endpoint"}, status=status.HTTP_403_FORBIDDEN)
+def serialized_data(contingent):
+    college_rep = contingent.college_rep
+    data = {
+        "username":college_rep.username,
+        "email":college_rep.email,
+        "name": college_rep.name,
+        "institution_name": college_rep.institution_name,
+        "designation": college_rep.designation,
+        "phone_no": college_rep.phone_no,
+        "leader_name": contingent.leader_name,
+        "leader_contact_num": contingent.leader_contact_num,
+        "num_of_boys": contingent.num_of_boys,
+        "num_of_girls": contingent.num_of_girls,
+        "num_of_coaches_pti": contingent.num_of_coaches_pti,
+        "num_of_faculty_members": contingent.num_of_faculty_members,
+        "num_of_supporting_staff": contingent.num_of_supporting_staff,
+        "games": [team.game.name for team in college_rep.team_set.all()]
+        #* college_rep.team_set fetches all the teams it is referred by foreign key
+    }
+    return data
+
+
+class AllContingentView(generics.GenericAPIView):
+    serializer_class = AllContingentSerializer
+
+    @swagger_auto_schema(
+        manual_parameters=[token_param]
+    )
+    def get(self, request):
+        if request.user.is_staff:
+            #* The below line fetches all the teams and the game associated with the team. It optimizes the speed of queries by decreasing N queries into a single query
+            contingents = Contingent.objects.prefetch_related('college_rep__team_set__game').all()
+            data = [serialized_data(contingent) for contingent in contingents]
+            serializer = AllContingentSerializer(data=data, many=True)
+            serializer.is_valid(raise_exception=True)
+            return Response(serializer.validated_data, status=status.HTTP_200_OK)
+        else:
+            return Response({"error": "You are not allowed to access this endpoint"}, status=status.HTTP_403_FORBIDDEN)
 
 class ContingentDetailView(generics.GenericAPIView):
     serializer_class = ContingentSerializer
@@ -104,7 +143,8 @@ class ContingentDetailView(generics.GenericAPIView):
                 "leader_name": ....,
                 "leader_contact_num": ....,
                 }""",
-        }
+        },
+        manual_parameters=[token_param]
     )
     def post(self, request):
         serializer = self.get_serializer(data=request.data)
@@ -126,7 +166,8 @@ class ContingentDetailView(generics.GenericAPIView):
                 "leader_contact_num": ....,
                 }""",
             404: """{"error":"Contingent not found"}""",
-        }
+        },
+        manual_parameters=[token_param]
     )
     def get(self, request):
         # print(request.user)
@@ -140,7 +181,8 @@ class ContingentDetailView(generics.GenericAPIView):
     @swagger_auto_schema(
         responses={
             204: """{"delete": "Contingent has been deleted"}""",
-        }
+        },
+        manual_parameters=[token_param]
     )
     def delete(self, request):
         contingent = Contingent.objects.filter(college_rep=request.user)

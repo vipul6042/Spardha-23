@@ -31,8 +31,9 @@ from django.template.loader import render_to_string
 from django.utils.html import strip_tags
 from Spardha.settings import CURRENT_URL_BACKEND, SENDGRID_VERIFY_ACCOUNT_TEMP_ID
 from Services import discord_logger
+from Services import discord_logger
 
-token_param = openapi.Parameter('Authorization', openapi.IN_HEADER, description="Provide auth token", type=openapi.TYPE_STRING)
+token_param = openapi.Parameter('Authorization', openapi.IN_HEADER, description="Token <YourToken>", type=openapi.TYPE_STRING)
 
 def get_current_site(*args, **kwargs):
     class Site:
@@ -228,6 +229,7 @@ class UserUpdateView(generics.GenericAPIView):
             return Response(content, status=status.HTTP_200_OK)
         except serializers.get_error_detail:
             discord_logger.send_message(str(serializers.get_error_detail))
+            discord_logger.send_message(str(serializers.get_error_detail))
             return Response(
                 {"error": "An error occurred!"}, status=status.HTTP_403_FORBIDDEN
             )
@@ -410,3 +412,18 @@ class StatusCheck(generics.GenericAPIView):
         return Response(
                     status = status.HTTP_200_OK,
                 )
+    
+class AllUsersView(generics.GenericAPIView):
+    queryset = UserAccount.objects.all()
+    serializer_class = UserSerializer
+
+    @swagger_auto_schema(
+        manual_parameters=[token_param]
+    )
+    def get(self, request):
+        if request.user.is_staff:
+            users = self.get_queryset()  # Retrieve the queryset of users
+            serializer = self.get_serializer(users, many=True)  # Serialize the data
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        else:
+            return Response({"error": "You are not allowed to access this endpoint"}, status=status.HTTP_403_FORBIDDEN)
