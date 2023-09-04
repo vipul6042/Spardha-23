@@ -6,12 +6,12 @@ import { Outlet } from 'react-router';
 
 function LandingPages() {
   return (
-    <>
+    <div >
       <Header />
       <HomePage />
       <Outlet />
       <Footer />
-    </>
+    </div>
   );
 }
 
