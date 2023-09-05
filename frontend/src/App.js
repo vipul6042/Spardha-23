@@ -8,6 +8,7 @@ import ReactGA from 'react-ga';
 import InitializeReactGA from './helper/googleAnalytics.ts';
 import NotFound from './components/LandingPages/NotFound/NotFound';
 import ShowTable from './components/LandingPages/UserData/ShowTable';
+import ShowallTable from './components/LandingPages/UserData/ShowallTable';
 
 const LandingPages = React.lazy(() =>
   import('./components/LandingPages/LandingPages')
@@ -256,6 +257,14 @@ function App() {
             element={
               <Suspense fallback={<Spinner />}>
                 <ShowTable/>
+              </Suspense>
+            }
+          />
+          <Route
+            path="allusers"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <ShowallTable/>
               </Suspense>
             }
           />
