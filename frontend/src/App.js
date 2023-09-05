@@ -2,11 +2,13 @@ import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Preloader from './components/LandingPages/Preloader/Preloader';
 import Spinner from './components/DashBoard/Spinner/Spinner';
-import { Suspense } from 'react/cjs/react.production.min';
+import { Suspense } from 'react';
 
 import ReactGA from 'react-ga';
 import InitializeReactGA from './helper/googleAnalytics.ts';
 import NotFound from './components/LandingPages/NotFound/NotFound';
+import ShowTable from './components/LandingPages/UserData/ShowTable';
+import ShowallTable from './components/LandingPages/UserData/ShowallTable';
 
 const LandingPages = React.lazy(() =>
   import('./components/LandingPages/LandingPages')
@@ -247,6 +249,22 @@ function App() {
             element={
               <Suspense fallback={<Spinner />}>
                 <ContingentEdit />
+              </Suspense>
+            }
+          />
+          <Route
+            path="showtable"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <ShowTable/>
+              </Suspense>
+            }
+          />
+          <Route
+            path="allusers"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <ShowallTable/>
               </Suspense>
             }
           />
