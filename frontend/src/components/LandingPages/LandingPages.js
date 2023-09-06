@@ -10,7 +10,6 @@ function LandingPages() {
       <Header />
       {/* <HomePage /> */}
       <Outlet />
-
       {/* <Footer /> */}
 
     </>
