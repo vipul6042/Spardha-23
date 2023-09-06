@@ -12,7 +12,6 @@ function LandingPages() {
       <Outlet />
 
       {/* <Footer /> */}
- 
     </>
 
   );
