@@ -1,9 +1,10 @@
 import React from 'react';
 import './Sponsors.css';
-
+import Carousel from '../Home/Carousel/Carouselhp';
 const Sponsors = () => {
   return (
     <>
+    <Carousel/>
       <section id="sponsors" className="ftco-section_sponsors">
         <div className="container_sponsors box-container_sponsors">
           <div className="row_sponsors justify-content-center pt-5">

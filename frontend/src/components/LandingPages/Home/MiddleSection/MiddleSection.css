@@ -14,7 +14,7 @@ body {
 	position: relative;
 	justify-content: center;
 	align-items: center;
-	width: calc(100vw - var(--width_sc));
+	width:100vw;
 	height: 67vh;
 
 }
@@ -134,7 +134,7 @@ body {
 	}
 }
 
-@media (max-width: 950px) and (min-width:750px) {
+@media (max-width: 950px) and (min-width:790px) {
 
 	.container-home {
 		flex-direction: column;
@@ -195,9 +195,11 @@ margin: 0px;
 	.btn1,
 	.btn2 {
 		font-size: 2.8vh;
+		width: 30vw;
+		max-width: 300px;
 	}
 }
-@media (max-width: 750px)  {
+@media (max-width: 790px)  {
 
 	.container-home {
 		flex-direction: column;
@@ -263,5 +265,6 @@ margin: 0px;
 	.btn1,
 	.btn2 {
 		font-size: 2.5vh;
+		width: 50vw;
 	}
 }

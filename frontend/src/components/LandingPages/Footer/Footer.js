@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css';
+import Carousel from '../Home/Carousel/Carouselhp';
 import {
   FaMapMarker,
   FaPhoneAlt,
@@ -13,6 +14,7 @@ import {
 const Footer = () => {
   return (
     <section id="contactus">
+      <Carousel/>
       <footer
         className={`${styles.ftco_footer} ${styles.ftco_section} ${styles.img}`}
       >

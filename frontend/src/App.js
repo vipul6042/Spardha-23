@@ -69,6 +69,9 @@ const EventsEdit = React.lazy(() =>
 const HomePage = React.lazy(() =>
   import('./components/LandingPages/Home/HomePage/Home')
 );
+const Footer1 = React.lazy(() =>
+  import('./components/LandingPages/Footer/Footer')
+);
 
 
 function usePageViews() {
@@ -231,6 +234,14 @@ function App() {
               </Suspense>
             }
           />
+          <Route
+            path="contactus"
+            element={
+              <Suspense fallback={<Preloader />}>
+                <Footer1 />
+              </Suspense>
+            }
+          />
         </Route>
 
         <Route
@@ -265,6 +276,7 @@ function App() {
               </Suspense>
             }
           />
+        
           <Route
             path="events"
             element={

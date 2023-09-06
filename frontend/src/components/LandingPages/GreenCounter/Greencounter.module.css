@@ -1,8 +1,5 @@
 .ftco_counter {
-  background-image: url('./../../../assets/bg/bg_basketball.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+background-color: rgba(255, 0, 0, 0.259);
 }
 
 .ftco-counter {
@@ -26,7 +23,7 @@
   right: 0;
   left: 0;
   height: 150%;
-  background: #7ed321;
+  background: #d3212156;
   opacity: 0.8;
 }
 

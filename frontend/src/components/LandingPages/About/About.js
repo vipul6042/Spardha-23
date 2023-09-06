@@ -4,10 +4,11 @@ import talkofthetown from './talkoftown.jpg';
 import hype from './hype.png';
 import takeback from './takeback.png'
 import Greencounter from '../GreenCounter/Greencounter';
-
+import Carousel from '../Home/Carousel/Carouselhp';
 const About = () => {
   return (
     <>
+    <Carousel/>
       <div id="about">
         <section id={styles['about']} className="ftco-section">
           <div className={styles['container']}>

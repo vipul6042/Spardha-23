@@ -487,8 +487,8 @@ const Events = () => {
             >
               Find Your Interest
             </h3>
-            <h2 className={`${styles.mb_1} ${styles.H2}`}>
-              Sports &amp; Games
+            <h2 className={`${styles.mb_1} ${styles.H2}`} style={{ color: 'white' }}>
+            Sports &amp; Games
             </h2>
           </div>
         </div>

@@ -1,5 +1,5 @@
 .sctn {
-	width: calc(100vw - var(--width_sc));
+	width:100vw;
 	display: flex;
 	height: 95vh;
 
