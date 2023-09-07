@@ -20,7 +20,7 @@ import { useMediaQuery } from 'react-responsive';
 function Header() {
   const [open, setOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
-  const isMobile = useMediaQuery({ maxWidth: 992 });
+  const isMobile = useMediaQuery({ maxWidth: 993});
 
   useEffect(() => {
     const scrollListener = document.addEventListener('scroll', () => {
@@ -73,7 +73,7 @@ function Header() {
             className="side"
             style={{
               position: 'absolute',
-              right: isMobile?'0':'100px',
+              right: isMobile?'0':'60px',
               background: open ? 'rgba(255, 255, 255, 0.90)' : 'transparent',
               width:isMobile?'180px':null,
               alignItems:isMobile?'center':null,
@@ -246,7 +246,7 @@ function Header() {
                     Guests
                   </NavHashLink>
                 </NavItem> */}
-                {/* <NavItem className={styles['nav-items']}>
+                <NavItem className={styles['nav-items']}>
                   <NavHashLink
                     exact="true"
                     to="/sponsors#sponsors"
@@ -280,7 +280,7 @@ function Header() {
                   >
                     Sponsors
                   </NavHashLink>
-                </NavItem> */}               
+                </NavItem>               
                 <NavItem className={styles['nav-items']}>
                   <NavHashLink
                     exact="true"
