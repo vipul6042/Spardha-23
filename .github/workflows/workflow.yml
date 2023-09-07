@@ -27,13 +27,15 @@ jobs:
       - name: git-checkout
         uses: actions/checkout@v2
 
-      - name: Navigate to frontend directory
-        run: cd frontend
+      # - name: Navigate to frontend directory
+      #   run: cd frontend
       
       - name: Install all dependencies
+        working-directory: ./frontend
         run: npm install
 
       - name: Build
+        working-directory: ./frontend
         run: npm run build # The build command of your project
 
       - name: Push # This will push the builds in build branch
