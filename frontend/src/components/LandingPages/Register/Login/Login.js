@@ -23,14 +23,26 @@ import {
 } from 'react-icons/fa';
 import { useReducer } from 'react';
 import isEmail from 'validator/lib/isEmail';
-// import isAlphanumeric from 'validator/lib/isAlphanumeric';
+import { useNavigate } from 'react-router';
+import isAlphanumeric from 'validator/lib/isAlphanumeric';
 
 function Login() {
   const ref_container = useRef();
   useEffect(() => {
     const scrollDiv = document.getElementById('loginDiv').offsetTop;
-    window.scrollTo({top: scrollDiv -80, behavior: 'smooth'});
+    window.scrollTo({ top: scrollDiv + 600, behavior: 'smooth' });
+    // window.scrollTo({
+    //   top: ref_container.current,
+    //   behavior: 'smooth',
+    // });
+    // register
+    // ref_container.current.scrollIntoView({
+    //   block: 'start',
+    //   behavior: 'smooth',
+    // });
   }, []);
+  const navigate = useNavigate();
+
   const submitHandler = (e) => {
     e.preventDefault();
 
@@ -39,27 +51,7 @@ function Login() {
       message: 'Please wait while your request is being processed.',
     });
 
-    if (password2.value !== password1.value) {
-      dispatchPassword1(password1.value);
-      dispatchPassword2(password2.value);
-      dispatchToast({
-        color: 'danger',
-        message: 'Please fill out all the fields correctly',
-      });
-      return;
-    }
-
-    e.preventDefault();
-    if (
-      !email.valid ||
-      // !username.valid ||
-      !password1.valid ||
-      !password2.valid 
-      // !name.valid ||
-      // !designation.valid ||
-      // !institute.valid ||
-      // !phone.valid
-    ) {
+    if (!username.valid || !password.valid) {
       dispatchToast({
         color: 'danger',
         message: 'Please fill out all the fields correctly',
@@ -69,21 +61,19 @@ function Login() {
 
     const baseUrl = process.env.REACT_APP_BASE_URL;
     axios
-      .post(`${baseUrl}auth/register/`, {
-        // username: username.value,
-        email: email.value,
-        password: password1.value,
-        // name: name.value,
-        // institution_name: institute.value,
-        // designation: designation.value,
-        // phone_no: phone.value,
+      .post(`${baseUrl}auth/login/`, {
+        username: username.value,
+        password: password.value,
       })
       .then((res) => {
+        localStorage.setItem('token', res.data.token);
         dispatchToast({
           color: 'success',
-          message: res.data.success,
+          message: 'Logged in Successfully! Redirecting...',
         });
-        return;
+        setTimeout(() => {
+          navigate('/dashboard/home');
+        }, 2000);
       })
       .catch(({ response }) => {
         dispatchToast({
@@ -93,24 +83,21 @@ function Login() {
       });
   };
 
-  const emailReducer = (state, value) => {
+  const usernameReducer = (state, value) => {
     let warning = '';
     if (value === '') warning = 'This field is required.';
-    else if (!isEmail(value)) warning = 'Please enter a valid email address.';
+    else if (value.includes('@')) {
+      if (!isEmail(value)) warning = 'Please enter a valid email address.';
+    } else {
+      if (value.length < 6 || value.length > 30)
+        warning = 'Username must be of length 6 - 30.';
+      else if (!isAlphanumeric(value, undefined, { ignore: ' ._-' }))
+        warning = 'Please use only alphabets, numbers or _, - and .';
+    }
     return { value, warning, valid: warning === '' && value !== '' };
   };
 
-  // const usernameReducer = (state, value) => {
-  //   let warning = '';
-  //   if (value === '') warning = 'This field is required.';
-  //   else if (value.length < 6 || value.length > 30)
-  //     warning = 'Username must be of length 6 - 30.';
-  //   else if (!isAlphanumeric(value, undefined, { ignore: ' ._-' }))
-  //     warning = 'Please use only alphabets, numbers or _, - and .';
-  //   return { value, warning, valid: warning === '' && value !== '' };
-  // };
-
-  const password1Reducer = (state, value) => {
+  const passwordReducer = (state, value) => {
     let warning = '';
     if (value === '') warning = 'This field is required.';
     else if (value.length < 6 || value.length > 30)
@@ -118,100 +105,26 @@ function Login() {
     return { value, warning, valid: warning === '' && value !== '' };
   };
 
-  const password2Reducer = (state, value) => {
-    let warning = '';
-    if (value === '') warning = 'This field is required.';
-    else if (value !== password1.value) warning = 'Passwords do not match.';
-    return { value, warning, valid: warning === '' && value !== '' };
-  };
-
-  // const nameReducer = (state, value) => {
-  //   let warning = '';
-  //   if (value === '') warning = 'This field is required.';
-  //   else if (!isAlpha(value, undefined, { ignore: ' ' }))
-  //     warning = 'Please enter a valid name.';
-  //   return { value, warning, valid: warning === '' && value !== '' };
-  // };
-
-  // const designationReducer = (state, value) => {
-  //   let warning = '';
-  //   if (value === '') warning = 'This field is required.';
-  //   else if (isInt(value)) warning = 'Please enter a valid designation.';
-  //   return { value, warning, valid: warning === '' && value !== '' };
-  // };
-
-  // const instituteReducer = (state, value) => {
-  //   let warning = '';
-  //   if (value === '') warning = 'This field is required.';
-  //   else if (isInt(value)) warning = 'Please enter a valid Institute Name.';
-  //   return { value, warning, valid: warning === '' && value !== '' };
-  // };
-
-  // const phoneReducer = (state, value) => {
-  //   let warning = '';
-  //   if (value === '') warning = 'This field is required.';
-  //   else if (!isPhone(value, 'en-IN'))
-  //     warning = 'Please enter a valid phone number.';
-  //   return { value, warning, valid: warning === '' && value !== '' };
-  // };
-
   const toastReducer = (state, action) => {
     return { color: action.color, message: action.message };
   };
 
-  const [email, dispatchEmail] = useReducer(emailReducer, {
+  const [username, dispatchUsername] = useReducer(usernameReducer, {
     value: '',
     warning: '',
     valid: false,
   });
 
-  // const [username, dispatchUsername] = useReducer(usernameReducer, {
-  //   value: '',
-  //   warning: '',
-  //   valid: false,
-  // });
-
-  const [password1, dispatchPassword1] = useReducer(password1Reducer, {
+  const [password, dispatchpassword] = useReducer(passwordReducer, {
     value: '',
     warning: '',
     valid: false,
   });
-
-  const [password2, dispatchPassword2] = useReducer(password2Reducer, {
-    value: '',
-    warning: '',
-    valid: false,
-  });
-
-  // const [name, dispatchName] = useReducer(nameReducer, {
-  //   value: '',
-  //   warning: '',
-  //   valid: false,
-  // });
-
-  // const [designation, dispatchDesignation] = useReducer(designationReducer, {
-  //   value: '',
-  //   warning: '',
-  //   valid: false,
-  // });
-
-  // const [institute, dispatchInstitute] = useReducer(instituteReducer, {
-  //   value: '',
-  //   warning: '',
-  //   valid: false,
-  // });
-
-  // const [phone, dispatchPhone] = useReducer(phoneReducer, {
-  //   value: '',
-  //   warning: '',
-  //   valid: false,
-  // });
 
   const [toast, dispatchToast] = useReducer(toastReducer, {
     color: 'primary',
     message: '',
   });
-  // const navigate = useNavigate(); 
   return (
     <AnimatePresence>
     <motion.div 
@@ -315,35 +228,35 @@ function Login() {
                     <InputGroup className={`${styles['input-group']}`}>
                       <InputGroupText
                         className={`${styles['form-text']} ${
-                          email.valid && ' text-success border-success'
+                          username.valid && ' text-success border-success'
                         } ${
-                          email.warning !== '' && ' text-danger border-danger'
+                          username.warning !== '' && ' text-danger border-danger'
                         }`}
                       >
                         <FaEnvelope></FaEnvelope>
                       </InputGroupText>
                       <Input
-                        name="email"
-                        id="email"
-                        type="email"
-                        placeholder="Enter Your Email Address"
-                        value={email.value}
-                        valid={email.warning === '' && email.value !== ''}
-                        invalid={email.warning !== ''}
+                        name="username"
+                        id="username"
+                        type="text"
+                        placeholder="Enter Your Username or Email"
+                        value={username.value}
+                        valid={username.warning === '' && username.value !== ''}
+                        invalid={username.warning !== ''}
                         onChange={(e) => {
-                          dispatchEmail(e.target.value);
+                          dispatchUsername(e.target.value);
                         }}
                         bsSize="sm"
                         className={`${styles['form-control']}`}
                         required
                       ></Input>
                     </InputGroup>
-                    {email.warning !== '' && (
+                    {username.warning !== '' && (
                       <FormFeedback
                         className="text-danger d-block fw-bold"
                         style={{ fontSize: '12px' }}
                       >
-                        {email.warning}
+                        {username.warning}
                       </FormFeedback>
                     )}
                   </FormGroup>
@@ -397,45 +310,45 @@ function Login() {
               <Row xs={1} md={1} xl={2}>
                 <div className="col-sm-6">
                   <FormGroup className={`${styles['form-group']}`}>
-                    <Label for="password1" className={`${styles.label}`}>
+                    <Label for="password" className={`${styles.label}`}>
                       Password:&nbsp;
                       <span style={{ color: 'red' }}>*</span>
                     </Label>
                     <InputGroup className={`${styles['input-group']}`}>
                       <InputGroupText
                         className={`${styles['form-text']} ${
-                          password1.valid && ' text-success border-success'
+                          password.valid && ' text-success border-success'
                         } ${
-                          password1.warning !== '' &&
+                          password.warning !== '' &&
                           ' text-danger border-danger'
                         }`}
                       >
                         <FaKey></FaKey>
                       </InputGroupText>
                       <Input
-                        name="password1"
-                        id="password1"
+                        name="password"
+                        id="password"
                         type="password"
                         placeholder="Enter the Password"
-                        value={password1.value}
+                        value={password.value}
                         valid={
-                          password1.warning === '' && password1.value !== ''
+                          password.warning === '' && password.value !== ''
                         }
-                        invalid={password1.warning !== ''}
+                        invalid={password.warning !== ''}
                         onChange={(e) => {
-                          dispatchPassword1(e.target.value);
+                          dispatchpassword(e.target.value);
                         }}
                         bsSize="sm"
                         className={`${styles['form-control']}`}
                         required
                       ></Input>
                     </InputGroup>
-                    {password1.warning !== '' && (
+                    {password.warning !== '' && (
                       <FormFeedback
                         className="text-danger d-block fw-bold"
                         style={{ fontSize: '12px' }}
                       >
-                        {password1.warning}
+                        {password.warning}
                       </FormFeedback>
                     )}
                   </FormGroup>
