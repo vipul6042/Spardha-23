@@ -21,6 +21,8 @@ function Header() {
   const [open, setOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
   const isMobile = useMediaQuery({ maxWidth: 993});
+  //const [home,setHome]=useState(true);
+  const [active,setActive]=useState(false);
 
   useEffect(() => {
     const scrollListener = document.addEventListener('scroll', () => {
@@ -58,13 +60,13 @@ function Header() {
       >
         <div className="nav-contain" style={{ display: 'flex' }}>
           <NavbarBrand>
-            <NavHashLink exact="true" to="/" smooth>
+            <NavHashLink exact="true" to="/" smooth >
               <img
                 src={`/images/logo/spardha-logo-${
                   navbar ? (isMobile ? 'white' : 'black') : 'white'
                 }.png`}
                 alt="Sparhda Logo"
-                height="60px"
+                height="70px"
                 // width="80px"
               />
             </NavHashLink>
@@ -114,13 +116,14 @@ function Header() {
                     //   };
                     // }}
                     style={({ isActive }) => {
+                    
                       return {
                         color: isMobile
                           ? '#000'
                           : navbar
                           ? '#000'
                           : 'rgba(255, 255, 255, 0.9)',
-                          borderBottom:isMobile?'1px solid black': isActive ? '3px solid red' : null,
+                          borderBottom:isMobile?'1px solid black': active ?  'none': '3px solid red',
                         };
                     }}
                     smooth
@@ -147,6 +150,7 @@ function Header() {
                     //   };
                     // }}
                     style={({ isActive }) => {
+                      if(isActive){setActive(true)}
                       return {
                         color: isMobile
                           ? '#000'
@@ -179,7 +183,7 @@ function Header() {
                     //       : 'rgba(255, 255, 255, 0.9)',
                     //   };
                     // }}
-                    style={({ isActive }) => {
+                    style={({ isActive }) => {if(isActive){setActive(true)}
                       return {
                         color: isMobile
                           ? '#000'
@@ -253,6 +257,7 @@ function Header() {
                     className={styles['nav-links']}
                     onClick={() => {
                       setOpen(false);
+
                     }}
                     // style={({ isActive }) => {
                     //   return {
@@ -266,7 +271,7 @@ function Header() {
                     //     ? "3px solid red;",
                     //   };
                     // }}
-                    style={({ isActive }) => {
+                    style={({ isActive }) => {if(isActive){setActive(true)}
                       return {
                         color: isMobile
                           ? '#000'
@@ -298,7 +303,7 @@ function Header() {
                     //       : 'rgba(255, 255, 255, 0.9)',
                     //   };
                     // }}
-                    style={({ isActive }) => {
+                    style={({ isActive }) => {if(isActive){setActive(true)}
                       return {
                         color: isMobile
                           ? '#000'
@@ -316,17 +321,20 @@ function Header() {
                 <NavItem className={styles['nav-items']}>
                   <NavHashLink
                     exact="true"
-                    to="/#contactus"
+                    to="/contactus#contactus"
                     className={styles['nav-links']}
                     onClick={() => {
-                      setOpen(false);
+                      setOpen(false);;
                     }}
-                    style={{
-                      color: isMobile
-                        ? '#000'
-                        : navbar
-                        ? '#000'
-                        : 'rgba(255, 255, 255, 0.9)',
+                    style={({ isActive }) => {if(isActive){setActive(true)}
+                      return {
+                        color: isMobile
+                          ? '#000'
+                          : navbar
+                          ? '#000'
+                          : 'rgba(255, 255, 255, 0.9)',
+                          borderBottom:isMobile?'1px solid black': isActive ? '3px solid red' : null,
+                        };
                     }}
                     smooth
                   >
@@ -350,7 +358,7 @@ function Header() {
                     //       : 'rgba(255, 255, 255, 0.9)',
                     //   };
                     // }}
-                    style={({ isActive }) => {
+                    style={({ isActive }) => {if(isActive){setActive(true)}
                       return {
                         color: isMobile
                           ? '#000'
@@ -368,12 +376,13 @@ function Header() {
                 <NavItem className={styles['nav-items']} style={{marginRight:'60px'}}>
                   <Nav navbar className={`ms-auto ${styles['mini-navbar-nav']}`}>
                   <NavItem className={styles['mini-nav-items']}>
-                  <NavHashLink
-                    exact="true"
-                    to="https://www.facebook.com/Spardha.IIT.BHU/"
+                  <a
+                    
+                    href="https://www.facebook.com/Spardha.IIT.BHU/"
                     className={styles['nav-icons']}
                     onClick={() => {
                       setOpen(false);
+                      
                     }}
                     style={{
                       color: isMobile
@@ -385,14 +394,13 @@ function Header() {
                     smooth
                   >
                     <FaFacebookF className={`${styles.icons_lower}`} />
-                  </NavHashLink>
+                  </a>
 
                   </NavItem>
                   
                   <NavItem className={styles['mini-nav-items']}>
-                  <NavHashLink
-                    exact="true"
-                    to="https://www.linkedin.com/company/spardha/about/"
+                  <a
+                    href="https://www.linkedin.com/company/spardha/about/"
                     className={styles['nav-icons']}
                     onClick={() => {
                       setOpen(false);
@@ -407,13 +415,13 @@ function Header() {
                     smooth
                   >
                       <FaLinkedin className={`${styles.icons_lower}`} />
-                  </NavHashLink>
+                  </a>
 
                   </NavItem>
                   <NavItem className={styles['mini-nav-items']}>
-                  <NavHashLink
-                    exact="true"
-                    to="https://twitter.com/Spardha_IITBHU"
+                  <a
+                    
+                    href="https://twitter.com/Spardha_IITBHU"
                     className={styles['nav-icons']}
                     onClick={() => {
                       setOpen(false);
@@ -428,7 +436,7 @@ function Header() {
                     smooth
                   >
                     <FaTwitter className={`${styles.icons_lower}`} />
-                  </NavHashLink>
+                  </a>
 
                   </NavItem>
                   </Nav>
@@ -443,5 +451,3 @@ function Header() {
 }
 
 export default Header;
-
-
