@@ -391,8 +391,6 @@ function Header() {
                         ? '#000'
                         : 'rgba(255, 255, 255, 0.9)',
                     }}
-                    target="_blank" 
-                    rel="noopener noreferrer"
                     smooth
                   >
                     <FaFacebookF className={`${styles.icons_lower}`} />
@@ -414,8 +412,6 @@ function Header() {
                         ? '#000'
                         : 'rgba(255, 255, 255, 0.9)',
                     }}
-                    target="_blank" 
-                    rel="noopener noreferrer"
                     smooth
                   >
                       <FaLinkedin className={`${styles.icons_lower}`} />
@@ -437,8 +433,6 @@ function Header() {
                         ? '#000'
                         : 'rgba(255, 255, 255, 0.9)',
                     }}
-                    target="_blank" 
-                    rel="noopener noreferrer"
                     smooth
                   >
                     <FaTwitter className={`${styles.icons_lower}`} />

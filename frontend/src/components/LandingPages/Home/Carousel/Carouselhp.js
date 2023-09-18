@@ -17,15 +17,29 @@ function Carousel() {
     };
   }, [currentSlide,images.length]);
 
+  const prevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide - 1 + images.length) % images.length);
+  };
+
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
+  };
+
   return (
     <div className="carousel-home">
-   
+      <button id='prev' className=" carousel-control-prev" onClick={prevSlide}>
+      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+      </button>
       <img
         className="carousel-image-home"
         src={images[currentSlide]}
         alt={`Slide ${currentSlide + 1}`}
       />
-   
+      <button id='next' className=" carousel-control-next" onClick={nextSlide}>
+      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+      </button>
     </div>
   );
 }
