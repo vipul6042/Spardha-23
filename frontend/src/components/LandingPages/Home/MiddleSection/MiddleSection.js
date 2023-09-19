@@ -8,7 +8,7 @@ function Mid() {
 
       <div className="container-home">
         <div className="left-box">
-          <div className="heading1">SPARDHA 2023 <br />NEVER GIVE UP</div>
+          <div className="heading1">SPARDHA 2023 <br />MOULDING CHAMPIONS</div>
           <div className="description">Annual sports festival of IIT (BHU) under the Games and Sports Council.</div>
 
           <div className="button-container">

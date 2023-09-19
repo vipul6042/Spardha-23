@@ -229,6 +229,7 @@ margin: 0px;
 	.heading1 {
 		font-size: 5vh;
 		margin: 5vh 0vw;
+		line-height: 6vh;
 	}
 
 	.left-box {

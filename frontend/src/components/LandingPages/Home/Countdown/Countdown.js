@@ -6,7 +6,7 @@ class CountdownTimer extends Component {
     super(props);
 
     // Calculate the target date and time in IST (UTC+5:30)
-    this.targetDate = new Date("2023-09-30T00:00:00Z"); // UTC time
+    this.targetDate = new Date("2023-10-13T00:00:00Z"); // UTC time
     this.targetDate.setHours(this.targetDate.getHours() -5, this.targetDate.getMinutes()-30 );
 
     // Initialize the state with the initial time difference
@@ -20,11 +20,13 @@ class CountdownTimer extends Component {
   calculateTimeDifference = () => {
     const currentDate = new Date();
     const timeDifference = this.targetDate - currentDate;
-    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+     
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)+(days*24)-24);
     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
     
-    return { hours, minutes, seconds };
+    return { days ,hours, minutes, seconds };
   };
 
   // Define a function to update the timer
@@ -46,7 +48,9 @@ class CountdownTimer extends Component {
           <div class="countdown">
             <span class="hours">
               <div class="time">
-                <div>{Math.floor((hours < 10 ? `0${this.state.hours}` : this.state.hours)/10)} </div>
+                
+                <div>{Math.floor((hours < 10 ? `0${this.state.hours}` : this.state.hours)/100)} </div>
+                <div>{Math.floor(((hours < 10 ? `0${this.state.hours}` : this.state.hours)/10)%10)} </div>
                 <div>{(hours < 10 ? `0${this.state.hours}` : this.state.hours)%10} </div>
             </div>
             <div class="value">HOURS</div>
