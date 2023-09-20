@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Footer.module.css';
 import Carousel from '../Home/Carousel/Carouselhp';
 
+
 const Footer = () => {
   return (
     <>
@@ -10,7 +11,7 @@ const Footer = () => {
         <footer
           className={`${styles.ftco_footer} ${styles.ftco_section} ${styles.img}`}
         >
-          <div className={styles.abcd}>
+          <div className={styles.container}>
             <div className={styles.heading123}>
               <h2><b><u>Contact Us</u></b></h2>
             </div>
@@ -58,13 +59,13 @@ const Footer = () => {
                 <div className={styles.hospitality}>
                   <h5><b>Hospitality:</b></h5>
                   <h6 className={styles.name}>Aryan Singh</h6>
-                  <h6>aryan singh.met21@itbhu.ac.in</h6>
+                  <h6>aryan.singh.met21@itbhu.ac.in</h6>
                   <h6>+91 99972 55604</h6>
-                  <h6 className={styles.name}>Gaurav Maharsh</h6>
+                  <h6 className={styles.name}>Gaurav Maharshi</h6>
                   <h6>gaurav.maharshi.cer21@itbhu.ac.in </h6>
                   <h6>+91 87624 49914</h6>
                   <h6 className={styles.name}>Deepanshu</h6>
-                  <h6>deepanshu student.cer21@itbhu.ac.in</h6>
+                  <h6>deepanshu.student.cer21@itbhu.ac.in</h6>
                   <h6>+91 91168 98755</h6>
                 </div>
               </div>
@@ -74,9 +75,16 @@ const Footer = () => {
                     <i class="fa-solid fa-envelope fa-2xl"></i>
                     <a href="spardha@itbhu.ac.in" className={styles.link}>spardha@itbhu.ac.in</a>
                   </div>
-                  <div className={styles.logo}>
-                    <i class="fa-solid fa-location-dot fa-2xl"></i>
-                    <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.3239763295937!2d82.98692631503495!3d25.259684835361114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e33d4b53c5a85%3A0x5e36cad9ac063d23!2sIIT+Gymkhana!5e0!3m2!1sen!2s!4v1502537110030" className={styles.link}>IIT (BHU) Varanasi, Uttar Pradesh-221005</a>
+                  <div className={styles.logo} style={{
+                    display: "flex",
+                    flexDirection: "row"
+                  }}>
+                    <i className="fa-solid fa-location-dot fa-2xl" style={{
+                      translate: "3px 10px"
+                    }}></i>
+                    <div >
+                      <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.3239763295937!2d82.98692631503495!3d25.259684835361114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e33d4b53c5a85%3A0x5e36cad9ac063d23!2sIIT+Gymkhana!5e0!3m2!1sen!2s!4v1502537110030" className={styles.link}>IIT (BHU) Varanasi, Uttar Pradesh-221005</a>
+                    </div>
                   </div>
                   <div className={styles.logo}>
                     <i class="fa-solid fa-globe fa-2xl"></i>
@@ -89,13 +97,13 @@ const Footer = () => {
                   <br />
                   <span>
                     <a href="https://www.facebook.com/Spardha.IIT.BHU/" target="_blank" rel="noopener noreferrer">
-                      <i class="fa-brands fa-facebook"></i>
+                      <img className={styles.socialmedia} src="/images/icons/facebook-logo.svg" alt="facebook logo"></img>
                     </a>
                     <a href="https://www.linkedin.com/company/spardha/about/" target="_blank" rel="noopener noreferrer">
-                      <i class="fa-brands fa-linkedin"></i>
+                      <img className={styles.socialmedia} src="/images/icons/linkedin-logo.svg" alt="facebook logo"></img>
                     </a>
                     <a href="https://www.instagram.com/spardha_iitbhu/" target="_blank" rel="noopener noreferrer">
-                      <i class="fa-brands fa-instagram"></i>
+                      <img className={styles.socialmedia} src="/images/icons/instagram-logo.svg" alt="facebook logo"></img>
                     </a>
                   </span>
                 </div>

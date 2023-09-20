@@ -9,10 +9,10 @@ import Carousel from '../Home/Carousel/Carouselhp';
 const About = () => {
   return (
     <>
-    <Carousel/>
-      <div id="about">
-        <section id={styles['about']} className="ftco-section">
-          <div className={styles['container']}>
+      <Carousel />
+      <div iclassName={styles.aboutus}>
+        <section className="ftco-section">
+          <div className={styles.container}>
             <div
               className={`${styles.row}
                     ${styles.justify_content_center}
@@ -33,15 +33,15 @@ const About = () => {
                     letterSpacing: '2px',
                   }}
                 >
-                  &nbsp;WHAT ARE WE
+                  &nbsp;
                 </h3>
-                
+
               </div>
             </div>
 
             <div className={styles['row']}>
               <div className={styles['col-md-12']}>
-              <h2
+                <h2
                   className={styles['mb-1']}
                   style={{
                     color: '#760E53',
@@ -50,16 +50,16 @@ const About = () => {
                     fontWeight: '700',
                     fontSize: '30px ',
                     marginBottom: '1em',
-                    marginTop:'1em',
+                    marginTop: '1em',
                     letterSpacing: '2px',
-                   
+
                   }}
                 >
                   ABOUT US
                 </h2>
-                <div className={styles['block-7'] } id={styles['borderline']}>
+                <div className={styles['block-7']} id={styles['borderline']}>
                   <div className={styles['text-justify']}>
-                  
+
                     <p
                       style={{
                         fontFamily: 'Poppins',
@@ -73,7 +73,7 @@ const About = () => {
                     </p>
                   </div>
                 </div>
-                
+
               </div>
 
               <div className={styles['col-md-4']}>
@@ -91,7 +91,7 @@ const About = () => {
                     <h3
                       className={styles['text-wrap']}
                       style={{
-                        
+
                         fontSize: '22px',
                         color: 'black',
                         lineHeight: '1.4',
