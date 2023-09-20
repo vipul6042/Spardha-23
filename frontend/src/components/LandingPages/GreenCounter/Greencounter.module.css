@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Poppins&display=swap');
+
+
+
+
 .ftco_counter {
 background-color: rgba(255, 0, 0, 0.259);
 }
 
 .ftco-counter {
   padding: 7em 0;
+  
 }
 
 #section-counter {
@@ -14,6 +20,7 @@ background-color: rgba(255, 0, 0, 0.259);
 @media (max-width: 1199.98px) {
   .ftco-counter {
     background-position: center center !important;
+    
   }
 }
 
@@ -23,7 +30,7 @@ background-color: rgba(255, 0, 0, 0.259);
   right: 0;
   left: 0;
   height: 150%;
-  background: #d3212156;
+  
   opacity: 0.8;
 }
 
@@ -33,6 +40,8 @@ background-color: rgba(255, 0, 0, 0.259);
   height: 150%;
   padding-top: 50px;
   padding-bottom: 50px;
+  background: white;
+  
 }
 
 @media (min-width: 576px) {
@@ -69,6 +78,8 @@ background-color: rgba(255, 0, 0, 0.259);
     margin-left: 25px; */
   justify-content: center;
   -webkit-box-pack: center !important;
+
+  
 }
 
 .col_md_12 {
@@ -81,6 +92,7 @@ background-color: rgba(255, 0, 0, 0.259);
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
+  
 }
 
 @media (min-width: 768px) {
@@ -127,6 +139,8 @@ background-color: rgba(255, 0, 0, 0.259);
   -webkit-box-align: center !important;
   -ms-flex-align: center !important;
   align-items: center !important;
+  
+  
 }
 
 @media (max-width: 768px) {
@@ -151,6 +165,9 @@ background-color: rgba(255, 0, 0, 0.259);
   font-size: 40px;
   display: block;
   text-align: center !important;
+  
+  
+  
 }
 
 .circle {
@@ -160,17 +177,19 @@ background-color: rgba(255, 0, 0, 0.259);
   vertical-align: middle;
   border-radius: 115px;
   border-width: 4px;
-  border-color: white;
+  border-color:#760E53 ;
   border-style: solid;
-  color: white;
+  color: #760E53;
   padding: 65px 5px;
   text-align: center;
-  font-family: 'League Spartan';
+  font-family: 'Poppins';
+  
 }
 
 .numbergc {
   letter-spacing: 3px;
   font-weight: 800;
   font-size: 50px;
-  color: #fff;
+  color:#760E53;
+ 
 }

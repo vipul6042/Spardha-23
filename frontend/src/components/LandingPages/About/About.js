@@ -5,6 +5,7 @@ import hype from './hype.png';
 import takeback from './takeback.png'
 import Greencounter from '../GreenCounter/Greencounter';
 import Carousel from '../Home/Carousel/Carouselhp';
+
 const About = () => {
   return (
     <>
@@ -26,7 +27,7 @@ const About = () => {
                   className={`${styles.subheading_mt - 5} ${styles.pt - 5}`}
                   style={{
                     color: '#6db549',
-                    fontFamily: 'League Spartan',
+                    fontFamily: 'Poppins',
                     marginTop: '75px',
                     fontWeight: '800',
                     letterSpacing: '2px',
@@ -34,57 +35,45 @@ const About = () => {
                 >
                   &nbsp;WHAT ARE WE
                 </h3>
-                <h2
-                  className={styles['mb-1']}
-                  style={{
-                    color: 'white',
-                    // fontSize: '3.5em',
-                    fontfamily: 'League spartan',
-                    fontWeight: '900',
-                    marginBottom: '1em',
-                    letterSpacing: '2px',
-                  }}
-                >
-                  ABOUT US
-                </h2>
+                
               </div>
             </div>
 
             <div className={styles['row']}>
               <div className={styles['col-md-12']}>
+              <h2
+                  className={styles['mb-1']}
+                  style={{
+                    color: '#760E53',
+                    // fontSize: '3.5em',
+                    fontfamily: 'Poppins',
+                    fontWeight: '700',
+                    fontSize: '30px ',
+                    marginBottom: '1em',
+                    marginTop:'1em',
+                    letterSpacing: '2px',
+                   
+                  }}
+                >
+                  ABOUT US
+                </h2>
                 <div className={styles['block-7'] } id={styles['borderline']}>
                   <div className={styles['text-justify']}>
+                  
                     <p
                       style={{
-                        fontFamily: 'Open Sans',
+                        fontFamily: 'Poppins',
                         fontSize: '18px',
                         lineHeight: '1.8',
                         fontWeight: '500',
-                        color: 'white',
+                        color: 'black',
                       }}
                     >
-                      Spardha is the annual sports festival of IIT (BHU),
-                      Varanasi. In its glorious history of over 37 years,
-                      Spardha has grown to become the largest and one of the
-                      most awaited sports festival of northern India where
-                      athletic competition is drawn from throughout the country.
-                      Each year, over a thousand participants compete in an
-                      array of sports like hockey, basketball, cricket, boxing,
-                      tennis and many more, creating a stunning spectacle of
-                      exceptional fervidness in athletic talent. The event,
-                      embraced by one of the best gatherings of celebrated
-                      sports personalities and spirited audience, has always
-                      enthused a zest for continuously scaling new zeniths in
-                      the pursuit of excellence and vibrancy among one and all.
-                      At present, Spardha has a team of over 500 and is also
-                      associated with numerous renowned firms and sports
-                      organizations. These exhilarating days have many
-                      resounding experiences for participants and supporters
-                      alike, creating a lifetime of memories. Gear up yourself
-                      to witness the thrilling and frolicsome SPARDHA.
+                      Spardha is the annual sports festival of IIT (BHU), Varanasi. In its glorious history of over 37 years, Spardha has grown to become the largest and one of the most awaited sports festival of northern India where athletic competition is drawn from throughout the country. Each year, over a thousand participants compete in an array of sports like hockey, basketball, cricket, boxing, tennis and many more, creating a stunning spectacle of exceptional fervidness in athletic talent. The event, embraced by one of the best gatherings of celebrated sports personalities and spirited audience, has always enthused a zest for continuously scaling new zeniths in the pursuit of excellence and vibrancy among one and all. At present, Spardha has a team of over 500 and is also associated with numerous renowned firms and sports organizations. These exhilarating days have many resounding experiences for participants and supporters alike, creating a lifetime of memories. Gear up yourself to witness the thrilling and frolicsome SPARDHA.
                     </p>
                   </div>
                 </div>
+                
               </div>
 
               <div className={styles['col-md-4']}>
@@ -102,8 +91,9 @@ const About = () => {
                     <h3
                       className={styles['text-wrap']}
                       style={{
+                        
                         fontSize: '22px',
-                        color: 'white',
+                        color: 'black',
                         lineHeight: '1.4',
                         fontWeight: 'bold',
                       }}
@@ -138,7 +128,7 @@ const About = () => {
                       className={styles['text-wrap']}
                       style={{
                         fontSize: '22px',
-                        color: 'white',
+                        color: 'black',
                         lineHeight: '1.4',
                         fontWeight: 'bold',
                       }}
@@ -174,7 +164,7 @@ const About = () => {
                       className={styles['text-wrap']}
                       style={{
                         fontSize: '22px',
-                        color: 'white',
+                        color: 'black',
                         lineHeight: '1.4',
                         fontWeight: 'bold',
                       }}
