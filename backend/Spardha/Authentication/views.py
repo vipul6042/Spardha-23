@@ -31,6 +31,8 @@ from django.template.loader import render_to_string
 from django.utils.html import strip_tags
 from Services import discord_logger
 
+from Spardha.CustomThrottle import EmailThrottle
+
 token_param = openapi.Parameter('Authorization', openapi.IN_HEADER, description="Token <YourToken>", type=openapi.TYPE_STRING)
 
 def get_current_site(*args, **kwargs):
@@ -118,7 +120,7 @@ def create_auth_token(user):
 
 class RequestPasswordResetEmail(generics.GenericAPIView):
     serializer_class = ResetPasswordEmailSerializer
-
+    throttle_classes = [EmailThrottle]
     @swagger_auto_schema(
         responses={
             200: """{"success": "Link has been sent by email to reset password"}""",
@@ -260,6 +262,8 @@ class UserUpdateView(generics.GenericAPIView):
             )
 
 
+
+
 def send_verification_mail(user, request):
     uidb64 = urlsafe_base64_encode(smart_bytes(user.id))
     token = PasswordResetTokenGenerator().make_token(user)
@@ -284,7 +288,7 @@ def send_verification_mail(user, request):
 class RegisterView(generics.GenericAPIView):
     queryset = UserAccount.objects.all()
     serializer_class = RegisterSerializer
-
+    throttle_classes = [EmailThrottle]
     @swagger_auto_schema(
         responses={
             200: """{"success": "Verification link has been sent by email!"}""",
@@ -333,7 +337,7 @@ def ActivateAccount(request, uidb64, token):
 class ResendLinkView(generics.GenericAPIView):
     queryset = UserAccount.objects.all()
     serializer_class = ResetPasswordEmailSerializer
-
+    throttle_classes = [EmailThrottle]
     @swagger_auto_schema(
         responses={
             200: """{"success": "Verification link has been sent by email!"}
