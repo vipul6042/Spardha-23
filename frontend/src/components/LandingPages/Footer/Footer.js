@@ -70,9 +70,9 @@ const Footer = () => {
                           wordSpacing: '0.4em',
                           textDecoration: 'none',
                         }}
-                        href="tel:+919519228100"
+                        href="tel:+916392003370"
                       >
-                        &emsp;&emsp;+91&#8209;9519228100
+                        &emsp;&emsp;+91&#8209;6392003370
                       </a>
                     </span>
 
@@ -88,9 +88,9 @@ const Footer = () => {
                           wordSpacing: '0.4em',
                           textDecoration: 'none',
                         }}
-                        href="tel:+917004405828"
+                        href="tel:+917400694759"
                       >
-                        &emsp;&emsp;+91&#8209;7004405828
+                        &emsp;&emsp;+91&#8209;7400694759
                       </a>
                     </span>
 
@@ -106,9 +106,9 @@ const Footer = () => {
                           wordSpacing: '0.4em',
                           textDecoration: 'none',
                         }}
-                        href="tel:+919109520441"
+                        href="tel:+918862866770"
                       >
-                        &emsp;&emsp;+91&#8209;9109520441
+                        &emsp;&emsp;+91&#8209;8862866770
                       </a>
                     </span>
 
@@ -224,11 +224,9 @@ const Footer = () => {
                   FOLLOW US
                 </h2>
                 <div
-                  className={`${styles.ftco_footer_social} ${
-                    styles.list_unstyled
-                  } ${styles.float_md_left} ${styles.float_lft} ${
-                    styles.mt - 2
-                  }`}
+                  className={`${styles.ftco_footer_social} ${styles.list_unstyled
+                    } ${styles.float_md_left} ${styles.float_lft} ${styles.mt - 2
+                    }`}
                 >
                   <span>
                     <a
