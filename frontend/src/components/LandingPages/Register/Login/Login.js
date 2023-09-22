@@ -52,17 +52,13 @@ function Login() {
       return;
     }
 
-    let baseUrl = process.env.REACT_APP_BASE_URL;
-    if(baseUrl.substring(baseUrl.length-1)!=="/")
-    baseUrl+='/'
-    console.log(`${baseUrl}auth/login/`);
+    const baseUrl = process.env.REACT_APP_BASE_URL;
     axios
       .post(`${baseUrl}auth/login/`, {
         username: username.value,
         password: password.value,
       })
       .then((res) => {
-        console.log("login resp",res)
         localStorage.setItem('token', res.data.token);
         dispatchToast({
           color: 'success',
