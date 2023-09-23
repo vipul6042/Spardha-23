@@ -102,12 +102,28 @@ svg {
 td {
   margin: 2px 5px;
 }
-@media (max-width: 1250px) {
+@media (max-width: 1500px) {
   .displayBox {
     width: 23rem;
   }
   .Supreme {
     padding-left: 2%;
+  }
+}
+@media (max-width:1230px) {
+  .displayBox{
+    width: 17rem;
+    height: auto;
+  }
+}
+@media (max-width:1050px) {
+  .Supreme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .displayBox{
+    width: 22rem;
   }
 }
 @media (max-width: 993px) {
@@ -120,7 +136,7 @@ td {
     align-items: center;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 720px) {
   .displayBox {
     width: 95%;
   }
@@ -136,3 +152,4 @@ td {
     grid-template-rows: 2fr 2fr 1fr;
   }
 }
+
