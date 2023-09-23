@@ -72,7 +72,9 @@ const HomePage = React.lazy(() =>
 const Footer1 = React.lazy(() =>
   import('./components/LandingPages/Footer/Footer')
 );
-
+const Matches =React.lazy(()=>
+  import('./components/LandingPages/matches/matches')
+);
 
 function usePageViews() {
   let location = useLocation();
@@ -199,6 +201,14 @@ function App() {
             element={
               <Suspense fallback={<Preloader />}>
                 <Team />
+              </Suspense>
+            }
+          />
+          <Route
+            path="matches"
+            element={
+              <Suspense fallback={<Preloader />}>
+                <Matches />
               </Suspense>
             }
           />

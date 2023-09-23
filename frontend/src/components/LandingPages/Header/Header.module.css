@@ -190,3 +190,8 @@ font-family: 'Montserrat';
 .icons_lower:hover {
 color: red;
 }
+@media (max-width:1120px) {
+  .nav-links{
+    font-size: 110%;
+  }
+}
