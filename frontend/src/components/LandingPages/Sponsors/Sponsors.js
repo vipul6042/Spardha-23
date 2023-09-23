@@ -1055,7 +1055,7 @@ const Sponsors = () => {
     <section id="events" className={`${styles.ftco_section} ${styles.events}`}>
       <div className='bg'>
         <Carousel />
-      </div>
+      {/* </div>
       <div className={`${styles.container} ${styles.pb_1}`}>
         <div
           className={`${styles.row} ${styles.justify_content_center} ${styles.mb_5}`}
@@ -1066,7 +1066,7 @@ const Sponsors = () => {
             
            
           </div>
-        </div>
+        </div> */}
       <div className={styles.maindiv}>
        <h2 className={`${styles.mb_1} ${styles.H2}`} >
             Our Past Sponsors
