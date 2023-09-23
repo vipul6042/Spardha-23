@@ -76,6 +76,11 @@ i {
 }
 .socialmedia {
   padding: 5%;
+  filter: grayscale(100%);
+}
+.socialmedia:hover {
+  scale: 1.1;
+  filter: grayscale(0%);
 }
 .text {
   display: table-cell;

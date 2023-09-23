@@ -44,7 +44,6 @@ const Footer = () => {
                   <h6>+91 63920 03370</h6>
                 </div>
               </div>
-
               <div className={styles.evehosp}>
                 <div className={styles.events}>
                   <h5><b>Events:</b></h5>
@@ -55,7 +54,6 @@ const Footer = () => {
                   <h6>dhruv.jain.cd.mec21gitbhu.ac.in</h6>
                   <h6>+91 95489 62930</h6>
                 </div>
-
                 <div className={styles.hospitality}>
                   <h5><b>Hospitality:</b></h5>
                   <h6 className={styles.name}>Aryan Singh</h6>
@@ -97,26 +95,22 @@ const Footer = () => {
                   <br />
                   <span>
                     <a href="https://www.facebook.com/Spardha.IIT.BHU/" target="_blank" rel="noopener noreferrer">
-                      <img className={styles.socialmedia} src="/images/icons/facebook-logo.svg" alt="facebook logo"></img>
+                      <img className={styles.socialmedia} src="/images/icons/icons8-facebook.svg" alt="facebook logo"></img>
                     </a>
                     <a href="https://www.linkedin.com/company/spardha/about/" target="_blank" rel="noopener noreferrer">
-                      <img className={styles.socialmedia} src="/images/icons/linkedin-logo.svg" alt="facebook logo"></img>
+                      <img className={styles.socialmedia} src="/images/icons/icons8-linkedin.svg" alt="linkedin logo"></img>
                     </a>
                     <a href="https://www.instagram.com/spardha_iitbhu/" target="_blank" rel="noopener noreferrer">
-                      <img className={styles.socialmedia} src="/images/icons/instagram-logo.svg" alt="facebook logo"></img>
+                      <img className={styles.socialmedia} src="/images/icons/icons8-instagram.svg" alt="instagram logo"></img>
                     </a>
                   </span>
                 </div>
-
-              </div></div>
+              </div>
+            </div>
           </div>
-
-
-
         </footer>
       </section>
     </>
   );
 };
-
 export default Footer;

@@ -8,7 +8,7 @@ import AthleticsPDF from './athletics.pdf';
 import BadmintonPDF from './badminton.pdf';
 import BasketballPDF from './basketball.pdf';
 import BoxingPDF from './boxing.pdf';
-import CricketPDF from './cricket.pdf';
+import CricketPDF from './CricketPDF.pdf';
 import ChessPDF from './chess.pdf';
 import CyclingPDF from './CyclingPDF.pdf';
 import FootballPDF from './football.pdf';
@@ -1094,7 +1094,7 @@ const Cycling = (props) => {
                   <p className={`${styles.paragraph}`} style={{ paddingBottom: '15px' }}>
                     <b>CAPTAIN</b>
                     <br />
-                    Abhishek 
+                    Abhishek
                     <br />
                     9417044824
                     <br />

@@ -17,7 +17,7 @@ import football from './image/football.png';
 import footballhover from './image/footballhover.png';
 import handball from './image/handball.png';
 import handballhover from './image/handballhover.png';
-import question from './question.png';
+//import question from './question.png';
 import hockey from './image/hockey.png';
 import hockeyhover from './image/hockeyhover.png';
 import kabaddi from './image/kabaddi.png';
@@ -644,9 +644,15 @@ const chessMouseLeave = () => {
           </div>
         </div>
       <div className={styles.maindiv}>
-      <h2 className={`${styles.mb_1} ${styles.H2}`} >
+        <div className={styles.title}>
+      
+          <div><h2 className={`${styles.mb_1} ${styles.H2}`} >
             Sports &amp; Games
-            </h2>
+            </h2></div>
+          <div>
+            <Link to="/register/signup/" className={styles.registerbtn}>Register Now</Link>
+          </div>
+        </div>
             <div className={styles.scrollablediv}>
         <div className={`${styles.row}`}>
           {/* <div
@@ -1126,52 +1132,7 @@ const chessMouseLeave = () => {
       </div>
       </div>
       </div>
-      <div className={`${styles.container}`}>
-        <div className={`${styles.row} ${styles.mt_5} ${styles.pt_5}`}>
-          {/* <div className={`${styles.col_md_3}`}></div> */}
-          <div className={`${styles.col_md_6}`}>
-            <div className={`${styles.block_7}`}>
-              <img src={question} alt="" style={{ width: '150px' }} />
-              <div className={`${styles.text_justify}`}>
-                <h2
-                  style={{
-                    textAlign: 'center',
-                    fontFamily: 'Open Sans',
-                    fontWeight: '700',
-                  }}
-                >
-                  So, What are you thinking?
-                </h2>
-                <h4
-                  style={{
-                    textAlign: 'center',
-                    fontFamily: 'Open Sans',
-                    fontWeight: '700',
-                  }}
-                >
-                  Register Now !!
-                </h4>
-                <div
-                  className={`${styles.text_center}`}
-                  style={{ marginTop: '2em' }}
-                >
-                  <Link
-                    to="/register/signup/"
-                    className={`${styles.btn_xlg} ${styles.btn} ${styles.btn_success}`}
-                    style={{
-                      color: 'white',
-                      fontFamily: 'Open Sans',
-                      fontWeight: '500',
-                    }}
-                  >
-                    Register for Events
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+   
     </section>
   );
 };
