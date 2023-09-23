@@ -72,7 +72,6 @@ REST_FRAMEWORK = {
      'DEFAULT_THROTTLE_CLASSES': [
         'Spardha.CustomThrottle.CustomAnonThrottle',
         'Spardha.CustomThrottle.CustomUserThrottle',
-        'Spardha.CustomThrottle.EmailThrottle'
     ],
     'DEFAULT_THROTTLE_RATES': {
         'anon': '30/min',
