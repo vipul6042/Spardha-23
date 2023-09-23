@@ -1,5 +1,5 @@
 .ftco_section {
-  margin: 100px 85px 32px 85px;
+  margin: 100px 200px 32px 200px;
 
   position: relative;
 }
@@ -39,7 +39,7 @@
   z-index: 1;
   position: relative;
   overflow: auto;
-
+  /* margin-bottom: 5%; */
   width: 100%;
   border-radius: 20px;
 }
@@ -176,7 +176,7 @@ select {
 a {
   cursor: pointer;
 }
-@media (max-width: 690px) {
+@media (max-width: 993px) {
   .maindiv_top {
     flex-direction: column;
     justify-content: center;
@@ -231,5 +231,25 @@ a {
 @media (max-height: 495px) {
   .scrollablediv {
     height: 20vh;
+  }
+}
+@media (max-width: 920px) {
+  .ftco_section{
+    margin: 100px 100px 32px 100px;
+  }
+}
+@media (max-width: 540px) {
+  .ftco_section{
+    margin: 100px 50px 32px 50px;
+  }
+}
+@media (max-width: 450px) {
+  .ftco_section{
+    margin: 100px 30px 32px 30px;
+  }
+}
+@media (max-width: 395px) {
+  .ftco_section{
+    margin: 100px 11px 32px 11px;
   }
 }
