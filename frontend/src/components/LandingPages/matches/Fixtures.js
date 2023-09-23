@@ -56,7 +56,7 @@ const Fixtures = ({ selectedSport }) => {
     (match) => match.sport === selectedSport
   );
   var match = filteredMatches;
-  if (selectedSport == 'All') {
+  if (selectedSport === 'All') {
     match = matchData;
   }
   return (
@@ -65,7 +65,7 @@ const Fixtures = ({ selectedSport }) => {
         <div className="displayBox">
           <div className="row1">
             <div style={{ display: 'flex' }}>
-              <img src={data.icon} style={{ height: '25px' }} />
+              <img src={data.icon} style={{ height: '25px' }} alt='sport icon' />
               {data.sport}
             </div>
             {data.time}

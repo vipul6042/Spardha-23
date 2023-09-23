@@ -54,7 +54,7 @@ const MatchResults = ({ selectedSport }) => {
     (match) => match.sport === selectedSport
   );
   var match = filteredMatches;
-  if (selectedSport == 'All') {
+  if (selectedSport === 'All') {
     match = matchData;
   }
 
@@ -64,7 +64,7 @@ const MatchResults = ({ selectedSport }) => {
         <div className="displayBox">
           <div className="row1">
             <div style={{ display: 'flex' }}>
-              <img src={data.icon} />
+            <img src={data.icon} style={{ height: '25px' }} alt='sport icon' />
               {data.sport}
             </div>
             {data.winner}

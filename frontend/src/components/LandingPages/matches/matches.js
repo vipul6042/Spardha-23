@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './Matches.module.css';
-import { Link } from 'react-router-dom';
 import Carousel from '../Home/Carousel/Carouselhp';
 import Fixtures from './Fixtures';
 import MatchResults from './Result';
@@ -29,7 +28,6 @@ const Matches = () => {
     'Volleyball',
     'Weight Lifting',
   ];
-  const [scrollLeft, setScrollLeft] = useState(0);
   const [selectedDate, setSelectedDate] = useState('2023-09-23'); // Set the default date here
   const [selectedSport, setSelectedSport] = useState('All');
   const handleDateChange = (event) => {
@@ -43,7 +41,6 @@ const Matches = () => {
     } else {
       navbar.scrollLeft += step;
     }
-    setScrollLeft(navbar.scrollLeft);
   };
 
   return (
@@ -60,7 +57,7 @@ const Matches = () => {
             <div className={`${styles.maindiv_top}`}>
               <h2 className={`${styles.mb_1} ${styles.H2}`}>Matches</h2>
               <div className={`${styles.options}`}>
-                <a onClick={() => setActiveTab('Fixtures')}>
+                <span onClick={() => setActiveTab('Fixtures')}>
                   <h3
                     style={{
                       color: activeTab === 'Fixtures' ? '#760e53' : null,
@@ -72,9 +69,9 @@ const Matches = () => {
                   >
                     Fixtures
                   </h3>
-                </a>
+                </span>
                 <h3 style={{ fontWeight: 300 }}>|</h3>
-                <a onClick={() => setActiveTab('Results')}>
+                <span onClick={() => setActiveTab('Results')}>
                   <h3
                     style={{
                       color: activeTab === 'Results' ? '#760e53' : null,
@@ -86,7 +83,7 @@ const Matches = () => {
                   >
                     Results
                   </h3>
-                </a>
+                </span>
               </div>
             </div>
             <div className={`${styles.horizontal_navbar_container}`}>
