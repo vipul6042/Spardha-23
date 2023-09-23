@@ -65,6 +65,7 @@ const Matches = () => {
                         activeTab === 'Fixtures'
                           ? ' 0.1875rem solid #760e53'
                           : null,
+                      cursor:'pointer',
                     }}
                   >
                     Fixtures
@@ -79,6 +80,7 @@ const Matches = () => {
                         activeTab === 'Results'
                           ? ' 0.1875rem solid #760e53'
                           : null,
+                        cursor:'pointer',
                     }}
                   >
                     Results
