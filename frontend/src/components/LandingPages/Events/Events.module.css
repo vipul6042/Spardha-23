@@ -50,7 +50,7 @@
   background-color: #760E53;
   color: white;
   transition: ease-out;
-  transition-duration: 200ms;
+  transition-duration: 300ms;
 }
 /* Customize scrollbar appearance (optional) */
 .scrollablediv::-webkit-scrollbar {
@@ -719,9 +719,17 @@ padding: 0px 2vw;
   top: 6%; 
   position: absolute
 }
+.rule_book_box div{
+  color: #760E53;
+}
 .rule_book_box:hover{
   background-color: #760E53;
   color: #ffdcdc;
+  transition: 300ms;
+  .rulebook{
+    color: #fff;
+    transition: 300ms;
+  }
 }
 .event_box_name{
   left:17%;

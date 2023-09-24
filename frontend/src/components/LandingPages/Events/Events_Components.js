@@ -366,7 +366,7 @@ const Athletics = (props) => {
     >
       <div
         style={{
-          color: "#760E53",
+          // color: "#760E53",
           fontSize: 18,
           fontFamily: "Poppins",
           fontWeight: 600,

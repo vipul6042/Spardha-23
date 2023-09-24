@@ -650,7 +650,7 @@ const chessMouseLeave = () => {
             Sports &amp; Games
             </h2></div>
           <div>
-            <Link to="/register/signup/" className={styles.registerbtn}>Register Now</Link>
+            <Link to="/register/login/" className={styles.registerbtn}>Register&nbsp;Now</Link>
           </div>
         </div>
             <div className={styles.scrollablediv}>

@@ -88,7 +88,7 @@ const Footer = () => {
                     <i class="fa-solid fa-globe fa-2xl"></i>
                     <a href="spardha.org.in" className={styles.link}>spardha.org.in</a>
                   </div>
-                  <div className={`${styles.logo} ${styles.name}`}>
+                  <div className={`${styles.logo}`}>
                   <h5>For Tech Related Query</h5>
                   <a href="tech@spardha.org.in" className={styles.link}>tech@spardha.org.in</a>
                   </div>

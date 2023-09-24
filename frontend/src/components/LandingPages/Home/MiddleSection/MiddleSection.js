@@ -13,7 +13,7 @@ function Mid() {
 
           <div className="button-container">
           <NavHashLink
-                        to="/register/signup#register"><button className="btn1">LOGIN/SIGNUP</button></NavHashLink>
+                        to="/register/signup#register"><button className="btn1">LOGIN&nbsp;/&nbsp;SIGNUP</button></NavHashLink>
 
 
         
