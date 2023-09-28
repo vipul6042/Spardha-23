@@ -51,7 +51,7 @@ const Footer = () => {
                   <h6>gurmeet.student.civ21@itbhu.ac.in</h6>
                   <h6>+91 97858 15941</h6>
                   <h6 className={styles.name}>Dhruv Jain</h6>
-                  <h6>dhruv.jain.cd.mec21gitbhu.ac.in</h6>
+                  <h6>dhruv.jain.cd.mec21@itbhu.ac.in</h6>
                   <h6>+91 95489 62930</h6>
                 </div>
                 <div className={styles.hospitality}>
@@ -88,7 +88,7 @@ const Footer = () => {
                     <i class="fa-solid fa-globe fa-2xl"></i>
                     <a href="spardha.org.in" className={styles.link}>spardha.org.in</a>
                   </div>
-                  <div className={`${styles.logo} ${styles.name}`}>
+                  <div className={`${styles.logo}`}>
                   <h5>For Tech Related Query</h5>
                   <a href="tech@spardha.org.in" className={styles.link}>tech@spardha.org.in</a>
                   </div>
