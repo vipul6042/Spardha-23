@@ -9,6 +9,7 @@ import {
   Alert,
 } from 'reactstrap';
 import styles from './Events.module.css';
+import { Link } from 'react-router-dom';
 
 const EventsDb = () => {
   const token = localStorage.getItem('token');
@@ -291,7 +292,18 @@ const EventsDb = () => {
 
   return (
     <>
-      <div className={`${styles['events-heading']}`}>Boys</div>
+    <div className='sub_details'>
+      <div className='heading'>
+                    <div className="events-heading">BOYS</div>
+                    <div className="edit_button">
+                    <Link
+                        to="/dashboard/events"
+                        style={{ textDecoration: 'none', color: '#760e53' }}
+                      >
+                        Edit
+                      </Link>
+                    </div>
+                  </div>
       <table
         className={`${styles['events-table']}`}
         align="center"
@@ -579,8 +591,21 @@ const EventsDb = () => {
           })
         )}
       </table>
+      </div>
       <br />
-      <div className={`${styles['events-heading']}`}>Girls</div>
+      <div className='sub_details'>
+      <div className='heading'>
+                    <div className="events-heading">Girls</div>
+                    <div className="edit_button">
+                    <Link
+                        to="/dashboard/events"
+                        style={{ textDecoration: 'none', color: '#760e53' }}
+                      >
+                        Edit
+                      </Link>
+                    </div>
+                  </div>
+      {/* <div className={`${styles['events-heading']}`}>Girls</div> */}
       <table
         className={`${styles['events-table']}`}
         align="center"
@@ -865,8 +890,21 @@ const EventsDb = () => {
           })
         )}
       </table>
+      </div>
       <br />
-      <div className={`${styles['events-heading']}`}>Mixed</div>
+      <div className='sub_details'>
+      <div className='heading'>
+                    <div className="events-heading">Mixed</div>
+                    <div className="edit_button">
+                    <Link
+                        to="/dashboard/events"
+                        style={{ textDecoration: 'none', color: '#760e53' }}
+                      >
+                        Edit
+                      </Link>
+                    </div>
+                  </div>
+      {/* <div className={`${styles['events-heading']}`}>Mixed</div> */}
       <table
         className={`${styles['events-table']}`}
         align="center"
@@ -983,23 +1021,27 @@ const EventsDb = () => {
                       {team.game.endsWith('M') && 'MIXED'}]
                     </ModalHeader>
                     <ModalBody className={`${styles['modal-body']}`}>
-                      <Alert
-                        color="warning"
+                      <div style={{backgroundColor:'red'}}>
+                      <Alert 
+                        // color="warning"
                         style={{
                           fontSize: '16px',
                           paddingTop: '10px',
                           paddingBottom: '10px',
+                          backgroundColor: 'red'
                         }}
+                        
                       >
                         {' '}
                         Your changes are not saved unless you submit them.
-                      </Alert>
+                      </Alert></div>
                       <table align="center" cellPadding="20">
                         <tr>
                           <td>
                             <input
                               type="text"
-                              className="form-control"
+                              style={{border:'2px solid #760e53'}}
+                              className={`${styles['form-control']}`}
                               placeholder="Captain / Leader Name"
                               data-game={team.game}
                               name="captain_name"
@@ -1044,6 +1086,7 @@ const EventsDb = () => {
                                           'players'
                                         ][rowIndex][colIndex]
                                       }
+                                      style={{border:'1px solid #760e53'}}
                                       onChange={inputChangeHandler}
                                     ></input>
                                   </td>
@@ -1076,7 +1119,7 @@ const EventsDb = () => {
             );
           })
         )}
-      </table>
+      </table></div>
       <br />
     </>
   );

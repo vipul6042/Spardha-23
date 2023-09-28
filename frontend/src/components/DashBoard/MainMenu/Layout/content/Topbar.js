@@ -64,7 +64,7 @@ const Topbar = ({ toggleSidebar }) => {
     <Navbar
       color="light"
       light
-      className="navbar shadow-sm bg-white rounded"
+      className="navbar1"
       expand="md"
     >
       <div className="left_content">
@@ -93,7 +93,8 @@ const Topbar = ({ toggleSidebar }) => {
                 </li>
                 <li className="dropdown">
                   <button className="dropdown-toggle" onClick={toggleOpen}>
-                    <img src="/images/icons/user.png" alt="user" />
+                    <img src="/images/icons/Male user.png" alt="user" />
+                    <img style={{width:'20px'}} src="/images/icons/Expand Arrow.png" alt="user" />
                     <b className="caret"></b>
                   </button>
                   <ul

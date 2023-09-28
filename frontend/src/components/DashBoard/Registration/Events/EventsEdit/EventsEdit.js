@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './EventsEdit.module.css';
-import { FaMale, FaFemale } from 'react-icons/fa';
+//import { FaMale, FaFemale } from 'react-icons/fa';
 import { Button, Collapse, FormGroup, Input, Label, Spinner } from 'reactstrap';
 import axios from 'axios';
 import { useNavigate } from 'react-router';
@@ -147,9 +147,9 @@ function EventsEdit() {
                       setShowBoys((prevState) => !prevState);
                     }}
                     className={`${styles['panel-title']} text-center align-items-center`}
-                    style={{ color: '#59ba00' }}
+                    style={{ color: '#FFFFFF' }}
                   >
-                    <FaMale /> <b>Boys </b>
+                     <b>BOYS </b>
                     {showBoysSpinner && <Spinner size="sm" />}
                   </h4>
                 </div>
@@ -445,9 +445,9 @@ function EventsEdit() {
                       setShowGirls((prevState) => !prevState);
                     }}
                     className={`${styles['panel-title']} text-center align-items-center`}
-                    style={{ color: '#59ba00' }}
+                    style={{ color: '#FFFFFF' }}
                   >
-                    <FaFemale /> <b>Girls </b>
+                     <b>Girls </b>
                     {showGirlsSpinner && <Spinner size="sm" />}
                   </h4>
                 </div>
@@ -653,7 +653,7 @@ function EventsEdit() {
                       setShowMixed((prevState) => !prevState);
                     }}
                     className={`${styles['panel-title']} text-center align-items-center`}
-                    style={{ color: '#59ba00' }}
+                    style={{ color: '#FFFFFF' }}
                   >
                     <b>Mixed </b>
                     {showMixedSpinner && <Spinner size="sm" />}
@@ -718,8 +718,9 @@ function EventsEdit() {
         </div>
         <Button
           color="success"
-          style={{ fontWeight: 'bold', width: 'fit-content' }}
-          className="mt-4"
+          style={{ fontWeight: 'bold', width: 'fit-content',
+          }}
+          className={styles['btn']}
           onClick={submitHandler}
         >
           Submit

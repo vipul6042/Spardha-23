@@ -3,9 +3,9 @@ import './Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import { toast } from 'react-toastify';
+//import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-toast.configure();
+//toast.configure();
 
 const Home = () => {
   const token = localStorage.getItem('token');
@@ -58,65 +58,61 @@ const Home = () => {
 
   return (
     <div className="user-dashboard">
-      <h1>Hello, {user.name}</h1>
+      <h1>Hello, <username className='username'>{user.name}</username></h1>
       <div className="row_dbHome">
-        <div className="col-xs-12 gutter widthAdjust">
+        <div className="col-xs-10 gutter widthAdjust">
           <div className="welcome-text">
             <div className="text-justify">
-              <h2>
-                Note: Since we allow only college registration, so you're
+              <h2>Note:</h2>
+              <h3>
+                Since we allow only college registration, so you're
                 supposed to register for {user.institution}. In case you want
                 someone else to register for your college, you need to first
-                delete your account in{' '}
-                <u style={{ textDecoration: 'none' }}>
-                  <Link
-                    to="/dashboard/profile"
-                    style={{ textDecoration: 'none' }}
-                  >
-                    User Profile
-                  </Link>
-                </u>{' '}
-                section, before another user can create an account with same
+                delete your account in User Profile section, before another user can create an account with same
                 college name.
-              </h2>
+                < u className='linkButton' style={{ textDecoration: 'none' }}>
+                <Link 
+                    to="/dashboard/profile"
+                    style={ {textDecoration: 'none' }}
+                  ><button className="register">
+                User Profile</button>
+                  </Link></u>
+              </h3>
             </div>
           </div>
         </div>
-        <div className="col-xs-12 gutter widthAdjust">
+        
+        <div className="col-xs-10 gutter widthAdjust">
           <div className="welcome-text">
             <div className="text-justify">
-              <h2>
-                You've registered for {numevents} events. Click{' '}
-                <u style={{ textDecoration: 'none' }}>
+              <h3>
+                Please read the Rule Book before registering for events.
+              </h3>
+              <u className='linkButton' style={{ textDecoration: 'none' }}>
+                  <a
+                    href="/pdf/RuleBook.pdf"
+                                        style={{ textDecoration: 'none' }}
+                  ><butoon className="register">
+                    View RuleBook</butoon>
+                  </a>
+                </u>
+            </div>
+          </div>
+        </div>
+        <div className="col-xs-10 gutter widthAdjust">
+          <div className="welcome-text">
+            <div className="text-justify">
+              <h3>
+                You've registered for <u className='num'>{numevents} </u>events.
+              </h3>
+              <u className='linkButton' style={{ textDecoration: 'none' }}>
                   <Link
                     to="/dashboard/registration"
                     style={{ textDecoration: 'none' }}
-                  >
-                    here
+                  ><button className="register">
+                    Add/Edit Events</button>
                   </Link>
-                </u>{' '}
-                to modify or add events.
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div className="col-xs-12 gutter widthAdjust">
-          <div className="welcome-text">
-            <div className="text-justify">
-              <h2>
-                Please read the{' '}
-                <u style={{ textDecoration: 'none' }}>
-                  <a
-                    href="/pdf/RuleBook.pdf"
-                    target="_blank"
-                    style={{ textDecoration: 'none' }}
-                    className="linkbutton_db"
-                  >
-                    Rule Book
-                  </a>
-                </u>{' '}
-                before registering for events.
-              </h2>
+                </u>
             </div>
           </div>
         </div>
