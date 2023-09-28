@@ -79,8 +79,11 @@ def serialized_data(contingent):
 class AllContingentView(generics.GenericAPIView):
     serializer_class = AllContingentSerializer
 
+    @swagger_auto_schema(
+        manual_parameters=[token_param]
+    )
     def get(self, request):
-        if request.user.is_staff:
+        if request.user.is_staff or request.user.is_admin:
             # * The below line fetches all the teams and the game associated with the team. It optimizes the speed of queries by decreasing N queries into a single query
             contingents = Contingent.objects.prefetch_related(
                 'college_rep__team_set__game').all()
