@@ -8,6 +8,9 @@ import ReactGA from 'react-ga';
 import InitializeReactGA from './helper/googleAnalytics.ts';
 import NotFound from './components/LandingPages/NotFound/NotFound';
 // import { Carousel } from 'react-responsive-carousel';
+import ShowTable from './components/LandingPages/UserData/ShowTable';
+import ShowallTable from './components/LandingPages/UserData/ShowallTable';
+import { AllGameFixtures } from './components/LandingPages/UserData/AllGameFixtures';
 
 const LandingPages = React.lazy(() =>
   import('./components/LandingPages/LandingPages')
@@ -21,6 +24,9 @@ const About = React.lazy(() => import('./components/LandingPages/About/About'));
 // );
 const Events = React.lazy(() =>
   import('./components/LandingPages/Events/Events')
+);
+const Admin = React.lazy(() =>
+  import('./components/DashBoard/Admin/Admin')
 );
 const Team = React.lazy(() => import('./components/LandingPages/Team/Team'));
 const Sponsors = React.lazy(() =>
@@ -74,6 +80,9 @@ const Footer1 = React.lazy(() =>
 );
 const Matches =React.lazy(()=>
   import('./components/LandingPages/matches/matches')
+);
+const Espardha =React.lazy(()=>
+  import('./components/LandingPages/Espardha/Espardha')
 );
 
 function usePageViews() {
@@ -181,6 +190,14 @@ function App() {
             }
           />
           <Route
+            path="espardha"
+            element={
+              <Suspense fallback={<Preloader />}>
+                <Espardha/>
+              </Suspense>
+            }
+          />
+          <Route
             path="events"
             element={
               <Suspense fallback={<Preloader />}>
@@ -253,7 +270,40 @@ function App() {
             }
           />
         </Route>
+        
+        <Route
+          path="admin"  
+          element={
+            <Suspense fallback={<Preloader />}>
+              <Admin/>
+            </Suspense>
+          }
+          />
+          <Route
+            path="admin/showtable"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <ShowTable />
+              </Suspense>
+            }
+          />
+           <Route
+            path="admin/allgames"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <AllGameFixtures />
+              </Suspense>
+            }
+          />
 
+          <Route
+            path="admin/allusers"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <ShowallTable />
+              </Suspense>
+            }
+          />
         <Route
           path="/dashboard"
           element={

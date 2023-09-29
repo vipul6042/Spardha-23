@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Events.module.css';
 // import rules from './rules.jpg';
+// import rules from './rules.jpg';
 // import trophy from './trophy.jpg';
 // import contacts from './contacts.jpg';
 import { FaTimes } from 'react-icons/fa';
@@ -48,7 +49,7 @@ import AthleticsPDF from './athletics.pdf';
 import BadmintonPDF from './badminton.pdf';
 import BasketballPDF from './basketball.pdf';
 import BoxingPDF from './boxing.pdf';
-import CricketPDF from './CricketPDF.pdf';
+import CricketPDF from './cricket.pdf';
 import ChessPDF from './chess.pdf';
 import CyclingPDF from './CyclingPDF.pdf';
 import FootballPDF from './football.pdf';
@@ -223,65 +224,65 @@ const Athletics = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-          Tagaram Kiran Kumar
-          <br />
-        </span>
-        <span className={`${styles.content}`}>
-          7396797341
-          <br />
-          tagaram.kirankumar.cer20@itbhu.ac.in
-          <br />
-          <br />
-        </span>
-        <span className={`${styles.content_header}`}
-        >
-          Anchal Dhar (W)
-          <br />
-        </span>
-        <span className={`${styles.content}`}>
-          8955357448
-          <br />
-          anchal.dhar.mec21@itbhu.ac.in
-        </span>
-      </div>
-      
-      {/* <div
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
+
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Tagaram Kiran Kumar
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  7396797341
+                  <br />
+                  tagaram.kirankumar.cer20@itbhu.ac.in
+                  <br />
+                  <br />
+                </span>
+                <span className={`${styles.content_header}`}
+                >
+                  Anchal Dhar (W)
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  8955357448
+                  <br />
+                  anchal.dhar.mec21@itbhu.ac.in
+                </span>
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -292,9 +293,9 @@ const Athletics = (props) => {
       >
         
       </div> */}
-    </div>
-    <div className={`${styles.event_show_block2}`}>
-      {/* <div
+            </div>
+            <div className={`${styles.event_show_block2}`}>
+              {/* <div
         style={{
           width: 430,
           height: "124.87px",
@@ -303,42 +304,42 @@ const Athletics = (props) => {
           position: "absolute"
         }}
       > */}
-        <div className={`${styles.main_header}`}>
-          VICE-CAPTAIN
-        </div>
-        <div
-          style={{
-            width: "50%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-          <span className={`${styles.content_header}`}
-          >
-            Gurjot
-            <br />
-          </span>
-          <span className={`${styles.content}`}>
-            7528980380
-            <br />
-            gurjot.student.ece19@itbhu.ac.in<br /><br />
-          </span>
-        
-        <span className={`${styles.content_header}`}
-        >
-          Shivanjali Verma(W)
-          <br />
-        </span>
-        <span className={`${styles.content}`}>
-          8869038250
-          <br />
-          shivanjali.verma.mec19@itbhu.ac.in
-        </span>
-        {/* </div> */}
-      </div>
-      {/* <div
+              <div className={`${styles.main_header}`}>
+                VICE-CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "50%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}
+                >
+                  Gurjot
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  7528980380
+                  <br />
+                  gurjot.student.ece19@itbhu.ac.in<br /><br />
+                </span>
+
+                <span className={`${styles.content_header}`}
+                >
+                  Shivanjali Verma(W)
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  8869038250
+                  <br />
+                  shivanjali.verma.mec19@itbhu.ac.in
+                </span>
+                {/* </div> */}
+              </div>
+              {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -349,43 +350,43 @@ const Athletics = (props) => {
       >
         
       </div> */}
-    </div></div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={athletics}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Athletics
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          // color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={AthleticsPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
+            </div></div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={athletics}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Athletics
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={AthleticsPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
-        {/* <div
+      {/* <div
           className={`${styles.col_10} ${styles.text_center} ${styles.Main_block}`}
         >
           <button
@@ -417,7 +418,7 @@ const Athletics = (props) => {
 
 
           </div> */}
-          {/* <div
+      {/* <div
             className="row"
             style={{ marginLeft: '15px', marginRight: '15px' }}
           >
@@ -498,7 +499,7 @@ const Athletics = (props) => {
               </div>
             </div> */}
 
-            {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
+      {/* <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
               <div className={`${styles.event_block}`}>
                 <div className={`${styles.contact_box}`}>
                   <div className={`${styles.image}`}>
@@ -516,72 +517,58 @@ const Athletics = (props) => {
                     >
                       <b>CAPTAIN</b>
                       <br />
-                      Rohit Diwakar
+                      Tagaram Kiran Kumar
                       <br />
-                      8827687934
+                      7396797341
                       <br />
-                      rohit.diwakar.ece19@itbhu.ac.in
-                      <br />
-                      <br />
-                      Anshika Singh <b>(W)</b>
-                      <br />
-                      7985967630
-                      <br />
-                      anshika.singh.phy19@itbhu.ac.in
+                      tagaram.kirankumar.cer20@itbhu.ac.in
                       <br />
                       <br />
-                      <b>VICE-CAPTAIN</b>
+                      Anchal Dhar <b>(W)</b>
                       <br />
-                      Gurjot
+                      8955357448
                       <br />
-                      7528980380
-                      <br />
-                      gurjot.student.ece19@itbhu.ac.in
+                      anchal.dhar.mec21@itbhu.ac.in
                       <br />
                       <br />
-                      Shivanjali Verma <b>(W)</b>
-                      <br />
-                      8869038250
-                      <br />
-                      shivanjali.verma.mec19@itbhu.ac.in
-                      <br />
+                      
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-          </div> */} 
-        {/* </div>
+          </div> */}
+      {/* </div>
       </div> */}
     </div>
-//     <div
-//   style={{
-//     width: "100%",
-//     height: "100%",
-//     justifyContent: "center",
-//     alignItems: "center",
-//     display: "inline-flex"
-//   }}
-// >
-// <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
-// <div
-//         className={`${styles.col_10} ${styles.text_center} ${styles.Main_block}`}
-//       >
-//   <div className={`${styles.fa} ${styles.fa_times}`}>
-//             <button
-//               className={`${styles.fa} ${styles.fa_times}`}
-//               id="0x"
-//               onClick={() => props.changeState(false)}
-//             >
-//               <FaTimes />
-//             </button>
-//             <div
-//           className="row"
-//           style={{ marginLeft: 'auto', marginRight: 'auto' }}
-//         ></div>
-//   </div></div></div>
-  
-// </div>
+    //     <div
+    //   style={{
+    //     width: "100%",
+    //     height: "100%",
+    //     justifyContent: "center",
+    //     alignItems: "center",
+    //     display: "inline-flex"
+    //   }}
+    // >
+    // <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
+    // <div
+    //         className={`${styles.col_10} ${styles.text_center} ${styles.Main_block}`}
+    //       >
+    //   <div className={`${styles.fa} ${styles.fa_times}`}>
+    //             <button
+    //               className={`${styles.fa} ${styles.fa_times}`}
+    //               id="0x"
+    //               onClick={() => props.changeState(false)}
+    //             >
+    //               <FaTimes />
+    //             </button>
+    //             <div
+    //           className="row"
+    //           style={{ marginLeft: 'auto', marginRight: 'auto' }}
+    //         ></div>
+    //   </div></div></div>
+
+    // </div>
 
   );
 };
@@ -590,66 +577,66 @@ const Badminton = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        Rishi Kaushik <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        8005983306
-          <br />
-          rishi.kaushik.eee21@itbhu.ac.in
-          <br />
-          <br />
-        </span>
-        <span className={`${styles.content_header}`}
-        >
-          Manisha Bishnoi (W)
-          <br />
-        </span>
-        <span className={`${styles.content}`}>
-        8290451829
-          <br />
-          manisha.bishnoi.mec21@itbhu.ac.in
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
 
-        </span>
-      </div>
-      
-      {/* <div
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Rishi Kaushik <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  8005983306
+                  <br />
+                  rishi.kaushik.eee21@itbhu.ac.in
+                  <br />
+                  <br />
+                </span>
+                <span className={`${styles.content_header}`}
+                >
+                  Manisha Bishnoi (W)
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  8290451829
+                  <br />
+                  manisha.bishnoi.mec21@itbhu.ac.in
+
+                </span>
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -660,9 +647,9 @@ const Badminton = (props) => {
       >
         
       </div> */}
-    </div>
-    <div className={`${styles.event_show_block2}`}>
-      {/* <div
+            </div>
+            <div className={`${styles.event_show_block2}`}>
+              {/* <div
         style={{
           width: 430,
           height: "124.87px",
@@ -671,33 +658,33 @@ const Badminton = (props) => {
           position: "absolute"
         }}
       > */}
-        <div className={`${styles.main_header}`}>
-          VICE-CAPTAIN
-        </div>
-        <div
-          style={{
-            width: "50%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-          <span className={`${styles.content_header}`}
-          >
-            Kushagra Yadav
-            <br />
-          </span>
-          <span className={`${styles.content}`}>
-          8285600365
-            <br />
-            kushagra.yadav.ece19@itbhu.ac.in<br /><br />
-          </span>
-        
-        
-        {/* </div> */}
-      </div>
-      {/* <div
+              <div className={`${styles.main_header}`}>
+                VICE-CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "50%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}
+                >
+                  Kushagra Yadav
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  8285600365
+                  <br />
+                  kushagra.yadav.ece19@itbhu.ac.in<br /><br />
+                </span>
+
+
+                {/* </div> */}
+              </div>
+              {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -708,41 +695,41 @@ const Badminton = (props) => {
       >
         
       </div> */}
-    </div></div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={badminton}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Badminton
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={BadmintonPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+            </div></div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={badminton}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Badminton
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={BadmintonPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
 
@@ -887,65 +874,65 @@ const Basketball = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        Pratyaksh Sharma <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        7725911213
-          <br />
-          pratyaksh.sharma.civ21@itbhu.ac.in
-          <br />
-          <br />
-        </span>
-        <span className={`${styles.content_header}`}
-        >
-         Chhaya umbarkar (W)
-          <br />
-        </span>
-        <span className={`${styles.content}`}>
-        7249784702
-          <br />
-          chhaya.umbarkar.mst20@itbhu.ac.in
-        </span>
-      </div>
-      
-      {/* <div
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
+
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Pratyaksh Sharma <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  7725911213
+                  <br />
+                  pratyaksh.sharma.civ21@itbhu.ac.in
+                  <br />
+                  <br />
+                </span>
+                <span className={`${styles.content_header}`}
+                >
+                  Chhaya umbarkar (W)
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  7249784702
+                  <br />
+                  chhaya.umbarkar.mst20@itbhu.ac.in
+                </span>
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -956,9 +943,9 @@ const Basketball = (props) => {
       >
         
       </div> */}
-    </div>
-    <div className={`${styles.event_show_block2}`}>
-      {/* <div
+            </div>
+            <div className={`${styles.event_show_block2}`}>
+              {/* <div
         style={{
           width: 430,
           height: "124.87px",
@@ -967,33 +954,33 @@ const Basketball = (props) => {
           position: "absolute"
         }}
       > */}
-        <div className={`${styles.main_header}`}>
-          VICE-CAPTAIN
-        </div>
-        <div
-          style={{
-            width: "50%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-          <span className={`${styles.content_header}`}
-          >
-            Kinshuk Dwivedi
-            <br />
-          </span>
-          <span className={`${styles.content}`}>
-          9425183369
-            <br />
-            kinshuk.dwivedi.phy19@itbhu.ac.in<br /><br />
-          </span>
-        
-        
-        {/* </div> */}
-      </div>
-      {/* <div
+              <div className={`${styles.main_header}`}>
+                VICE-CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "50%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}
+                >
+                  Kinshuk Dwivedi
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  9425183369
+                  <br />
+                  kinshuk.dwivedi.phy19@itbhu.ac.in<br /><br />
+                </span>
+
+
+                {/* </div> */}
+              </div>
+              {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -1004,41 +991,41 @@ const Basketball = (props) => {
       >
         
       </div> */}
-    </div></div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={basketball}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Basketball
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={BasketballPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+            </div></div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={basketball}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Basketball
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={BasketballPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
 
@@ -1183,68 +1170,68 @@ const Boxing = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        Suyash Baloni <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        N/A
-          <br />
-          suyash.baloni.bme20@itbhu.ac.in
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
 
-          <br />
-          <br />
-        </span>
-        <span className={`${styles.content_header}`}
-        >
-          Saloni Agrawal (W)
-          <br />
-        </span>
-        <span className={`${styles.content}`}>
-       9928107374
-          <br />
-          saloni.agrawal.mat20@itbhu.ac.in
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Suyash Baloni <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  N/A
+                  <br />
+                  suyash.baloni.bme20@itbhu.ac.in
+
+                  <br />
+                  <br />
+                </span>
+                <span className={`${styles.content_header}`}
+                >
+                  Saloni Agrawal (W)
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  9928107374
+                  <br />
+                  saloni.agrawal.mat20@itbhu.ac.in
 
 
-        </span>
-      </div>
-      
-      {/* <div
+                </span>
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -1255,8 +1242,8 @@ const Boxing = (props) => {
       >
         
       </div> */}
-    </div>
-      {/* <div
+            </div>
+            {/* <div
         style={{
           width: 430,
           height: "124.87px",
@@ -1265,8 +1252,8 @@ const Boxing = (props) => {
           position: "absolute"
         }}
       > */}
-        
-      {/* <div
+
+            {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -1277,40 +1264,40 @@ const Boxing = (props) => {
       >
         
       </div> */}</div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={boxing}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Boxing
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={BoxingPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={boxing}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Boxing
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={BoxingPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
     // <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
@@ -1441,56 +1428,56 @@ const Chess = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        Harshraj Joshi <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        N/A
-          <br />
-          harshraj.joshi.che21@itbhu.ac.in
-          <br />
-          <br />
-        </span>
-        
-      </div>
-      
-      {/* <div
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
+
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Harshraj Joshi <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  N/A
+                  <br />
+                  harshraj.joshi.che21@itbhu.ac.in
+                  <br />
+                  <br />
+                </span>
+
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -1501,9 +1488,9 @@ const Chess = (props) => {
       >
         
       </div> */}
-    </div>
-    <div className={`${styles.event_show_block2}`}>
-      {/* <div
+            </div>
+            <div className={`${styles.event_show_block2}`}>
+              {/* <div
         style={{
           width: 430,
           height: "124.87px",
@@ -1512,33 +1499,33 @@ const Chess = (props) => {
           position: "absolute"
         }}
       > */}
-        <div className={`${styles.main_header}`}>
-          VICE-CAPTAIN
-        </div>
-        <div
-          style={{
-            width: "50%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-          <span className={`${styles.content_header}`}
-          >
-            Shaurya Panpalia
-            <br />
-          </span>
-          <span className={`${styles.content}`}>
-          7877860896
-            <br />
-            shaurya.panpalia.mst19@itbhu.ac.in<br /><br />
-          </span>
-        
-        
-        {/* </div> */}
-      </div>
-      {/* <div
+              <div className={`${styles.main_header}`}>
+                VICE-CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "50%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}
+                >
+                  Shaurya Panpalia
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  7877860896
+                  <br />
+                  shaurya.panpalia.mst19@itbhu.ac.in<br /><br />
+                </span>
+
+
+                {/* </div> */}
+              </div>
+              {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -1549,41 +1536,41 @@ const Chess = (props) => {
       >
         
       </div> */}
-    </div></div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={chess}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Chess
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={ChessPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+            </div></div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={chess}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Chess
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={ChessPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
     // <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
@@ -1718,56 +1705,56 @@ const Cricket = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-       Jai Patel <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-       7023064941
-          <br />
-          shashanksp.met18@iitbhu.ac.in
-          <br />
-          <br />
-        </span>
-        
-      </div>
-      
-      {/* <div
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
+
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Jai Patel <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  7023064941
+                  <br />
+                  shashanksp.met18@iitbhu.ac.in
+                  <br />
+                  <br />
+                </span>
+
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -1778,9 +1765,9 @@ const Cricket = (props) => {
       >
         
       </div> */}
-    </div>
-    <div className={`${styles.event_show_block2}`}>
-      {/* <div
+            </div>
+            <div className={`${styles.event_show_block2}`}>
+              {/* <div
         style={{
           width: 430,
           height: "124.87px",
@@ -1789,33 +1776,33 @@ const Cricket = (props) => {
           position: "absolute"
         }}
       > */}
-        <div className={`${styles.main_header}`}>
-          VICE-CAPTAIN
-        </div>
-        <div
-          style={{
-            width: "50%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-          <span className={`${styles.content_header}`}
-          >
-            Satyendra Kumar Satyarthi
-            <br />
-          </span>
-          <span className={`${styles.content}`}>
-          9877437762
-            <br />
-            satyendraks.rs.cer17@itbhu.ac.in<br /><br />
-          </span>
-        
-        
-        {/* </div> */}
-      </div>
-      {/* <div
+              <div className={`${styles.main_header}`}>
+                VICE-CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "50%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}
+                >
+                  Satyendra Kumar Satyarthi
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  9877437762
+                  <br />
+                  satyendraks.rs.cer17@itbhu.ac.in<br /><br />
+                </span>
+
+
+                {/* </div> */}
+              </div>
+              {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -1826,41 +1813,41 @@ const Cricket = (props) => {
       >
         
       </div> */}
-    </div></div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={cricket}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Cricket
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={CricketPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+            </div></div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={cricket}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Cricket
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={CricketPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
     // <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
     //   <div
@@ -1994,56 +1981,56 @@ const Cycling = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        Abhishek  <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        9417044824
-          <br />
-          abhishek.student.cer20@iitbhu.ac.in
-          <br />
-          <br />
-        </span>
-        
-      </div>
-      
-      {/* <div
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
+
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Abhishek  <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  9417044824
+                  <br />
+                  abhishek.student.cer20@iitbhu.ac.in
+                  <br />
+                  <br />
+                </span>
+
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -2054,9 +2041,9 @@ const Cycling = (props) => {
       >
         
       </div> */}
-    </div>
-    <div className={`${styles.event_show_block2}`}>
-      {/* <div
+            </div>
+            <div className={`${styles.event_show_block2}`}>
+              {/* <div
         style={{
           width: 430,
           height: "124.87px",
@@ -2065,33 +2052,33 @@ const Cycling = (props) => {
           position: "absolute"
         }}
       > */}
-        <div className={`${styles.main_header}`}>
-          VICE-CAPTAIN
-        </div>
-        <div
-          style={{
-            width: "50%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-          <span className={`${styles.content_header}`}
-          >
-            Aditya Kulkarni
-            <br />
-          </span>
-          <span className={`${styles.content}`}>
-          8669136556
-            <br />
-            aditya.kulkarni.cd.civ20@itbhu.ac.in<br /><br />
-          </span>
-        
-        
-        {/* </div> */}
-      </div>
-      {/* <div
+              <div className={`${styles.main_header}`}>
+                VICE-CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "50%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}
+                >
+                  Aditya Kulkarni
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  8669136556
+                  <br />
+                  aditya.kulkarni.cd.civ20@itbhu.ac.in<br /><br />
+                </span>
+
+
+                {/* </div> */}
+              </div>
+              {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -2102,41 +2089,41 @@ const Cycling = (props) => {
       >
         
       </div> */}
-    </div></div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={cycling}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Cycling
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={CyclingPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+            </div></div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={cycling}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Cycling
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={CyclingPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
     // <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
@@ -2267,56 +2254,56 @@ const Football = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        Soham Nandy <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        9549847995
-          <br />
-          soham.nandy.cd.mst21@itbhu.ac.in
-          <br />
-          <br />
-        </span>
-        
-      </div>
-      
-      {/* <div
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
+
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Soham Nandy <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  9549847995
+                  <br />
+                  soham.nandy.cd.mst21@itbhu.ac.in
+                  <br />
+                  <br />
+                </span>
+
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -2327,9 +2314,9 @@ const Football = (props) => {
       >
         
       </div> */}
-    </div>
-    <div className={`${styles.event_show_block2}`}>
-      {/* <div
+            </div>
+            <div className={`${styles.event_show_block2}`}>
+              {/* <div
         style={{
           width: 430,
           height: "124.87px",
@@ -2338,33 +2325,33 @@ const Football = (props) => {
           position: "absolute"
         }}
       > */}
-        <div className={`${styles.main_header}`}>
-          VICE-CAPTAIN
-        </div>
-        <div
-          style={{
-            width: "50%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-          <span className={`${styles.content_header}`}
-          >
-            Sachin Kumar
-            <br />
-          </span>
-          <span className={`${styles.content}`}>
-          6205237836
-            <br />
-            sachin.kumar.met19@itbhu.ac.in<br /><br />
-          </span>
-        
-        
-        {/* </div> */}
-      </div>
-      {/* <div
+              <div className={`${styles.main_header}`}>
+                VICE-CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "50%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}
+                >
+                  Sachin Kumar
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  6205237836
+                  <br />
+                  sachin.kumar.met19@itbhu.ac.in<br /><br />
+                </span>
+
+
+                {/* </div> */}
+              </div>
+              {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -2375,41 +2362,41 @@ const Football = (props) => {
       >
         
       </div> */}
-    </div></div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={football}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Football
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={FootballPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+            </div></div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={football}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Football
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={FootballPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
     // <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
     //   <div
@@ -2543,57 +2530,57 @@ const Handball = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        Patel Avi <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        6352926616
-          <br />
-          patelavi.nihilkumar.mec21@itbhu.ac.in
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
 
-          <br />
-          <br />
-        </span>
-        
-      </div>
-      
-      {/* <div
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Patel Avi <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  6352926616
+                  <br />
+                  patelavi.nihilkumar.mec21@itbhu.ac.in
+
+                  <br />
+                  <br />
+                </span>
+
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -2604,9 +2591,9 @@ const Handball = (props) => {
       >
         
       </div> */}
-    </div>
-    <div className={`${styles.event_show_block2}`}>
-      {/* <div
+            </div>
+            <div className={`${styles.event_show_block2}`}>
+              {/* <div
         style={{
           width: 430,
           height: "124.87px",
@@ -2615,33 +2602,33 @@ const Handball = (props) => {
           position: "absolute"
         }}
       > */}
-        <div className={`${styles.main_header}`}>
-          VICE-CAPTAIN
-        </div>
-        <div
-          style={{
-            width: "50%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-          <span className={`${styles.content_header}`}
-          >
-           Tarun Khandelwal
-            <br />
-          </span>
-          <span className={`${styles.content}`}>
-          8102029500
-            <br />
-            tarun.khandelwal.eee19@itbhu.ac.in<br /><br />
-          </span>
-        
-        
-        {/* </div> */}
-      </div>
-      {/* <div
+              <div className={`${styles.main_header}`}>
+                VICE-CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "50%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}
+                >
+                  Tarun Khandelwal
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  8102029500
+                  <br />
+                  tarun.khandelwal.eee19@itbhu.ac.in<br /><br />
+                </span>
+
+
+                {/* </div> */}
+              </div>
+              {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -2652,41 +2639,41 @@ const Handball = (props) => {
       >
         
       </div> */}
-    </div></div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={handball}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Handball
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={HandballPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+            </div></div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={handball}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Handball
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={HandballPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
     // <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
@@ -2821,56 +2808,56 @@ const Hockey = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        Abhishek Meena <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        8840041931
-          <br />
-abhishek.meena.mec19@itbhu.ac.in
-          <br />
-          <br />
-        </span>
-        
-      </div>
-      
-      {/* <div
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
+
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Abhishek Meena <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  8840041931
+                  <br />
+                  abhishek.meena.mec19@itbhu.ac.in
+                  <br />
+                  <br />
+                </span>
+
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -2881,9 +2868,9 @@ abhishek.meena.mec19@itbhu.ac.in
       >
         
       </div> */}
-    </div>
-    <div className={`${styles.event_show_block2}`}>
-      {/* <div
+            </div>
+            <div className={`${styles.event_show_block2}`}>
+              {/* <div
         style={{
           width: 430,
           height: "124.87px",
@@ -2892,33 +2879,33 @@ abhishek.meena.mec19@itbhu.ac.in
           position: "absolute"
         }}
       > */}
-        <div className={`${styles.main_header}`}>
-          VICE-CAPTAIN
-        </div>
-        <div
-          style={{
-            width: "50%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-          <span className={`${styles.content_header}`}
-          >
-            Ashish Kumar
-            <br />
-          </span>
-          <span className={`${styles.content}`}>
-          9370766492
-            <br />
-            ashish.kumar.min19@itbhu.ac.in<br /><br />
-          </span>
-        
-        
-        {/* </div> */}
-      </div>
-      {/* <div
+              <div className={`${styles.main_header}`}>
+                VICE-CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "50%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}
+                >
+                  Ashish Kumar
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  9370766492
+                  <br />
+                  ashish.kumar.min19@itbhu.ac.in<br /><br />
+                </span>
+
+
+                {/* </div> */}
+              </div>
+              {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -2929,41 +2916,41 @@ abhishek.meena.mec19@itbhu.ac.in
       >
         
       </div> */}
-    </div></div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={hockey}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Hockey
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={HockeyPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+            </div></div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={hockey}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Hockey
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={HockeyPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
     // <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
@@ -3100,65 +3087,65 @@ const Kabbadi = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        Peddinti Sai siva kumar<br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        7569965571
-          <br />
-peddinti.saiskumar.cer19@itbhu.ac.in
-          <br />
-          <br />
-        </span>
-        <span className={`${styles.content_header}`}
-        >
-Kodurupaka Mallika (W)
-          <br />
-        </span>
-        <span className={`${styles.content}`}>
-        6302471817
-          <br />
-kodurupaka.mallika.mec21@itbhu.ac.in
-        </span>
-      </div>
-      
-      {/* <div
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
+
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Peddinti Sai siva kumar<br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  7569965571
+                  <br />
+                  peddinti.saiskumar.cer19@itbhu.ac.in
+                  <br />
+                  <br />
+                </span>
+                <span className={`${styles.content_header}`}
+                >
+                  Kodurupaka Mallika (W)
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  6302471817
+                  <br />
+                  kodurupaka.mallika.mec21@itbhu.ac.in
+                </span>
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -3169,9 +3156,9 @@ kodurupaka.mallika.mec21@itbhu.ac.in
       >
         
       </div> */}
-    </div>
-    
-      {/* <div
+            </div>
+
+            {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -3182,41 +3169,41 @@ kodurupaka.mallika.mec21@itbhu.ac.in
       >
         
       </div> */}
-    </div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={kabaddi}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Kabaddi
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={KabbadiPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+          </div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={kabaddi}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Kabaddi
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={KabbadiPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
     // <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
@@ -3348,66 +3335,66 @@ const Khokho = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        yandapalli gireesh reddy
- <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        6303606994
-          <br />
-          ygireesh.reddy.eee21@itbhu.ac.in
-          <br />
-          <br />
-        </span>
-        <span className={`${styles.content_header}`}
-        >
-Saloni Sharma (W)
-          <br />
-        </span>
-        <span className={`${styles.content}`}>
-        8392940227
-          <br />
-saloni.sharma.civ22@itbhu.ac.in
-        </span>
-      </div>
-      
-      {/* <div
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
+
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  yandapalli gireesh reddy
+                  <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  6303606994
+                  <br />
+                  ygireesh.reddy.eee21@itbhu.ac.in
+                  <br />
+                  <br />
+                </span>
+                <span className={`${styles.content_header}`}
+                >
+                  Saloni Sharma (W)
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  8392940227
+                  <br />
+                  saloni.sharma.civ22@itbhu.ac.in
+                </span>
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -3418,9 +3405,9 @@ saloni.sharma.civ22@itbhu.ac.in
       >
         
       </div> */}
-    </div>
-    <div className={`${styles.event_show_block2}`}>
-      {/* <div
+            </div>
+            <div className={`${styles.event_show_block2}`}>
+              {/* <div
         style={{
           width: 430,
           height: "124.87px",
@@ -3429,44 +3416,44 @@ saloni.sharma.civ22@itbhu.ac.in
           position: "absolute"
         }}
       > */}
-        <div className={`${styles.main_header}`}>
-          VICE-CAPTAIN
-        </div>
-        <div
-          style={{
-            width: "50%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-          <span className={`${styles.content_header}`}
-          >
-            Munavath Prashanth
-            <br />
-          </span>
-          <span className={`${styles.content}`}>
-          6301984558
-            <br />
-            munavath.prashanth.min19@itbhu.ac.in<br /><br />
-          </span>
+              <div className={`${styles.main_header}`}>
+                VICE-CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "50%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}
+                >
+                  Munavath Prashanth
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  6301984558
+                  <br />
+                  munavath.prashanth.min19@itbhu.ac.in<br /><br />
+                </span>
 
-          <span className={`${styles.content_header}`}
-          >
-            Jayshree Das(W)
-            <br />
-          </span>
-          <span className={`${styles.content}`}>
-          6000805732
-            <br />
-            jayshree.das.min19@itbhu.ac.in<br /><br />
-          </span>
-        
-        
-        {/* </div> */}
-      </div>
-      {/* <div
+                <span className={`${styles.content_header}`}
+                >
+                  Jayshree Das(W)
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  6000805732
+                  <br />
+                  jayshree.das.min19@itbhu.ac.in<br /><br />
+                </span>
+
+
+                {/* </div> */}
+              </div>
+              {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -3477,41 +3464,41 @@ saloni.sharma.civ22@itbhu.ac.in
       >
         
       </div> */}
-    </div></div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={khokho}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      KhoKho
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={KhoKhoPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+            </div></div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={khokho}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            KhoKho
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={KhoKhoPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
     // <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
@@ -3669,56 +3656,56 @@ const Powerlifting = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        Dhahal Brahma <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        9101401340
-          <br />
-          dhahal.brahma.cer19@itbhu.ac.in
-          <br />
-          <br />
-        </span>
-        
-      </div>
-      
-      {/* <div
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
+
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Dhahal Brahma <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  9101401340
+                  <br />
+                  dhahal.brahma.cer19@itbhu.ac.in
+                  <br />
+                  <br />
+                </span>
+
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -3729,9 +3716,9 @@ const Powerlifting = (props) => {
       >
         
       </div> */}
-    </div>
-    <div className={`${styles.event_show_block2}`}>
-      {/* <div
+            </div>
+            <div className={`${styles.event_show_block2}`}>
+              {/* <div
         style={{
           width: 430,
           height: "124.87px",
@@ -3740,33 +3727,33 @@ const Powerlifting = (props) => {
           position: "absolute"
         }}
       > */}
-        <div className={`${styles.main_header}`}>
-          VICE-CAPTAIN
-        </div>
-        <div
-          style={{
-            width: "50%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-          <span className={`${styles.content_header}`}
-          >
-            Harsh Agrawal
-            <br />
-          </span>
-          <span className={`${styles.content}`}>
-          9759877847
-            <br />
-            harsh.agrawal.phe20@itbhu.ac.in<br /><br />
-          </span>
-        
-        
-        {/* </div> */}
-      </div>
-      {/* <div
+              <div className={`${styles.main_header}`}>
+                VICE-CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "50%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}
+                >
+                  Harsh Agrawal
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  9759877847
+                  <br />
+                  harsh.agrawal.phe20@itbhu.ac.in<br /><br />
+                </span>
+
+
+                {/* </div> */}
+              </div>
+              {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -3777,41 +3764,41 @@ const Powerlifting = (props) => {
       >
         
       </div> */}
-    </div></div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={powerlifting}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Powerlifting
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={PowerliftingPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+            </div></div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={powerlifting}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Powerlifting
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={PowerliftingPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
     // <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
@@ -3947,68 +3934,68 @@ const Squash = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        Hemank Vats <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        N/A
-          <br />
-         hemank.vats.apd20@itbhu.ac.in
-          <br />
-          <br />
-        </span>
-          <span className={`${styles.content_header}`}>
-        Toko yanu (W) <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        8258872098
-          <br />
-         saloni.sharma.civ22@itbhu.ac.in
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
 
-          <br />
-          <br />
-        </span>
-        
-      </div>
-      
-      {/* <div
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Hemank Vats <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  N/A
+                  <br />
+                  hemank.vats.apd20@itbhu.ac.in
+                  <br />
+                  <br />
+                </span>
+                <span className={`${styles.content_header}`}>
+                  Toko yanu (W) <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  8258872098
+                  <br />
+                  saloni.sharma.civ22@itbhu.ac.in
+
+                  <br />
+                  <br />
+                </span>
+
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -4019,9 +4006,9 @@ const Squash = (props) => {
       >
         
       </div> */}
-    </div>
-    
-      {/* <div
+            </div>
+
+            {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -4032,41 +4019,41 @@ const Squash = (props) => {
       >
         
       </div> */}
-    </div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={squash}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Squash
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={SquashPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+          </div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={squash}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Squash
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={SquashPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
     // <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
@@ -4199,66 +4186,66 @@ const TableTennis = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        Yashwardhan Sable <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        8839679648
-          <br />
-          yashwardhan.sable.phy20@itbhu.ac.in
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
 
-          <br />
-          <br />
-        </span>
-        <span className={`${styles.content_header}`}
-        >
-          Guddaji Sri Prada (W)
-          <br />
-        </span>
-        <span className={`${styles.content}`}>
-       N/A
-          <br />
-         guddaji.sriprada.cse20@itbhu.ac.in
-        </span>
-      </div>
-      
-      {/* <div
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Yashwardhan Sable <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  8839679648
+                  <br />
+                  yashwardhan.sable.phy20@itbhu.ac.in
+
+                  <br />
+                  <br />
+                </span>
+                <span className={`${styles.content_header}`}
+                >
+                  Guddaji Sri Prada (W)
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  N/A
+                  <br />
+                  guddaji.sriprada.cse20@itbhu.ac.in
+                </span>
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -4269,42 +4256,42 @@ const TableTennis = (props) => {
       >
         
       </div> */}
-    </div>
-    </div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={tabletennis}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      TableTennis
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={TableTennisPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+            </div>
+          </div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={tabletennis}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            TableTennis
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={TableTennisPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
 
@@ -4437,65 +4424,65 @@ const Taekwondo = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        Divyanshu Bharti <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        N/A
-          <br />
-          divyanshu.bharti.chy21@itbhu.ac.in
-          <br />
-          <br />
-        </span>
-        <span className={`${styles.content_header}`}
-        >
-         Sameeksha Murdia (W)
-          <br />
-        </span>
-        <span className={`${styles.content}`}>
-        9660339180
-          <br />
-          sameeksha.murdia.phy20@itbhu.ac.in
-        </span>
-      </div>
-      
-      {/* <div
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
+
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Divyanshu Bharti <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  N/A
+                  <br />
+                  divyanshu.bharti.chy21@itbhu.ac.in
+                  <br />
+                  <br />
+                </span>
+                <span className={`${styles.content_header}`}
+                >
+                  Sameeksha Murdia (W)
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  9660339180
+                  <br />
+                  sameeksha.murdia.phy20@itbhu.ac.in
+                </span>
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -4506,42 +4493,42 @@ const Taekwondo = (props) => {
       >
         
       </div> */}
-    </div>
-    </div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={taekwondo}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Taekwondo
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={TaekwondoPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+            </div>
+          </div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={taekwondo}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Taekwondo
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={TaekwondoPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
 
@@ -4674,66 +4661,66 @@ const Tennis = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        Trinabh Vashistha <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        8502959213
-          <br />
-          trinabh.vashistha.min21@itbhu.ac.in
-          <br />
-          <br />
-        </span>
-        <span className={`${styles.content_header}`}
-        >
-          Pranjali Gupta (W)
-          <br />
-        </span>
-        <span className={`${styles.content}`}>
-        N/A
-          <br />
-          pranjali.gupta.mst19@itbhu.ac.in
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
 
-        </span>
-      </div>
-      
-      {/* <div
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Trinabh Vashistha <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  8502959213
+                  <br />
+                  trinabh.vashistha.min21@itbhu.ac.in
+                  <br />
+                  <br />
+                </span>
+                <span className={`${styles.content_header}`}
+                >
+                  Pranjali Gupta (W)
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  N/A
+                  <br />
+                  pranjali.gupta.mst19@itbhu.ac.in
+
+                </span>
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -4744,42 +4731,42 @@ const Tennis = (props) => {
       >
         
       </div> */}
-    </div>
-    </div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={tennis}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Tennis
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={TennisPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+            </div>
+          </div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={tennis}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Tennis
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={TennisPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
     // <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
@@ -4911,65 +4898,65 @@ const Volleyball = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-        Pawan Kumar<br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        9110142092
-          <br />
-          pawan.kumar.ece20@itbhu.ac.in
-          <br />
-          <br />
-        </span>
-        <span className={`${styles.content_header}`}
-        >
-          Boddu Bhavana (W)
-          <br />
-        </span>
-        <span className={`${styles.content}`}>
-        9390085089
-          <br />
-         boddu.bhavana.mec20@itbhu.ac.in
-        </span>
-      </div>
-      
-      {/* <div
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
+
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Pawan Kumar<br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  9110142092
+                  <br />
+                  pawan.kumar.ece20@itbhu.ac.in
+                  <br />
+                  <br />
+                </span>
+                <span className={`${styles.content_header}`}
+                >
+                  Boddu Bhavana (W)
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  9390085089
+                  <br />
+                  boddu.bhavana.mec20@itbhu.ac.in
+                </span>
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -4980,9 +4967,9 @@ const Volleyball = (props) => {
       >
         
       </div> */}
-    </div>
-    <div className={`${styles.event_show_block2}`}>
-      {/* <div
+            </div>
+            <div className={`${styles.event_show_block2}`}>
+              {/* <div
         style={{
           width: 430,
           height: "124.87px",
@@ -4991,43 +4978,43 @@ const Volleyball = (props) => {
           position: "absolute"
         }}
       > */}
-        <div className={`${styles.main_header}`}>
-          VICE-CAPTAIN
-        </div>
-        <div
-          style={{
-            width: "50%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-          <span className={`${styles.content_header}`}
-          >
-            Mukul jaiman
-            <br />
-          </span>
-          <span className={`${styles.content}`}>
-          8302122511
-            <br />
-            mukul.jaiman.civ19@itbhu.ac.in<br /><br />
-          </span>
-          <span className={`${styles.content_header}`}
-          >
-            Priya Rathore(W)
-            <br />
-          </span>
-          <span className={`${styles.content}`}>
-          8225934951
-            <br />
-            priya.rathore.cer19@itbhu.ac.in<br /><br />
-          </span>
-        
-        
-        {/* </div> */}
-      </div>
-      {/* <div
+              <div className={`${styles.main_header}`}>
+                VICE-CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "50%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}
+                >
+                  Mukul jaiman
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  8302122511
+                  <br />
+                  mukul.jaiman.civ19@itbhu.ac.in<br /><br />
+                </span>
+                <span className={`${styles.content_header}`}
+                >
+                  Priya Rathore(W)
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  8225934951
+                  <br />
+                  priya.rathore.cer19@itbhu.ac.in<br /><br />
+                </span>
+
+
+                {/* </div> */}
+              </div>
+              {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -5038,41 +5025,41 @@ const Volleyball = (props) => {
       >
         
       </div> */}
-    </div></div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={volleyball}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      Volleyball
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={VolleyballPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+            </div></div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={volleyball}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            Volleyball
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={VolleyballPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
     // <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
@@ -5227,56 +5214,56 @@ const WeightLifting = (props) => {
   return (
     <div className={`${styles.main_event_div}`}>
       {/* <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}> */}
-  <div className={`${styles.events_main_block}`}>
-  <div className={`${styles.events_main_block_div1}`} >
-    <div
-      style={{
-        right:"5%",
-        top: "5%",
-        position: "absolute"
-      }}
-    >
-      <button
-            className={`${styles.fa} ${styles.fa_times}`}
-            id="0x"
-            onClick={() => props.changeState(false)}
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
           >
-            <FaTimes />
-          </button>
-    </div>
-    <div className={`${styles.event_white_block}`}/>
-    <div className={`${styles.event_line_right}`}/>
-    <div className={`${styles.event_line_left}`}/>
-    
-    <div className={`${styles.evnet_content_box}`}>
-    <div className={`${styles.event_show_block1}`}>
-      <div className={`${styles.main_header}`}>
-        CAPTAIN
-      </div>
-      <div
-          style={{
-            width: "100%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-        <span className={`${styles.content_header}`}>
-       Harsh Agrawal <br />
-                    
-        </span>
-        <span className={`${styles.content}`}>
-        9759877847
-          <br />
-          harshagrawal789789@gmail.com
-          <br />
-          <br />
-        </span>
-        
-      </div>
-      
-      {/* <div
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
+
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Harsh Agrawal <br />
+
+                </span>
+                <span className={`${styles.content}`}>
+                  9759877847
+                  <br />
+                  harshagrawal789789@gmail.com
+                  <br />
+                  <br />
+                </span>
+
+              </div>
+
+              {/* <div
         style={{
           width: "761.62px",
           height: "72.82px",
@@ -5287,9 +5274,9 @@ const WeightLifting = (props) => {
       >
         
       </div> */}
-    </div>
-    <div className={`${styles.event_show_block2}`}>
-      {/* <div
+            </div>
+            <div className={`${styles.event_show_block2}`}>
+              {/* <div
         style={{
           width: 430,
           height: "124.87px",
@@ -5298,33 +5285,33 @@ const WeightLifting = (props) => {
           position: "absolute"
         }}
       > */}
-        <div className={`${styles.main_header}`}>
-          VICE-CAPTAIN
-        </div>
-        <div
-          style={{
-            width: "50%",
-            height: "100%",
-            left: 0,
-            top: "20%",
-            position: "absolute"
-          }}
-        >
-          <span className={`${styles.content_header}`}
-          >
-            Uday Kiran
-            <br />
-          </span>
-          <span className={`${styles.content}`}>
-          78976 10891
-            <br />
-            moningi.udaykiran.mst19@itbhu.ac.in<br /><br />
-          </span>
-        
-        
-        {/* </div> */}
-      </div>
-      {/* <div
+              <div className={`${styles.main_header}`}>
+                VICE-CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "50%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}
+                >
+                  Uday Kiran
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  78976 10891
+                  <br />
+                  moningi.udaykiran.mst19@itbhu.ac.in<br /><br />
+                </span>
+
+
+                {/* </div> */}
+              </div>
+              {/* <div
         style={{
           width: 376,
           height: "72.08px",
@@ -5335,41 +5322,41 @@ const WeightLifting = (props) => {
       >
         
       </div> */}
-    </div></div>
-    <div className={`${styles.event_box_header}`}
-    >
-      Contacts:
-    </div>
-    <img className={`${styles.event_image}`} alt=" "
-      // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
-      src={weightlifting}
-    />
-    <div className={`${styles.event_box_name}`}
-    >
-      WeightLifting
-    </div>
-    <div className={`${styles.rule_book_box}`}
-    >
-      <div
-        style={{
-          color: "#760E53",
-          fontSize: 18,
-          fontFamily: "Poppins",
-          fontWeight: 600,
-          wordWrap: "break-word"
-        }}
-      >
-        <a href={WeightliftingPDF}
-          target="_blank"
-          rel="noreferrer"
-          className={`${styles.rulebook}`}
-        >
-          View Rulebook
-        </a>
-      </div>
-    </div>
-  </div>
-</div></div>
+            </div></div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" "
+            // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
+            src={weightlifting}
+          />
+          <div className={`${styles.event_box_name}`}
+          >
+            WeightLifting
+          </div>
+          <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={WeightliftingPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View Rulebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div></div>
 
 
     // <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>

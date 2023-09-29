@@ -12,7 +12,6 @@ body {
 
   
 }
-
 .container-home {
 	padding-top: 10vh;
 	display: flex;
@@ -157,7 +156,7 @@ width: max-content;
 	}
 }
 
-@media (max-width: 950px) and (min-width:790px) {
+@media (max-width: 950px) {
 
 	.container-home {
 		flex-direction: column;
@@ -225,7 +224,7 @@ margin: 0px;
 		max-width: 300px;
 	}
 }
-@media (max-width: 790px)  {
+@media (max-aspect-ratio:1)  {
 
 	.container-home {
 		flex-direction: column;
