@@ -27,6 +27,7 @@ const EventsDb = () => {
     Cricket_B: false,
     Football_B: false,
     Handball_B: false,
+    Handball_G: false,
     Hockey_B: false,
     'Lawn Tennis_B': false,
     'Lawn Tennis_G': false,
@@ -65,6 +66,7 @@ const EventsDb = () => {
   const [Weightlifting_B, setWeightlifting_B] = useState({});
   const [Hockey_B, setHockey_B] = useState({});
   const [Handball_B, setHandball_B] = useState({});
+  const [Handball_G, setHandball_G] = useState({});
   const [Football_B, setFootball_B] = useState({});
   const [Cricket_B, setCricket_B] = useState({});
   const [Taekwondo_B, setTaekwondo_B] = useState({});
@@ -100,6 +102,7 @@ const EventsDb = () => {
     Weightlifting_B: [Weightlifting_B, setWeightlifting_B],
     Hockey_B: [Hockey_B, setHockey_B],
     Handball_B: [Handball_B, setHandball_B],
+    Handball_G: [Handball_G, setHandball_G],
     Football_B: [Football_B, setFootball_B],
     Cricket_B: [Cricket_B, setCricket_B],
     Taekwondo_B: [Taekwondo_B, setTaekwondo_B],
@@ -293,7 +296,7 @@ const EventsDb = () => {
   return (
     <>
     <div className='sub_details'>
-      <div className='heading'>
+      <div className='heading-register'>
                     <div className="events-heading">BOYS</div>
                     <div className="edit_button">
                     <Link
@@ -594,7 +597,7 @@ const EventsDb = () => {
       </div>
       <br />
       <div className='sub_details'>
-      <div className='heading'>
+      <div className='heading-register'>
                     <div className="events-heading">Girls</div>
                     <div className="edit_button">
                     <Link

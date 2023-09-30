@@ -1,5 +1,15 @@
 .user-dashboard3 {
   padding: 10px 26px;
+  overflow: auto;
+  height: 75vh;
+}
+.user-dashboard3::-webkit-scrollbar {
+  width: 10px;
+}
+
+.user-dashboard3::-webkit-scrollbar-thumb {
+  background-color: #760e53;
+  border-radius: 200px;
 }
 
 /* .user-dashboard3 h1 {

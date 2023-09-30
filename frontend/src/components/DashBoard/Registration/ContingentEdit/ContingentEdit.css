@@ -71,7 +71,7 @@
   /* margin: 0px; */
 }
 .row_dbContingent::-webkit-scrollbar {
-  width: 0px;
+  width: 10px;
 }
 
 .row_dbContingent::-webkit-scrollbar-thumb {

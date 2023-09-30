@@ -84,6 +84,7 @@ const Home = () => {
   return (
     <div className="user-dashboard">
       <h1>Hello, <username className='username'>{user.name}</username></h1>
+      <div className='home_scroller'>
       <div className="row_dbHome">
         <div className="col-xs-10 gutter widthAdjust">
           <div className="welcome-text">
@@ -143,7 +144,8 @@ const Home = () => {
         </div>
       </div>
       <div>
-      <button className="btnform" onClick={handleDownload}>Download Entry Form</button>
+ <button className="btnform" onClick={handleDownload}>Download&nbsp;Entry&nbsp;Form</button>
+      </div>
       </div>
     </div>
   );

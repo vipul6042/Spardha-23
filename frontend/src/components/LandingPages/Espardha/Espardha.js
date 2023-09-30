@@ -25,7 +25,7 @@ const Espardha = () => {
               </div>
               <div className={`${styles.content}`}>
                 <div className={`${styles.top}`}>
-                  <img src={controler} alt='controler'/>
+                  <img src={controler} alt='controler' />
                   <h1>ESpardha</h1>
                 </div>
                 <div className={`${styles.middle}`}>
@@ -37,7 +37,7 @@ const Espardha = () => {
                   </div>
                   <p>🏆 #Espardha2023 🎮</p>
                   <div className={`${styles.buttons}`}>
-                    <a href="http://zenet.co.in/" target="_blank"  rel="noopener noreferrer">
+                    <a href="http://zenet.co.in/" target="_blank" rel="noopener noreferrer">
                       Register Now
                     </a>
                     <a href={pdf} download>
@@ -54,7 +54,7 @@ const Espardha = () => {
 
                   <div className={`${styles.contacts}`}>
                     <div className={`${styles.contact_card}`}>
-                      <h5>Drruv Jain</h5>
+                      <h5>Dhruv Jain</h5>
                       <p>+91 9548962930</p>
                     </div>
                     <div className={`${styles.contact_card}`}>

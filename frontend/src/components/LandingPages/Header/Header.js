@@ -13,7 +13,6 @@ import {
   FaLinkedin,
   FaTwitter,
 } from 'react-icons/fa';
-
 import styles from './Header.module.css';
 // import { isMobile } from 'react-device-detect';
 import { useMediaQuery } from 'react-responsive';

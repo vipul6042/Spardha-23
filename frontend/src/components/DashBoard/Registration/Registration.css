@@ -363,7 +363,7 @@ td {
   align-items: center;
   justify-content: space-between;
 }
-.heading{
+.heading-register{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -375,7 +375,7 @@ td {
   }
 }
 @media (max-width:850px) {
-  .heading{
+  .heading-register{
     padding-left: 0;
   }
   .contingent{

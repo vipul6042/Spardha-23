@@ -21,22 +21,22 @@
   color:#760E53;
   font-weight: 1000;
 }
-/* .user-dashboard .btn.btn-secondary.btn-lg.dropdown-toggle>span {
-    font-size: 11px;
-} */
-
-/* .user-dashboard .welcome-text button {
-    font-size: 11px;
-    padding-right: 23px;
-} */
-
-/* .user-dashboard .welcome-text h2 {
-    font-size: 14px;
+.home_scroller{
+  overflow: auto;
+  height: 75vh;
+  overflow-x: hidden;
+  padding-right:10px;
+}
+.home_scroller::-webkit-scrollbar {
+  width: 10px;
 }
 
-.user-dashboard h1 {
-    font-size: 25px;
-} */
+.home_scroller::-webkit-scrollbar-thumb {
+  background-color: #760e53;
+  border-radius: 200px;
+}
+
+
 
 @media only screen and (min-width: 767px) and (max-width: 998px) {
   .user-dashboard .header-top {
@@ -78,13 +78,12 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 .gutter {
-  
-  padding: 10px;
+  padding: 10px 0;
+  justify-content: center;
+  display: flex;
 }
 
 .welcome-text h2{
@@ -222,7 +221,7 @@
   }
 
   .gutter {
-    padding: 6px;
+    padding: 6px 0;
   }
 }
 
@@ -249,7 +248,7 @@
   text-align: justify;
 }
 
- /*.linkbutton_db {
+ /* .linkbutton_db {
   background: none;
   border: none;
   font-weight: 700;
@@ -268,16 +267,45 @@
     font-size: inherit !important;
     padding-right: inherit !important;
   }
-}
+} */
 
 .btnform{
   margin-top: 15px;
-  margin-left: -13px;
-  background: limegreen ;
+
   border-radius: 100px;
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
   padding: 10px 20px 10px 20px;
   position: relative;
-} */
+
+  background-color: transparent;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.1rem !important;
+  padding: 9px, 33px, 9px, 33px;
+  border-radius: 35px;
+  /* width: 176px; */
+  height: Fixed (40px);
+  /* top: 580px;
+  left: 1045px; */
+  border: 2px;
+  gap: 10px;
+  border: 2px solid rgba(118, 14, 83, 1);
+  display: flex;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 18px;
+  color: #760E53;
+} 
+.btnform:hover {
+  background-color: #760E53;
+  color: white;
+  transition: ease-out;
+  transition-duration: 300ms;
+}
+
+.btnform:focus {
+  color: #ffffff;
+}

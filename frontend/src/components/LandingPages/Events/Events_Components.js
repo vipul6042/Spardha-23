@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Events.module.css';
 // import rules from './rules.jpg';
-// import rules from './rules.jpg';
 // import trophy from './trophy.jpg';
 // import contacts from './contacts.jpg';
 import { FaTimes } from 'react-icons/fa';
@@ -45,6 +44,7 @@ import volleyball from './image/volleyball.png';
 // import volleyballhover from './image/volleyballhover.png';
 import weightlifting from './image/weightlifting.png';
 // import weightliftinghover from './image/weightliftinghover.png';
+import aquatics from './image/aquatics.png';
 import AthleticsPDF from './athletics.pdf';
 import BadmintonPDF from './badminton.pdf';
 import BasketballPDF from './basketball.pdf';
@@ -64,161 +64,127 @@ import TennisPDF from './tennis.pdf';
 import VolleyballPDF from './volleyball.pdf';
 import WeightliftingPDF from './weightlifting.pdf';
 import TaekwondoPDF from './taekwondo.pdf';
+// import AquaticsPDF from './taekwondo.pdf';
+
 // import { Link } from 'react-router-dom';
+const Aquatics = (props) => {
+  return (
+    <div className={`${styles.main_event_div}`}>
+      <div className={`${styles.events_main_block}`}>
+        <div className={`${styles.events_main_block_div1}`} >
+          <div
+            style={{
+              right: "5%",
+              top: "5%",
+              position: "absolute"
+            }}
+          >
+            <button
+              className={`${styles.fa} ${styles.fa_times}`}
+              id="0x"
+              onClick={() => props.changeState(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className={`${styles.event_white_block}`} />
+          <div className={`${styles.event_line_right}`} />
+          <div className={`${styles.event_line_left}`} />
 
-// const Aqautics = (props) => {
-//   return (
-//     <div>
-//       <div className="row" style={{ marginLeft: '5px', marginRight: '5px' }}>
-//         <div
-//           className={`${styles.col_10} ${styles.text_center} ${styles.Main_block}`}
-//         >
-//           <button
-//             className={`${styles.fa} ${styles.fa_times}`}
-//             id="0x"
-//             onClick={() => props.changeState(false)}
-//           >
-//             <FaTimes />
-//           </button>
-//           <div
-//             className="row"
-//             style={{ marginLeft: '15px', marginRight: '15px' }}
-//           >
-//             <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
-//               <div className={`${styles.event_block}`}>
-//                 <div className={`${styles.rule_box}`}>
-//                   <div className={`${styles.a_rule}`}>
-//                     <div className={`${styles.image}`}>
-//                       <img
-//                         className={`${styles.img_responsive}`}
-//                         src={rules}
-//                         alt="img"
-//                       />
-//                     </div>
-//                     <div className={`${styles.info} ${styles.rule}`}>
-//                       <h4> Rules </h4>
-//                       {/* <a
-//                      href={AthleticsPDF}//add aquatics rules pdf
-//                         target="_blank"
-//                         rel="noreferrer"
-//                         className={`${styles.rulebook}`}
-//                       >
-//                         CLICK HERE FOR RULES
-//                       </a>*/}
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-
-//             <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
-//               <div className={`${styles.event_block}`}>
-//                 <div className={`${styles.winner_box} ${styles.info}`}>
-//                   <div className={`${styles.image}`}>
-//                     <img
-//                       className={`${styles.img_responsive}`}
-//                       src={trophy}
-//                       alt="img"
-//                     />
-//                   </div>
-//                   <div className={`${styles.info}`}>
-//                     <h4>Aqautics</h4>
-//                     <p>
-//                       Coming Soon
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                       <br />
-//                     </p>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-
-//             <div className={`${styles.col_md_4} ${styles.col_sm_4}`}>
-//               <div className={`${styles.event_block}`}>
-//                 <div className={`${styles.contact_box}`}>
-//                   <div className={`${styles.image}`}>
-//                     <img
-//                       className={`${styles.img_responsive}`}
-//                       src={contacts}
-//                       alt="img"
-//                     />
-//                   </div>
-//                   <div className={`${styles.info}`}>
-//                     <h4>Contacts</h4>
-//                     <p
-//                       className={`${styles.paragraph}`}
-//                       style={{ paddingBottom: '10px' }}
-//                     >
-//                       <b>CAPTAIN</b>
-//                       <br />
-//                       Rohit Diwakar
-//                       <br />
-//                       8827687934
-//                       <br />
-//                       rohit.diwakar.ece19@itbhu.ac.in
-//                       <br />
-//                       <br />
-//                       Anshika Singh <b>(W)</b>
-//                       <br />
-//                       7985967630
-//                       <br />
-//                       anshika.singh.phy19@itbhu.ac.in
-//                       <br />
-//                       <br />
-//                       <b>VICE-CAPTAIN</b>
-//                       <br />
-//                       Gurjot
-//                       <br />
-//                       7528980380
-//                       <br />
-//                       gurjot.student.ece19@itbhu.ac.in
-//                       <br />
-//                       <br />
-//                       Shivanjali Verma <b>(W)</b>
-//                       <br />
-//                       8869038250
-//                       <br />
-//                       shivanjali.verma.mec19@itbhu.ac.in
-//                       <br />
-//                     </p>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+          <div className={`${styles.evnet_content_box}`}>
+            <div className={`${styles.event_show_block1}`}>
+              <div className={`${styles.main_header}`}>
+                CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}>
+                  Bisesh Agarwal<br />
+                </span>
+                <span className={`${styles.content}`}>
+                  7001782556
+                  {/* <br />
+                  email_id */}
+                  <br /><br />
+                </span>
+              </div>
+            </div>
+            {/* <div className={`${styles.event_show_block2}`}>
+              <div className={`${styles.main_header}`}>
+                VICE-CAPTAIN
+              </div>
+              <div
+                style={{
+                  width: "50%",
+                  height: "100%",
+                  left: 0,
+                  top: "20%",
+                  position: "absolute"
+                }}
+              >
+                <span className={`${styles.content_header}`}
+                >
+                  Gurjot
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  7528980380
+                  <br />
+                  gurjot.student.ece19@itbhu.ac.in<br /><br />
+                </span>
+                <span className={`${styles.content_header}`}
+                >
+                  Shivanjali Verma (W)
+                  <br />
+                </span>
+                <span className={`${styles.content}`}>
+                  8869038250
+                  <br />
+                  shivanjali.verma.mec19@itbhu.ac.in<br /><br />
+                </span>
+              </div>
+            </div> */}
+          </div>
+          <div className={`${styles.event_box_header}`}
+          >
+            Contacts:
+          </div>
+          <img className={`${styles.event_image}`} alt=" " src={aquatics} />
+          <div className={`${styles.event_box_name}`}>
+            Aquatics
+          </div>
+          {/* <div className={`${styles.rule_book_box}`}
+          >
+            <div
+              style={{
+                color: "#760E53",
+                fontSize: 18,
+                fontFamily: "Poppins",
+                fontWeight: 600,
+                wordWrap: "break-word"
+              }}
+            >
+              <a href={AquaticsPDF}
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.rulebook}`}
+              >
+                View&nbsp;Rulebook
+              </a>
+            </div>
+          </div> */}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Athletics = (props) => {
   return (
@@ -379,7 +345,7 @@ const Athletics = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -724,7 +690,7 @@ const Badminton = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -1020,7 +986,7 @@ const Basketball = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -1292,7 +1258,7 @@ const Boxing = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -1565,7 +1531,7 @@ const Chess = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -1842,7 +1808,7 @@ const Cricket = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -2118,7 +2084,7 @@ const Cycling = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -2391,7 +2357,7 @@ const Football = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -2668,7 +2634,7 @@ const Handball = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -2945,7 +2911,7 @@ const Hockey = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -3198,7 +3164,7 @@ const Kabbadi = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -3493,7 +3459,7 @@ const Khokho = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -3793,7 +3759,7 @@ const Powerlifting = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -4048,7 +4014,7 @@ const Squash = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -4286,7 +4252,7 @@ const TableTennis = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -4523,7 +4489,7 @@ const Taekwondo = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -4761,7 +4727,7 @@ const Tennis = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -5054,7 +5020,7 @@ const Volleyball = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -5351,7 +5317,7 @@ const WeightLifting = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View Rulebook
+                View&nbsp;Rulebook
               </a>
             </div>
           </div>
@@ -5488,7 +5454,6 @@ const WeightLifting = (props) => {
 };
 
 export {
-  // Aqautics,
   Athletics,
   Badminton,
   Basketball,
@@ -5509,4 +5474,5 @@ export {
   Tennis,
   Volleyball,
   WeightLifting,
+  Aquatics,
 };

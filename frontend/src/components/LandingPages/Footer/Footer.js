@@ -99,9 +99,6 @@ const Footer = () => {
                 <div className={styles.followus}>
                   <h5><b>Follow us:</b></h5>
                   <br />
-                <div className={styles.followus}>
-                  <h5><b>Follow us:</b></h5>
-                  <br />
                   <span>
                     <a href="https://www.facebook.com/Spardha.IIT.BHU/" target="_blank" rel="noopener noreferrer">
                       <img className={styles.socialmedia} src="/images/icons/icons8-facebook.svg" alt="facebook logo"></img>
@@ -113,7 +110,6 @@ const Footer = () => {
                       <img className={styles.socialmedia} src="/images/icons/icons8-instagram.svg" alt="instagram logo"></img>
                     </a>
                   </span>
-                </div>
               </div>
             </div>
           </div>
