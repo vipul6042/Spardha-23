@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import {AuthProvider} from "./contexts/AuthContext";
-import Navbar from "./components/Navbar/Navbar";
+// import Navbar from "./components/Navbar/Navbar";
 
 import AllUsers from './components/Pages/AllUsers'
 import SportsRegistrations from './components/Pages/SportsRegistrations'
@@ -15,7 +15,7 @@ function App() {
 	return (
 		<AuthProvider>
 			<BrowserRouter>
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar> */}
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/login" element={<Login />} />
