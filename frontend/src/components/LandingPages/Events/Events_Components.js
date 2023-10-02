@@ -132,6 +132,7 @@ const Aquatics = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -301,6 +302,7 @@ const Athletics = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -646,6 +648,7 @@ const Badminton = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -942,6 +945,7 @@ const Basketball = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -1214,6 +1218,7 @@ const Boxing = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -1487,6 +1492,7 @@ const Chess = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -1764,6 +1770,7 @@ const Cricket = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -2040,6 +2047,7 @@ const Cycling = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -2313,6 +2321,7 @@ const Football = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -2590,6 +2599,7 @@ const Handball = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -2867,6 +2877,7 @@ const Hockey = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -3120,6 +3131,7 @@ const Kabbadi = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -3415,6 +3427,7 @@ const Khokho = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -3715,6 +3728,7 @@ const Powerlifting = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -3970,6 +3984,7 @@ const Squash = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -4208,6 +4223,7 @@ const TableTennis = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -4445,6 +4461,7 @@ const Taekwondo = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -4683,6 +4700,7 @@ const Tennis = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -4976,6 +4994,7 @@ const Volleyball = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -5273,6 +5292,7 @@ const WeightLifting = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
