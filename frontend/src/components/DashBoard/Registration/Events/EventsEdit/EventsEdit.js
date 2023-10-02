@@ -9,6 +9,7 @@ import { EventContext } from '../../../../../contexts/EventContext';
 const GAMES = {
   boys: [
     'Athletics',
+    'Aquatics',
     'Badminton',
     'Basketball',
     'Boxing',
@@ -28,6 +29,7 @@ const GAMES = {
   ],
   girls: [
     'Athletics',
+    'Aquatics',
     'Badminton',
     'Basketball',
     'Boxing',
@@ -89,7 +91,7 @@ function EventsEdit() {
       })
       .catch((err) => {
         console.error(err.message);
-        setErrorMessage('Could not fetch data '+err.message);
+        setErrorMessage('Could not fetch data ' + err.message);
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -135,7 +137,7 @@ function EventsEdit() {
       })
       .catch((err) => {
         console.error(err); //could not submit changes
-        setErrorMessage('Could not submit changes '+err.message);
+        setErrorMessage('Could not submit changes ' + err.message);
       })
       .finally(() => {
         setLoading(false);
@@ -204,7 +206,7 @@ function EventsEdit() {
                     <FaFemale /> <b>Girls </b>
                   </h4>
                 </div>
-                <Collapse isOpen={showGirls }>
+                <Collapse isOpen={showGirls}>
                   <div className={`${styles['panel-body']}`}>
                     <div className="row xs-1 sm-2">
                       <div className={`col-sm-6 ${styles.container}`}>
@@ -286,7 +288,8 @@ function EventsEdit() {
         <ErrorMessage message={errorMessage} />
         <Button
           color="success"
-          style={{ fontWeight: 'bold', width: 'fit-content',
+          style={{
+            fontWeight: 'bold', width: 'fit-content',
           }}
           className={styles['btn']}
           onClick={submitHandler}

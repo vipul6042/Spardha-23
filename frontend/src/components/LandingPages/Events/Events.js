@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-// import aquatics from './aquatics.png';
+import aquatics from './image/aquatics.png';
+import aquaticshover from './image/aquaticshover.png';
 import athletics from './image/athletics.png';
 import athleticshover from './image/athleticshover.png';
 import basketball from './image/basketball.png';
@@ -44,7 +45,7 @@ import styles from './Events.module.css';
 import { Link } from 'react-router-dom';
 import Carousel from '../Home/Carousel/Carouselhp';
 import {
-  // Aqautics,
+  Aquatics,
   Athletics,
   Badminton,
   Basketball,
@@ -87,6 +88,8 @@ const Events = () => {
   const [showResults16, setShowResults16] = useState(false);
   const [showResults17, setShowResults17] = useState(false);
   const [showResults18, setShowResults18] = useState(false);
+  const [showResults19, setShowResults19] = useState(false);
+
   const [athletics1, setathletics1] = useState(athletics);
   const athleticsMouseEnter = () => {
     setathletics1(athleticshover);
@@ -220,6 +223,14 @@ const Events = () => {
   const chessMouseLeave = () => {
     setchess1(chess);
   };
+  const [aquatics1, setaquatics1] = useState(aquatics);
+  const aquaticsMouseEnter = () => {
+    setaquatics1(aquaticshover);
+    console.log("entered");
+  };
+  const aquaticsMouseLeave = () => {
+    setaquatics1(aquatics);
+  };
 
 
   const onClick0 = () => {
@@ -242,6 +253,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick1 = () => {
     setShowResults0(false);
@@ -263,6 +275,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick2 = () => {
     setShowResults0(false);
@@ -284,6 +297,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick3 = () => {
     setShowResults0(false);
@@ -305,6 +319,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick4 = () => {
     setShowResults0(false);
@@ -326,6 +341,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick5 = () => {
     setShowResults0(false);
@@ -347,6 +363,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick6 = () => {
     setShowResults0(false);
@@ -368,6 +385,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick7 = () => {
     setShowResults0(false);
@@ -389,6 +407,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick8 = () => {
     setShowResults0(false);
@@ -410,6 +429,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick9 = () => {
     setShowResults0(false);
@@ -431,6 +451,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick10 = () => {
     setShowResults0(false);
@@ -452,6 +473,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick11 = () => {
     setShowResults0(false);
@@ -473,6 +495,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick12 = () => {
     setShowResults0(false);
@@ -494,6 +517,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick13 = () => {
     setShowResults0(false);
@@ -515,6 +539,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick14 = () => {
     setShowResults0(false);
@@ -536,6 +561,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick15 = () => {
     setShowResults0(false);
@@ -557,6 +583,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick16 = () => {
     setShowResults0(false);
@@ -578,6 +605,7 @@ const Events = () => {
     setShowResults16(!showResults16);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick17 = () => {
     setShowResults0(false);
@@ -599,6 +627,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(!showResults17);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick18 = () => {
     setShowResults0(false);
@@ -620,6 +649,29 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(!showResults18);
+    setShowResults19(false);
+  };
+  const onClick19 = () => {
+    setShowResults0(false);
+    setShowResults1(false);
+    setShowResults2(false);
+    setShowResults3(false);
+    setShowResults4(false);
+    setShowResults5(false);
+    setShowResults6(false);
+    setShowResults7(false);
+    setShowResults8(false);
+    setShowResults9(false);
+    setShowResults10(false);
+    setShowResults11(false);
+    setShowResults12(false);
+    setShowResults13(false);
+    setShowResults14(false);
+    setShowResults15(false);
+    setShowResults16(false);
+    setShowResults17(false);
+    setShowResults18(false);
+    setShowResults19(!showResults18);
   };
 
   return (
@@ -671,69 +723,57 @@ const Events = () => {
                 className={`${styles.col_2} ${styles.padding} `}
                 id="0" onMouseEnter={athleticsMouseEnter}
                 onMouseLeave={athleticsMouseLeave}
-                onClick={onClick0}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={athletics1}
                   alt=""
-                 
+                  onClick={onClick0}
                 />
                 <p>Athletics</p>
               </div>
-              {showResults0 ? (
-                <Athletics changeState={(showResult0) => setShowResults0(false)} />
-              ) : null}
+
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="1"
                 onMouseEnter={badmintonMouseEnter}
                 onMouseLeave={badmintonMouseLeave}
-                onClick={onClick1}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={badminton1}
                   alt=""
-                 
+                  onClick={onClick1}
                 />
                 <p>Badminton</p>
 
 
               </div>
-              {showResults1 ? (
-                <Badminton changeState={(showResult1) => setShowResults1(false)} />
-              ) : null}
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="2"
                 onMouseEnter={basketballMouseEnter}
                 onMouseLeave={basketballMouseLeave}
-                onClick={onClick2}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={basketball1}
                   alt=""
-                 
+                  onClick={onClick2}
                 />
                 <p>Basketball</p>
               </div>
-              {showResults2 ? (
-                <Basketball changeState={(showResult2) => setShowResults2(false)} />
-              ) : null}
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="3"
                 onMouseEnter={boxingMouseEnter}
                 onMouseLeave={boxingMouseLeave}
-                onClick={onClick3}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={boxing1}
                   alt=""
-                 
+                  onClick={onClick3}
                 />
                 <p>Boxing</p>
               </div>
@@ -750,11 +790,17 @@ const Events = () => {
           </div>*/}
 
               {/* {showResults0 ? (
-            <Aqautics changeState={(showResult0) => setShowResults0(false)} />
+            <Aquatics changeState={(showResult0) => setShowResults0(false)} />
           ) : null} */}
-              
-              
-             
+              {showResults0 ? (
+                <Athletics changeState={(showResult0) => setShowResults0(false)} />
+              ) : null}
+              {showResults1 ? (
+                <Badminton changeState={(showResult1) => setShowResults1(false)} />
+              ) : null}
+              {showResults2 ? (
+                <Basketball changeState={(showResult2) => setShowResults2(false)} />
+              ) : null}
               {showResults3 ? (
                 <Boxing changeState={(showResult3) => setShowResults3(false)} />
               ) : null}
@@ -778,69 +824,56 @@ const Events = () => {
                 id="0"
                 onMouseEnter={chessMouseEnter}
                 onMouseLeave={chessMouseLeave}
-                onClick={onClick4}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={chess1}
                   alt=""
-                
+                  onClick={onClick4}
                 />
                 <p>Chess</p>
               </div>
-              {showResults4 ? (
-                <Chess changeState={(showResult4) => setShowResults4(false)} />
-              ) : null}
 
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="1"
                 onMouseEnter={cricketMouseEnter}
                 onMouseLeave={cricketMouseLeave}
-                onClick={onClick5}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={cricket1}
                   alt=""
-                  
+                  onClick={onClick5}
                 />
                 <p>Cricket</p>
               </div>
-              {showResults5 ? (
-                <Cricket changeState={(showResult5) => setShowResults5(false)} />
-              ) : null}
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="2"
                 onMouseEnter={cyclingMouseEnter}
                 onMouseLeave={cyclingMouseLeave}
-                onClick={onClick6}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={cycling1}
                   alt=""
-                 
+                  onClick={onClick6}
                 />
                 <p>Cycling</p>
 
               </div>
-              {showResults6 ? (
-                <Cycling changeState={(showResult6) => setShowResults6(false)} />
-              ) : null}
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="3"
                 onMouseEnter={footballMouseEnter}
                 onMouseLeave={footballMouseLeave}
-                onClick={onClick7}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={football1}
                   alt=""
-                
+                  onClick={onClick7}
                 />
                 <p>Football</p>
 
@@ -863,9 +896,15 @@ const Events = () => {
               {/* {showResults4 ? (
             <Squash changeState={(showResult5) => setShowResults5(false)} />
           ) : null} */}
-              
-              
-              
+              {showResults4 ? (
+                <Chess changeState={(showResult4) => setShowResults4(false)} />
+              ) : null}
+              {showResults5 ? (
+                <Cricket changeState={(showResult5) => setShowResults5(false)} />
+              ) : null}
+              {showResults6 ? (
+                <Cycling changeState={(showResult6) => setShowResults6(false)} />
+              ) : null}
               {showResults7 ? (
                 <Football changeState={(showResult7) => setShowResults7(false)} />
               ) : null}
@@ -877,72 +916,59 @@ const Events = () => {
                 id="0"
                 onMouseEnter={handballMouseEnter}
                 onMouseLeave={handballMouseLeave}
-                onClick={onClick8}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={handball1}
                   alt=""
-                  
+                  onClick={onClick8}
                 />
                 <p>Handball</p>
 
               </div>
-              {showResults8 ? (
-                <Handball changeState={(showResult8) => setShowResults8(false)} />
-              ) : null}
 
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="1"
                 onMouseEnter={hockeyMouseEnter}
                 onMouseLeave={hockeyMouseLeave}
-                onClick={onClick9}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={hockey1}
                   alt=""
-                 
+                  onClick={onClick9}
                 />
                 <p>Hockey</p>
 
               </div>
-              {showResults9 ? (
-                <Hockey changeState={(showResult9) => setShowResults9(false)} />
-              ) : null}
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="2"
                 onMouseEnter={kabaddiMouseEnter}
                 onMouseLeave={kabaddiMouseLeave}
-                onClick={onClick10}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={kabaddi1}
                   alt=""
-                 
+                  onClick={onClick10}
                 />
                 <p>Kabaddi</p>
 
               </div>
-              {showResults10 ? (
-                <Kabbadi changeState={(showResult10) => setShowResults10(false)} />
-              ) : null}
 
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="3"
                 onMouseEnter={khokhoMouseEnter}
                 onMouseLeave={khokhoMouseLeave}
-                onClick={onClick11}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={khokho1}
                   alt=""
-                 
+                  onClick={onClick11}
                 />
                 <p>kho-kho</p>
 
@@ -973,9 +999,15 @@ const Events = () => {
             <Cycling changeState={(showResult8) => setShowResults8(false)} />
           ) : null} */}
 
-              
-              
-              
+              {showResults8 ? (
+                <Handball changeState={(showResult8) => setShowResults8(false)} />
+              ) : null}
+              {showResults9 ? (
+                <Hockey changeState={(showResult9) => setShowResults9(false)} />
+              ) : null}
+              {showResults10 ? (
+                <Kabbadi changeState={(showResult10) => setShowResults10(false)} />
+              ) : null}
               {showResults11 ? (
                 <Khokho changeState={(showResult11) => setShowResults11(false)} />
               ) : null}
@@ -987,75 +1019,60 @@ const Events = () => {
                 id="0"
                 onMouseEnter={powerliftingMouseEnter}
                 onMouseLeave={powerliftingMouseLeave}
-                onClick={onClick12}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={powerlifting1}
                   alt=""
-               
+                  onClick={onClick12}
                 />
                 <p>Powerlifting</p>
 
               </div>
-              {showResults12 ? (
-                <Powerlifting
-                  changeState={(showResult12) => setShowResults12(false)}
-                />
-              ) : null}
 
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="1"
                 onMouseEnter={squashMouseEnter}
                 onMouseLeave={squashMouseLeave}
-                onClick={onClick13}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={squash1}
                   alt=""
-                 
+                  onClick={onClick13}
                 />
                 <p>Squash</p>
 
               </div>
-              {showResults13 ? (
-                <Squash changeState={(showResult13) => setShowResults13(false)} />
-              ) : null}
 
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="2"
                 onMouseEnter={tabletennisMouseEnter}
                 onMouseLeave={tabletennisMouseLeave}
-                onClick={onClick14}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={tabletennis1}
                   alt=""
+                  onClick={onClick14}
                 />
                 <p>TableTennis</p>
 
               </div>
-              {showResults14 ? (
-                <TableTennis
-                  changeState={(showResult14) => setShowResults14(false)}
-                />
-              ) : null}
 
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="3"
                 onMouseEnter={taekwondoMouseEnter}
                 onMouseLeave={taekwondoMouseLeave}
-                onClick={onClick15}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={taekwondo1}
                   alt=""
+                  onClick={onClick15}
                 />
                 <p>Taekwondo</p>
 
@@ -1066,9 +1083,19 @@ const Events = () => {
           {showResults13 ? (
             <Khokho changeState={(showResult13) => setShowResults13(false)} />
           ) : null} */}
-              
-              
-              
+              {showResults12 ? (
+                <Powerlifting
+                  changeState={(showResult12) => setShowResults12(false)}
+                />
+              ) : null}
+              {showResults13 ? (
+                <Squash changeState={(showResult13) => setShowResults13(false)} />
+              ) : null}
+              {showResults14 ? (
+                <TableTennis
+                  changeState={(showResult14) => setShowResults14(false)}
+                />
+              ) : null}
               {showResults15 ? (
                 <Taekwondo
                   changeState={(showResult15) => setShowResults15(false)}
@@ -1087,58 +1114,64 @@ const Events = () => {
                 id="0"
                 onMouseEnter={tennisMouseEnter}
                 onMouseLeave={tennisMouseLeave}
-                onClick={onClick16}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={tennis1}
                   alt=""
+                  onClick={onClick16}
                 />
                 <p>Tennis</p>
 
               </div>
-              {showResults16 ? (
-                <Tennis changeState={(showResult16) => setShowResults16(false)} />
-              ) : null}
 
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="1"
                 onMouseEnter={volleyballMouseEnter}
                 onMouseLeave={volleyballMouseLeave}
-                onClick={onClick17}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={volleyball1}
                   alt=""
+                  onClick={onClick17}
                 />
                 <p>Volleyball</p>
 
               </div>
-              {showResults17 ? (
-                <Volleyball
-                  changeState={(showResult17) => setShowResults17(false)}
-                />
-              ) : null}
 
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="2"
                 onMouseEnter={weightliftingMouseEnter}
                 onMouseLeave={weightliftingMouseLeave}
-                onClick={onClick18}
               >
                 <img
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={weightlifting1}
                   alt=""
+                  onClick={onClick18}
                 />
                 <p>Weightlifting</p>
 
               </div>
+
               <div
-                className={`${styles.col_2} ${styles.padding} ${styles.emptyblock} `} style={{ backgroundColor: 'transparent' }}></div>
+                className={`${styles.col_2} ${styles.padding} `}
+                id="2"
+                onMouseEnter={aquaticsMouseEnter}
+                onMouseLeave={aquaticsMouseLeave}
+              >
+                <img
+                  className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
+                  src={aquatics1}
+                  alt=""
+                  onClick={onClick19}
+                />
+                <p>Aquatics</p>
+
+              </div>
 
               {/* <div
             className={`${styles.col_2} ${styles.padding1} ${styles.shake}`}
@@ -1148,11 +1181,22 @@ const Events = () => {
               {/* {showResults16 ? (
             <Tennis changeState={(showResult0) => setShowResults16(false)} />
           ) : null} */}
-              
-              
+              {showResults16 ? (
+                <Tennis changeState={(showResult16) => setShowResults16(false)} />
+              ) : null}
+              {showResults17 ? (
+                <Volleyball
+                  changeState={(showResult17) => setShowResults17(false)}
+                />
+              ) : null}
               {showResults18 ? (
                 <WeightLifting
                   changeState={(showResult18) => setShowResults18(false)}
+                />
+              ) : null}
+              {showResults19 ? (
+                <Aquatics
+                  changeState={(showResult19) => setShowResults19(false)}
                 />
               ) : null}
             </div>
