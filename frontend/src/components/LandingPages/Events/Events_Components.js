@@ -110,47 +110,11 @@ const Aquatics = (props) => {
                 </span>
                 <span className={`${styles.content}`}>
                   7001782556
-                  {/* <br />
-                  email_id */}
-                  <br /><br />
+                  <br />
+                  <br />
                 </span>
               </div>
             </div>
-            {/* <div className={`${styles.event_show_block2}`}>
-              <div className={`${styles.main_header}`}>
-                VICE-CAPTAIN
-              </div>
-              <div
-                style={{
-                  width: "50%",
-                  height: "100%",
-                  left: 0,
-                  top: "20%",
-                  position: "absolute"
-                }}
-              >
-                <span className={`${styles.content_header}`}
-                >
-                  Gurjot
-                  <br />
-                </span>
-                <span className={`${styles.content}`}>
-                  7528980380
-                  <br />
-                  gurjot.student.ece19@itbhu.ac.in<br /><br />
-                </span>
-                <span className={`${styles.content_header}`}
-                >
-                  Shivanjali Verma (W)
-                  <br />
-                </span>
-                <span className={`${styles.content}`}>
-                  8869038250
-                  <br />
-                  shivanjali.verma.mec19@itbhu.ac.in<br /><br />
-                </span>
-              </div>
-            </div> */}
           </div>
           <div className={`${styles.event_box_header}`}
           >
@@ -168,6 +132,7 @@ const Aquatics = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign:"center",
                 wordWrap: "break-word"
               }}
             >
@@ -176,7 +141,7 @@ const Aquatics = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div> */}
@@ -337,6 +302,7 @@ const Athletics = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -345,7 +311,7 @@ const Athletics = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -682,6 +648,7 @@ const Badminton = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -690,7 +657,7 @@ const Badminton = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -978,6 +945,7 @@ const Basketball = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -986,7 +954,7 @@ const Basketball = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -1250,6 +1218,7 @@ const Boxing = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -1258,7 +1227,7 @@ const Boxing = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -1523,6 +1492,7 @@ const Chess = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -1531,7 +1501,7 @@ const Chess = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -1800,6 +1770,7 @@ const Cricket = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -1808,7 +1779,7 @@ const Cricket = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -2076,6 +2047,7 @@ const Cycling = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -2084,7 +2056,7 @@ const Cycling = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -2260,7 +2232,7 @@ const Football = (props) => {
 
                 </span>
                 <span className={`${styles.content}`}>
-                  9549847995
+                  9580058180
                   <br />
                   soham.nandy.cd.mst21@itbhu.ac.in
                   <br />
@@ -2305,13 +2277,13 @@ const Football = (props) => {
               >
                 <span className={`${styles.content_header}`}
                 >
-                  Sachin Kumar
+                  Harsh Raj Singh
                   <br />
                 </span>
                 <span className={`${styles.content}`}>
-                  6205237836
+                  9142697620
                   <br />
-                  sachin.kumar.met19@itbhu.ac.in<br /><br />
+                  harsh.raj.chy21@itbhu.ac.in<br /><br />
                 </span>
 
 
@@ -2349,6 +2321,7 @@ const Football = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -2357,7 +2330,7 @@ const Football = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -2626,6 +2599,7 @@ const Handball = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -2634,7 +2608,7 @@ const Handball = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -2903,6 +2877,7 @@ const Hockey = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -2911,7 +2886,7 @@ const Hockey = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -3156,6 +3131,7 @@ const Kabbadi = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -3164,7 +3140,7 @@ const Kabbadi = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -3451,6 +3427,7 @@ const Khokho = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -3459,7 +3436,7 @@ const Khokho = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -3751,6 +3728,7 @@ const Powerlifting = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -3759,7 +3737,7 @@ const Powerlifting = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -4006,6 +3984,7 @@ const Squash = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -4014,7 +3993,7 @@ const Squash = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -4244,6 +4223,7 @@ const TableTennis = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -4252,7 +4232,7 @@ const TableTennis = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -4481,6 +4461,7 @@ const Taekwondo = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -4489,7 +4470,7 @@ const Taekwondo = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -4719,6 +4700,7 @@ const Tennis = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -4727,7 +4709,7 @@ const Tennis = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -5012,6 +4994,7 @@ const Volleyball = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -5020,7 +5003,7 @@ const Volleyball = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>
@@ -5309,6 +5292,7 @@ const WeightLifting = (props) => {
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: 600,
+                textAlign: "center",
                 wordWrap: "break-word"
               }}
             >
@@ -5317,7 +5301,7 @@ const WeightLifting = (props) => {
                 rel="noreferrer"
                 className={`${styles.rulebook}`}
               >
-                View&nbsp;Rulebook
+                View Rulebook
               </a>
             </div>
           </div>

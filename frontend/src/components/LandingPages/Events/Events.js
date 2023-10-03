@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-// import aquatics from './aquatics.png';
+import aquatics from './image/aquatics.png';
+import aquaticshover from './image/aquaticshover.png';
 import athletics from './image/athletics.png';
 import athleticshover from './image/athleticshover.png';
 import basketball from './image/basketball.png';
@@ -44,7 +45,7 @@ import styles from './Events.module.css';
 import { Link } from 'react-router-dom';
 import Carousel from '../Home/Carousel/Carouselhp';
 import {
-  // Aqautics,
+  Aquatics,
   Athletics,
   Badminton,
   Basketball,
@@ -87,6 +88,8 @@ const Events = () => {
   const [showResults16, setShowResults16] = useState(false);
   const [showResults17, setShowResults17] = useState(false);
   const [showResults18, setShowResults18] = useState(false);
+  const [showResults19, setShowResults19] = useState(false);
+
   const [athletics1, setathletics1] = useState(athletics);
   const athleticsMouseEnter = () => {
     setathletics1(athleticshover);
@@ -220,6 +223,14 @@ const Events = () => {
   const chessMouseLeave = () => {
     setchess1(chess);
   };
+  const [aquatics1, setaquatics1] = useState(aquatics);
+  const aquaticsMouseEnter = () => {
+    setaquatics1(aquaticshover);
+    console.log("entered");
+  };
+  const aquaticsMouseLeave = () => {
+    setaquatics1(aquatics);
+  };
 
 
   const onClick0 = () => {
@@ -242,6 +253,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick1 = () => {
     setShowResults0(false);
@@ -263,6 +275,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick2 = () => {
     setShowResults0(false);
@@ -284,6 +297,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick3 = () => {
     setShowResults0(false);
@@ -305,6 +319,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick4 = () => {
     setShowResults0(false);
@@ -326,6 +341,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick5 = () => {
     setShowResults0(false);
@@ -347,6 +363,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick6 = () => {
     setShowResults0(false);
@@ -368,6 +385,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick7 = () => {
     setShowResults0(false);
@@ -389,6 +407,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick8 = () => {
     setShowResults0(false);
@@ -410,6 +429,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick9 = () => {
     setShowResults0(false);
@@ -431,6 +451,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick10 = () => {
     setShowResults0(false);
@@ -452,6 +473,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick11 = () => {
     setShowResults0(false);
@@ -473,6 +495,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick12 = () => {
     setShowResults0(false);
@@ -494,6 +517,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick13 = () => {
     setShowResults0(false);
@@ -515,6 +539,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick14 = () => {
     setShowResults0(false);
@@ -536,6 +561,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick15 = () => {
     setShowResults0(false);
@@ -557,6 +583,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick16 = () => {
     setShowResults0(false);
@@ -578,6 +605,7 @@ const Events = () => {
     setShowResults16(!showResults16);
     setShowResults17(false);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick17 = () => {
     setShowResults0(false);
@@ -599,6 +627,7 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(!showResults17);
     setShowResults18(false);
+    setShowResults19(false);
   };
   const onClick18 = () => {
     setShowResults0(false);
@@ -620,6 +649,29 @@ const Events = () => {
     setShowResults16(false);
     setShowResults17(false);
     setShowResults18(!showResults18);
+    setShowResults19(false);
+  };
+  const onClick19 = () => {
+    setShowResults0(false);
+    setShowResults1(false);
+    setShowResults2(false);
+    setShowResults3(false);
+    setShowResults4(false);
+    setShowResults5(false);
+    setShowResults6(false);
+    setShowResults7(false);
+    setShowResults8(false);
+    setShowResults9(false);
+    setShowResults10(false);
+    setShowResults11(false);
+    setShowResults12(false);
+    setShowResults13(false);
+    setShowResults14(false);
+    setShowResults15(false);
+    setShowResults16(false);
+    setShowResults17(false);
+    setShowResults18(false);
+    setShowResults19(!showResults18);
   };
 
   return (
@@ -634,12 +686,6 @@ const Events = () => {
           <div
             className={`${styles.col_md_7} ${styles.heading_section} ${styles.text_center}`}
           >
-            {/* <h3
-              className={`${styles.subheading}`}
-              style={{ color: '#6db549', fontWeight: 'bold' }}
-            >
-              Find Your Interest
-            </h3> */}
 
           </div>
         </div>
@@ -655,18 +701,7 @@ const Events = () => {
           </div>
           <div className={styles.scrollablediv}>
             <div className={`${styles.row}`}>
-              {/* <div
-            className={`${styles.col_2} ${styles.padding} ${styles.shake}`}
-            id="0"
-          >
-            <img
-              className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
-              src={aquatics}
-              alt=""
-              onClick={onClick0}
-            />
-          </div> */}
-
+             
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="0" onMouseEnter={athleticsMouseEnter}
@@ -684,6 +719,7 @@ const Events = () => {
               {showResults0 ? (
                 <Athletics changeState={(showResult0) => setShowResults0(false)} />
               ) : null}
+
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="1"
@@ -715,7 +751,7 @@ const Events = () => {
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={basketball1}
                   alt=""
-                 
+                  
                 />
                 <p>Basketball</p>
               </div>
@@ -737,41 +773,13 @@ const Events = () => {
                 />
                 <p>Boxing</p>
               </div>
-              {/*<div
-            className={`${styles.col_2} ${styles.padding} ${styles.shake}`}
-            id="0"
-          >
-            <img
-              className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
-              src={chess}
-              alt=""
-              onClick={onClick4}
-            />
-          </div>*/}
-
-              {/* {showResults0 ? (
-            <Aqautics changeState={(showResult0) => setShowResults0(false)} />
-          ) : null} */}
-              
-              
-             
               {showResults3 ? (
                 <Boxing changeState={(showResult3) => setShowResults3(false)} />
               ) : null}
             </div>
 
             <div className={`${styles.row}`}>
-              {/* <div
-            className={`${styles.col_2} ${styles.padding} ${styles.shake}`}
-            id="0"
-          >
-            <img
-              className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
-              src={boxing}
-              alt=""
-              onClick={onClick4}
-            />
-          </div> */}
+
 
               <div
                 className={`${styles.col_2} ${styles.padding} `}
@@ -784,14 +792,13 @@ const Events = () => {
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={chess1}
                   alt=""
-                
+                 
                 />
                 <p>Chess</p>
               </div>
               {showResults4 ? (
                 <Chess changeState={(showResult4) => setShowResults4(false)} />
               ) : null}
-
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="1"
@@ -803,7 +810,7 @@ const Events = () => {
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={cricket1}
                   alt=""
-                  
+                 
                 />
                 <p>Cricket</p>
               </div>
@@ -821,7 +828,7 @@ const Events = () => {
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={cycling1}
                   alt=""
-                 
+
                 />
                 <p>Cycling</p>
 
@@ -846,26 +853,7 @@ const Events = () => {
 
               </div>
 
-              {/*<div
-            className={`${styles.col_2} ${styles.padding} ${styles.shake}`}
-            id="0"
-          >
-            <img
-              className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
-              src={handball}
-              alt=""
-              onClick={onClick8}
-            />
-          </div>*/}
-              {/* {showResults4 ? (
-            <Boxing changeState={(showResult4) => setShowResults4(false)} />
-          ) : null} */}
-              {/* {showResults4 ? (
-            <Squash changeState={(showResult5) => setShowResults5(false)} />
-          ) : null} */}
-              
-              
-              
+
               {showResults7 ? (
                 <Football changeState={(showResult7) => setShowResults7(false)} />
               ) : null}
@@ -903,7 +891,7 @@ const Events = () => {
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={hockey1}
                   alt=""
-                 
+                  
                 />
                 <p>Hockey</p>
 
@@ -930,7 +918,6 @@ const Events = () => {
               {showResults10 ? (
                 <Kabbadi changeState={(showResult10) => setShowResults10(false)} />
               ) : null}
-
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="3"
@@ -947,34 +934,6 @@ const Events = () => {
                 <p>kho-kho</p>
 
               </div>
-              {/*<div
-            className={`${styles.col_2} ${styles.padding} ${styles.shake}`}
-            id="1"
-          >
-            <img
-              className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
-              src={tabletennis}
-              alt=""
-              onClick={onClick13}
-            />
-          </div>*/}
-              {/*<div
-            className={`${styles.col_2} ${styles.padding} ${styles.shake}`}
-            id="3"
-          >
-            <img
-              className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
-              src={tennis}
-              alt=""
-              onClick={onClick15}
-            />
-          </div>*/}
-              {/* {showResults8 ? (
-            <Cycling changeState={(showResult8) => setShowResults8(false)} />
-          ) : null} */}
-
-              
-              
               
               {showResults11 ? (
                 <Khokho changeState={(showResult11) => setShowResults11(false)} />
@@ -993,7 +952,7 @@ const Events = () => {
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={powerlifting1}
                   alt=""
-               
+                 
                 />
                 <p>Powerlifting</p>
 
@@ -1035,6 +994,7 @@ const Events = () => {
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={tabletennis1}
                   alt=""
+                 
                 />
                 <p>TableTennis</p>
 
@@ -1056,19 +1016,12 @@ const Events = () => {
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={taekwondo1}
                   alt=""
+                 
                 />
                 <p>Taekwondo</p>
 
               </div>
-              {/* {showResults12 ? (
-            <Kabbadi changeState={(showResult12) => setShowResults12(false)} />
-          ) : null}
-          {showResults13 ? (
-            <Khokho changeState={(showResult13) => setShowResults13(false)} />
-          ) : null} */}
-              
-              
-              
+             
               {showResults15 ? (
                 <Taekwondo
                   changeState={(showResult15) => setShowResults15(false)}
@@ -1077,11 +1030,7 @@ const Events = () => {
             </div>
 
             <div className={`${styles.row} ${styles.lastrow} `}>
-              {/*<div
-            className={`${styles.col_2} ${styles.padding1} ${styles.shake}`}
-            id="0"
-         ></div> */}
-
+             
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="0"
@@ -1093,6 +1042,7 @@ const Events = () => {
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={tennis1}
                   alt=""
+                
                 />
                 <p>Tennis</p>
 
@@ -1112,6 +1062,7 @@ const Events = () => {
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={volleyball1}
                   alt=""
+                 
                 />
                 <p>Volleyball</p>
 
@@ -1133,26 +1084,37 @@ const Events = () => {
                   className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
                   src={weightlifting1}
                   alt=""
+                
                 />
                 <p>Weightlifting</p>
 
               </div>
-              <div
-                className={`${styles.col_2} ${styles.padding} ${styles.emptyblock} `} style={{ backgroundColor: 'transparent' }}></div>
-
-              {/* <div
-            className={`${styles.col_2} ${styles.padding1} ${styles.shake}`}
-            id="3"
-          ></div> */}
-
-              {/* {showResults16 ? (
-            <Tennis changeState={(showResult0) => setShowResults16(false)} />
-          ) : null} */}
-              
-              
               {showResults18 ? (
                 <WeightLifting
                   changeState={(showResult18) => setShowResults18(false)}
+                />
+              ) : null}
+
+              <div
+                className={`${styles.col_2} ${styles.padding} `}
+                id="2"
+                onMouseEnter={aquaticsMouseEnter}
+                onMouseLeave={aquaticsMouseLeave}
+                onClick={onClick19}
+              >
+                <img
+                  className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
+                  src={aquatics1}
+                  alt=""
+                 
+                />
+                <p>Aquatics</p>
+
+              </div>
+
+              {showResults19 ? (
+                <Aquatics
+                  changeState={(showResult19) => setShowResults19(false)}
                 />
               ) : null}
             </div>
