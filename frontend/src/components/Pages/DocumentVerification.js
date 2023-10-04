@@ -31,6 +31,7 @@ function DocumentVerification() {
 			<table className="table">
 				<thead>
 					<tr>
+						<th>#</th>
 						<th>ID</th>
 						<th>Document</th>
 						<th>Is Verified</th>
@@ -44,7 +45,7 @@ function DocumentVerification() {
 				</thead>
 				<tbody>
 					{documents.map((document, index) => (
-						<DocumentRow key={index} document={document} setErrorMessage={setErrorMessage} />
+						<DocumentRow key={index} document={document} serialNumber={index + 1} setErrorMessage={setErrorMessage} />
 					))}
 				</tbody>
 			</table>
@@ -55,10 +56,11 @@ function DocumentVerification() {
 
 DocumentRow.propTypes = {
 	document: PropTypes.object.isRequired,
+	serialNumber: PropTypes.number.isRequired,
 	setErrorMessage: PropTypes.func.isRequired,
 };
 
-function DocumentRow({ document, setErrorMessage }) {
+function DocumentRow({ document,serialNumber, setErrorMessage }) {
 	const [modified, setModified] = useState(false);
 	const [newDoc, setNewDoc] = useState({ ...document });
 	const { token } = useContext(AuthContext);
@@ -84,6 +86,7 @@ function DocumentRow({ document, setErrorMessage }) {
 	return (
 		<>
 			<tr>
+				<td>{serialNumber}</td>
 				<td>{document.id} </td>
 				<td><KeyValuePairsList data={newDoc.document} /> </td>
 				<td>
