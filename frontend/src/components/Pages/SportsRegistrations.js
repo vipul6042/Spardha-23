@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
+import "./table.css";
 
 function SportsRegistrations() {
 	const baseUrl = process.env.REACT_APP_BASE_URL;
@@ -34,7 +35,7 @@ function SportsRegistrations() {
 			{contingents.length === 0 ? (
 				<p>No Registrations</p>
 			) : (
-				<table className="registrationTable">
+				<table className="table">
 					<thead>
 						<tr>
 							{Object.keys(contingents[0]).map((key) => (

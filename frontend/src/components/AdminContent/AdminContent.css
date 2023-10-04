@@ -56,7 +56,8 @@ line-height: normal;
     height: 89.5%;
     margin: 15px 15px 12px 12px;
     padding-top: 1px;
-
+    overflow: auto;
+    height: 80vh;
 }
 .topbar{
     height: 75px;

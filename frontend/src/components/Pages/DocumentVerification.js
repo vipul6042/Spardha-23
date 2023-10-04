@@ -2,13 +2,13 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 import axios from "axios";
 import PropTypes from "prop-types";
-
+import "./table.css";
 const baseUrl = process.env.REACT_APP_BASE_URL;
 
 function DocumentVerification() {
 	const baseUrl = process.env.REACT_APP_BASE_URL;
 	const [documents, setDocuments] = useState([]);
-  const [errormsg,setErrorMessage]=useState("")
+	const [errormsg, setErrorMessage] = useState("")
 	const { token } = useContext(AuthContext);
 	useEffect(function () {
 		axios
@@ -28,7 +28,7 @@ function DocumentVerification() {
 	return (
 		<>
 			<h1>Document Verification</h1>
-			<table>
+			<table className="table">
 				<thead>
 					<tr>
 						<th>ID</th>
@@ -44,40 +44,40 @@ function DocumentVerification() {
 				</thead>
 				<tbody>
 					{documents.map((document, index) => (
-						<DocumentRow key={index} document={document} setErrorMessage={setErrorMessage}/>
+						<DocumentRow key={index} document={document} setErrorMessage={setErrorMessage} />
 					))}
 				</tbody>
 			</table>
-            <ErrorMessage message={errormsg} />
+			<ErrorMessage message={errormsg} />
 		</>
 	);
 }
 
 DocumentRow.propTypes = {
 	document: PropTypes.object.isRequired,
-  setErrorMessage: PropTypes.func.isRequired,
+	setErrorMessage: PropTypes.func.isRequired,
 };
 
-function DocumentRow({ document,setErrorMessage }) {
+function DocumentRow({ document, setErrorMessage }) {
 	const [modified, setModified] = useState(false);
 	const [newDoc, setNewDoc] = useState({ ...document });
 	const { token } = useContext(AuthContext);
 	function submitHandler() {
-    setModified(false)
+		setModified(false)
 		axios
-			.patch(baseUrl + "/documents/verify/" + document.id+"/", newDoc, {
+			.patch(baseUrl + "/documents/verify/" + document.id + "/", newDoc, {
 				headers: {
 					Authorization: `Token ${token}`,
 				},
 			})
 			.then(function () {
 				setModified(false);
-        setErrorMessage("")
+				setErrorMessage("")
 			})
 			.catch(function (error) {
 				console.log(error);
-        setModified(true);
-        setErrorMessage("Error in syncing changes")
+				setModified(true);
+				setErrorMessage("Error in syncing changes")
 			});
 	}
 
@@ -85,7 +85,7 @@ function DocumentRow({ document,setErrorMessage }) {
 		<>
 			<tr>
 				<td>{document.id} </td>
-				<td><KeyValuePairsList data={newDoc.document}/> </td>
+				<td><KeyValuePairsList data={newDoc.document} /> </td>
 				<td>
 					<input
 						type="checkbox"
@@ -136,7 +136,7 @@ function DocumentRow({ document,setErrorMessage }) {
 }
 
 ErrorMessage.propTypes = {
-  message: PropTypes.string.isRequired,
+	message: PropTypes.string.isRequired,
 };
 
 function ErrorMessage({ message }) {
@@ -149,7 +149,7 @@ function ErrorMessage({ message }) {
 }
 
 KeyValuePairsList.propTypes = {
-  data: PropTypes.object.isRequired,
+	data: PropTypes.object.isRequired,
 };
 function KeyValuePairsList({ data }) {
 	// Convert the object into an array of key-value pairs

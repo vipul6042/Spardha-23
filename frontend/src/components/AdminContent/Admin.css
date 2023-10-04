@@ -38,10 +38,11 @@
   .sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: rgba(118, 14, 83, 1);
+    background: #4D44B5;
     color: #fff;
-    margin-left: -250px;
+    /* margin-left: -250px; */
     transition: all 0.5s;
+    height: 100%;
   }
   
   .sidebar.is-open {

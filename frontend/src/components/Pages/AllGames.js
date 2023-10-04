@@ -17,13 +17,13 @@ const AllGames = () => {
   const [selectedSport, setSelectedSport] = useState();
   const [isLoaded, setIsLoaded] = useState(false);
   const { token } = useContext(AuthContext);
-  useEffect(()=> {
+  useEffect(() => {
     axios
       .get(MICROSERVICE_URL_GAME, {
-				headers: {
-					Authorization: `Token ${token}`,
-				},
-			})
+        headers: {
+          Authorization: `Token ${token}`,
+        },
+      })
       .then((resp) => {
         let games = resp.data.data;
         let sports_o = {};
@@ -73,4 +73,4 @@ function Loading() {
   );
 }
 
-export default AllGames ;
+export default AllGames;

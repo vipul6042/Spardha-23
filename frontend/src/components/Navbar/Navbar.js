@@ -14,7 +14,7 @@ function Navbar() {
 		<div className={styles.navbar}>
 			{isLoggedIn && (
 				<button className={styles.logOut} onClick={logoutHandler}>
-					<Link to="/login">Logout</Link>
+					<Link to="/login" style={{color:'white',textDecoration:'none'}}>Logout</Link>
 				</button>
 			)}
 		</div>

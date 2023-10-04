@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
+import "./table.css";
 
 function AllUsers() {
 	const baseUrl = process.env.REACT_APP_BASE_URL;
@@ -26,14 +27,14 @@ function AllUsers() {
 				setUsers(res.data);
 			})
 			.catch((err) => console.error(err));
-	}, [baseUrl,token]);
+	}, [baseUrl, token]);
 	return (
 		<div>
 			<h1>All Users</h1>
 			{users.length === 0 ? (
 				<p>No Users</p>
 			) : (
-				<table>
+				<table className="table">
 					<thead>
 						<tr>
 							{Object.keys(users[0]).map((key) => (
