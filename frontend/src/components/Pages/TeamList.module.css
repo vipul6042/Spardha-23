@@ -13,7 +13,10 @@
   padding: 10px;
   text-align: center;
 }
-
+.teamTable th {
+	background-color: rgb(109, 113, 111);
+	color: rgb(0, 0, 0);
+}
 .noGames {
   margin: 20px;
   font-size: 18px;

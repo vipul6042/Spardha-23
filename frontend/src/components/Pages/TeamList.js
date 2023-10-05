@@ -17,6 +17,7 @@ const TeamList = ({ teams }) => {
 			<table className={styles.teamTable}>
 				<thead>
 					<tr>
+						<th>#</th>
 						{teamKeys.map((key) => (
 							<th key={key}>{key}</th>
 						))}
@@ -25,6 +26,7 @@ const TeamList = ({ teams }) => {
 				<tbody>
 					{teams.map((team, index) => (
 						<tr key={index}>
+							<td>{index+1}</td>
 							{teamKeys.map((key) => (
 								<td key={key}>{team[key]}</td>
 							))}
