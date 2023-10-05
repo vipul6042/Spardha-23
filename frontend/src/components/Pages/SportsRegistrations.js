@@ -38,6 +38,7 @@ function SportsRegistrations() {
 				<table className="table">
 					<thead>
 						<tr>
+							<th>#</th>
 							{Object.keys(contingents[0]).map((key) => (
 								<th key={key}>{formatText(key)}</th>
 							))}
@@ -46,6 +47,7 @@ function SportsRegistrations() {
 					<tbody>
 						{contingents.map((contingent, index) => (
 							<tr key={index}>
+								<td>{index+1}</td>
 								{Object.keys(contingent).map((key) => (
 									<td key={key + contingent[key]}>
 										{key === "games"

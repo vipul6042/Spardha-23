@@ -37,6 +37,7 @@ function AllUsers() {
 				<table className="table">
 					<thead>
 						<tr>
+							<th>#</th>
 							{Object.keys(users[0]).map((key) => (
 								<th key={key}>{formatText(key)}</th>
 							))}
@@ -45,6 +46,7 @@ function AllUsers() {
 					<tbody>
 						{users.map((user, index) => (
 							<tr key={index}>
+								<td>{index+1}</td>
 								{Object.keys(user).map((key) => (
 									<td key={key + user[key]}>{user[key]}</td>
 								))}
