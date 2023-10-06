@@ -15,12 +15,13 @@ class AllDocumentView(generics.GenericAPIView):
         manual_parameters=[token_param]
     )
     def get(self, request):
-        if request.user.is_staff or request.user.is_admin:
-            documents = Document.objects.select_related("verified_by")
-            serializer = AllDocumentSerializer(documents, many=True)
-            return Response(serializer.data, status=status.HTTP_200_OK)
-        else:
-            return Response({"error": "You are not allowed to access this endpoint"}, status=status.HTTP_403_FORBIDDEN)
+        # if request.user.is_staff or request.user.is_admin:
+        #     documents = Document.objects.select_related("verified_by")
+        #     serializer = AllDocumentSerializer(documents, many=True)
+        #     return Response(serializer.data, status=status.HTTP_200_OK)
+        # else:
+        #     return Response({"error": "You are not allowed to access this endpoint"}, status=status.HTTP_403_FORBIDDEN)
+        return Response(status=status.HTTP_503_SERVICE_UNAVAILABLE)
     
     @swagger_auto_schema(
         responses={
@@ -30,10 +31,11 @@ class AllDocumentView(generics.GenericAPIView):
         }
     )
     def post(self, request):
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        document=serializer.save()
-        return Response({"success": "Document has been created successfully"}, status=status.HTTP_201_CREATED)
+        # serializer = self.get_serializer(data=request.data)
+        # serializer.is_valid(raise_exception=True)
+        # document=serializer.save()
+        # return Response({"success": "Document has been created successfully"}, status=status.HTTP_201_CREATED)
+        return Response(status=status.HTTP_503_SERVICE_UNAVAILABLE)
 
 class DocumentView(generics.GenericAPIView):
     serializer_class = DocumentUpdateSerializer
@@ -50,14 +52,15 @@ class DocumentView(generics.GenericAPIView):
     )
     def patch(self, request, id):
         try:
-            data_to_modify = request.data
-            data_to_modify["verified_by"] = request.user.id
-            document_to_verify = Document.objects.get(id=id)
-            document_to_verify.verification_time = timezone.now()
-            serializer = self.get_serializer(document_to_verify, data=data_to_modify,partial=True)
-            serializer.is_valid(raise_exception=True)
-            document=serializer.save()
-            return Response({"success": "Document's verification status has been updated successfully"}, status=status.HTTP_204_NO_CONTENT)
+            # data_to_modify = request.data
+            # data_to_modify["verified_by"] = request.user.id
+            # document_to_verify = Document.objects.get(id=id)
+            # document_to_verify.verification_time = timezone.now()
+            # serializer = self.get_serializer(document_to_verify, data=data_to_modify,partial=True)
+            # serializer.is_valid(raise_exception=True)
+            # document=serializer.save()
+            # return Response({"success": "Document's verification status has been updated successfully"}, status=status.HTTP_204_NO_CONTENT)
+            return Response(status=status.HTTP_503_SERVICE_UNAVAILABLE)
         except Exception as e:
             print(e)
             return Response({"error": "The Document does not exist"}, status=status.HTTP_404_NOT_FOUND)
