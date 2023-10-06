@@ -194,7 +194,7 @@ const Chess = (props) => {
 const Cricket = (props) => {
   return (
     <EventCard
-      captainsArray={[new Person("Jai Patel (M)", "7023064941", "shashanksp.met18@iitbhu.ac.in")]}
+      captainsArray={[new Person("Jai Patel (M)", "7023064941", "shashanksp.met18@itbhu.ac.in")]}
       imageSrc={cricket}
       eventName="Cricket"
       rulebookPDF={CricketPDF}
@@ -206,7 +206,7 @@ const Cricket = (props) => {
 const Cycling = (props) => {
   return (
     <EventCard
-      captainsArray={[new Person("Abhishek (M)", "9417044824", "abhishek.student.cer20@iitbhu.ac.in")]}
+      captainsArray={[new Person("Abhishek (M)", "9417044824", "abhishek.student.cer20@itbhu.ac.in")]}
       imageSrc={cycling}
       eventName="Cycling"
       rulebookPDF={CyclingPDF}
