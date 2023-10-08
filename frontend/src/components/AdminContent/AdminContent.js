@@ -18,12 +18,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { FaUserAlt } from 'react-icons/fa';
 import { FaEdit } from 'react-icons/fa';
 import { HiUsers } from "react-icons/hi";
+import { MdPostAdd } from "react-icons/md";
 import { CgFileDocument } from "react-icons/cg";
 import { IoMdBasketball } from "react-icons/io";
 import AllUsers from '../Pages/AllUsers';
 import SportsRegistrations from '../Pages/SportsRegistrations';
 import DocumentVerification from '../Pages/DocumentVerification';
 import AllGames from '../Pages/AllGames';
+import Fixtures from '../Pages/fitures';
 
 // import { FaSignOutAlt } from 'react-icons/fa';
 
@@ -160,6 +162,19 @@ const Admin = () => {
                 All Games
               </NavLink>
             </NavItem>
+            <NavItem className="item_nav">
+              <NavLink
+                tag={Link}
+                //   to={'/allGames'}
+                onClick={() => {
+                  setPage('fixtures');
+                }}
+              >
+                {/* <FontAwesomeIcon icon={faImage} className="mr-2 icon_bar" /> */}
+                <MdPostAdd />
+                Fixtures
+              </NavLink>
+            </NavItem>
             {/* <NavItem>
           <NavLink tag={Link} to={"/faq"}>
             <FontAwesomeIcon icon={faQuestion} className="mr-2" />
@@ -269,6 +284,8 @@ const Admin = () => {
               return <AllGames />
             case 'docVerification':
               return <DocumentVerification />
+            case "fixtures":
+              return <Fixtures/>
             default:
               return <AllUsers />;
           }

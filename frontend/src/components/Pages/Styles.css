@@ -221,3 +221,18 @@ body {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.fixtureForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.submitBtn{
+  border-radius: 20px;
+  background-color: #4D44B5;
+}
+.submitBtn:hover{
+  background-color: #4D44B5;
+  color: white;
+}
