@@ -18,6 +18,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { FaUserAlt } from 'react-icons/fa';
 import { FaEdit } from 'react-icons/fa';
 import { HiUsers } from "react-icons/hi";
+import { MdPostAdd } from "react-icons/md";
 import { CgFileDocument } from "react-icons/cg";
 import { IoMdBasketball } from "react-icons/io";
 import AllUsers from '../Pages/AllUsers';
@@ -170,8 +171,8 @@ const Admin = () => {
                 }}
               >
                 {/* <FontAwesomeIcon icon={faImage} className="mr-2 icon_bar" /> */}
-                <IoMdBasketball />
-                fixtures
+                <MdPostAdd />
+                Fixtures
               </NavLink>
             </NavItem>
             {/* <NavItem>

@@ -230,4 +230,9 @@ body {
 }
 .submitBtn{
   border-radius: 20px;
+  background-color: #4D44B5;
+}
+.submitBtn:hover{
+  background-color: #4D44B5;
+  color: white;
 }
