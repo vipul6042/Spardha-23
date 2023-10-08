@@ -8,9 +8,9 @@ const Fixtures = ({ selectedSport }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const apiUrl = process.env.REACT_APP_API_URL;
+    const apiUrl = process.env.REACT_APP_MICROSERVICE_URL;
     axios
-      .get(`${apiUrl}/games/`)
+      .get(`${apiUrl}api/v1/games/`)
       .then((response) => {
         // console.log(response.data)
         setMatchData(response.data.data);
