@@ -13,10 +13,10 @@ function Fixtures() {
   const { token } = useContext(AuthContext);
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const apiUrl = process.env.REACT_APP_API_URL;
+    const apiUrl = process.env.REACT_APP_MICROSERVICE_URL;
 
     try {
-      const response = await fetch(`${apiUrl}/games/`, {
+      const response = await fetch(`${apiUrl}/api/v1/games/`, {
         method: "POST",
         headers: {
           Authorization: `Token ${token}`,
