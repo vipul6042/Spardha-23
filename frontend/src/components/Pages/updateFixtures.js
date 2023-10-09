@@ -1,40 +1,40 @@
-import React, { useState, useContext } from 'react';
-import axios from 'axios';
+import React, { useState, useContext } from "react";
+// import axios from "axios";
 import { AuthContext } from "../../contexts/AuthContext";
 
 function Updatefixtures() {
   const [game, setGame] = useState({
-    game_name: '',
-    game_start: '',
-    game_venue: '',
-    team1: '',
-    team2: '',
+    game_name: "Athletics",
+    game_start: "",
+    game_venue: "",
+    team1: "",
+    team2: "",
     is_completed: false,
   });
   const games = [
-    'Athletics',
-    'Badminton',
-    'Basketball',
-    'Boxing',
-    'Chess',
-    'Cricket',
-    'Cycling',
-    'Football',
-    'Handball',
-    'Hockey',
-    'Kabbadi',
-    'Kho-kho',
-    'Powerlifting',
-    'Squash',
-    'Table Tennis',
-    'Taekwondo',
-    'Tennis',
-    'Volleyball',
-    'Weight Lifting',
+    "Athletics",
+    "Badminton",
+    "Basketball",
+    "Boxing",
+    "Chess",
+    "Cricket",
+    "Cycling",
+    "Football",
+    "Handball",
+    "Hockey",
+    "Kabbadi",
+    "Kho-kho",
+    "Powerlifting",
+    "Squash",
+    "Table Tennis",
+    "Taekwondo",
+    "Tennis",
+    "Volleyball",
+    "Weight Lifting",
   ];
   const { token } = useContext(AuthContext);
 
-  const [gameId, setGameId] = useState(''); // Input field for game_id
+  const [gameId, setGameId] = useState(""); // Input field for game_id
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -49,19 +49,30 @@ function Updatefixtures() {
     e.preventDefault();
 
     try {
-        const apiUrl = process.env.REACT_APP_MICROSERVICE_URL;
+      const apiUrl = process.env.REACT_APP_MICROSERVICE_URL;
 
-      const response = await axios.patch(`${apiUrl}/api/v1/games/${gameId}`,{Headers:{Authorization: `Token ${token}`,}}, game);
-      alert(`Game updated successfully: ${response.data}`);
+      const response = await fetch(`${apiUrl}/api/v1/games/${gameId}`, {
+        method: "PATCH",
+        headers: {
+          Authorization: `Token ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(game),
+      });
+      if (response.ok) {
+        alert("Game information posted successfully!");
+      } else {
+        alert("Failed to post game information.");
+      }
     } catch (error) {
-      alert('Error updating game');
+      alert("Error updating game");
     }
   };
 
   return (
     <div>
       <h1>Update Game</h1>
-      <form onSubmit={handleSubmit} className='fixtureForm'>
+      <form onSubmit={handleSubmit} className="fixtureForm">
         <div>
           <label htmlFor="game_id">Game ID:</label>
           <input
@@ -70,12 +81,18 @@ function Updatefixtures() {
             name="game_id"
             value={gameId}
             onChange={handleGameIdChange}
+            required
           />
         </div>
         <div>
           <label htmlFor="game_name">Game Name:</label>
-          <select value={game.game_name}onChange={handleChange}required  name="game_name" >
-            {games.map((data) =>(
+          <select
+            value={game.game_name}
+            onChange={handleChange}
+            required
+            name="game_name"
+          >
+            {games.map((data) => (
               <option value={data}>{data}</option>
             ))}
           </select>
@@ -88,6 +105,7 @@ function Updatefixtures() {
             name="game_start"
             value={game.game_start}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
@@ -98,6 +116,7 @@ function Updatefixtures() {
             name="game_venue"
             value={game.game_venue}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
@@ -108,6 +127,7 @@ function Updatefixtures() {
             name="team1"
             value={game.team1}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
@@ -118,6 +138,7 @@ function Updatefixtures() {
             name="team2"
             value={game.team2}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
@@ -132,7 +153,9 @@ function Updatefixtures() {
             }
           />
         </div>
-        <button type="submit" className='submitBtn'>Update Game</button>
+        <button type="submit" className="submitBtn">
+          Update Game
+        </button>
       </form>
     </div>
   );
