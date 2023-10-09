@@ -60,9 +60,9 @@ function Updatefixtures() {
         body: JSON.stringify(game),
       });
       if (response.ok) {
-        alert("Game information posted successfully!");
+        alert("Game information updated successfully!");
       } else {
-        alert("Failed to post game information.");
+        alert("Failed to update game information.");
       }
     } catch (error) {
       alert("Error updating game");
