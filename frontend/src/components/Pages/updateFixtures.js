@@ -49,9 +49,9 @@ function Updatefixtures() {
     e.preventDefault();
 
     try {
-        const apiUrl = process.env.REACT_APP_BASE_URL;
+        const apiUrl = process.env.REACT_APP_MICROSERVICE_URL;
 
-      const response = await axios.patch(`${apiUrl}/documents/${gameId}`,{Headers:{Authorization: `Token ${token}`,}}, game);
+      const response = await axios.patch(`${apiUrl}/api/v1/games/${gameId}`,{Headers:{Authorization: `Token ${token}`,}}, game);
       alert(`Game updated successfully: ${response.data}`);
     } catch (error) {
       alert('Error updating game');
