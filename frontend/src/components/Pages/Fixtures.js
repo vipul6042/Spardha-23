@@ -10,6 +10,27 @@ function Fixtures() {
     team2: "",
     is_completed: false,
   });
+  const games = [
+    'Athletics',
+    'Badminton',
+    'Basketball',
+    'Boxing',
+    'Chess',
+    'Cricket',
+    'Cycling',
+    'Football',
+    'Handball',
+    'Hockey',
+    'Kabbadi',
+    'Kho-kho',
+    'Powerlifting',
+    'Squash',
+    'Table Tennis',
+    'Taekwondo',
+    'Tennis',
+    'Volleyball',
+    'Weight Lifting',
+  ];
   const { token } = useContext(AuthContext);
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -50,17 +71,15 @@ function Fixtures() {
 
   return (
     <div>
-      <h2>Post Game Information</h2>
+      <h1>Post Game Information</h1>
       <form onSubmit={handleSubmit} className="fixtureForm">
         <label>
           Game Name:
-          <input
-            type="text"
-            name="game_name"
-            value={formData.game_name}
-            onChange={handleChange}
-            required
-          />
+          <select value={formData.game_name}onChange={handleChange}required  name="game_name" >
+            {games.map((data) =>(
+              <option value={data}>{data}</option>
+            ))}
+          </select>
         </label>
         <label>
           Game Start:

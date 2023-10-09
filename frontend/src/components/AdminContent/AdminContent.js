@@ -16,6 +16,9 @@ import SportsRegistrations from '../Pages/SportsRegistrations';
 import DocumentVerification from '../Pages/DocumentVerification';
 import AllGames from '../Pages/AllGames';
 import Fixtures from '../Pages/Fixtures';
+import Dnufixtures from '../Pages/dnufixtures';
+import AllFixtures from '../Pages/showfixtures';
+// import Updatefixtures from '../Pages/updateFixtures';
 
 const Admin = () => {
   const [sidebarIsOpen, setSidebarOpen] = useState(true);
@@ -106,7 +109,31 @@ const Admin = () => {
               >
                 {/* <FontAwesomeIcon icon={faImage} className="mr-2 icon_bar" /> */}
                 <MdPostAdd />
-                Fixtures
+                Add Fixtures
+              </NavLink>
+            </NavItem>
+            <NavItem className="item_nav">
+              <NavLink
+                tag={Link}
+                //   to={'/allGames'}
+                onClick={() => {
+                  setPage('dnufixtures');
+                }}
+              >
+                <MdPostAdd />
+                Delete and Update Fixtures
+              </NavLink>
+            </NavItem>
+            <NavItem className="item_nav">
+              <NavLink
+                tag={Link}
+                //   to={'/allGames'}
+                onClick={() => {
+                  setPage('Showfixtures');
+                }}
+              >
+                <MdPostAdd />
+                Show Fixtures
               </NavLink>
             </NavItem>
            
@@ -146,6 +173,10 @@ const Admin = () => {
               return <DocumentVerification />
             case "fixtures":
               return <Fixtures/>
+            case "dnufixtures":
+              return <Dnufixtures/>
+            case "Showfixtures":
+              return <AllFixtures/>
             default:
               return <AllUsers />;
           }
