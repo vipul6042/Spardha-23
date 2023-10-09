@@ -3,7 +3,7 @@ import { AuthContext } from "../../contexts/AuthContext";
 
 function Fixtures() {
   const [formData, setFormData] = useState({
-    game_name: "",
+    game_name: "Athletics",
     game_start: "",
     game_venue: "",
     team1: "",
