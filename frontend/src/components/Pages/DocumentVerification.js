@@ -82,7 +82,7 @@ function DocumentRow({ document, serialNumber, setErrorMessage }) {
 		setModified(false)
 		if (newDoc === document) return;
 		axios
-			.patch(baseUrl + "/documents/verify/" + document.id + "/", newDoc, {
+			.patch(baseUrl + "/documents/" + document.id + "/", newDoc, {
 				headers: {
 					Authorization: `Token ${token}`,
 				},
@@ -103,7 +103,7 @@ function DocumentRow({ document, serialNumber, setErrorMessage }) {
 			<tr>
 				<td>{serialNumber}</td>
 				<td>{document.id} </td>
-				<td> <a href={newDoc.document[Object.keys(newDoc.document)[0]]}>Open</a></td>
+				<td> <a href={newDoc.document[Object.keys(newDoc.document)[0]]} target="blank">Open</a></td>
 				<td>
 					<input
 						type="checkbox"
