@@ -13,7 +13,7 @@ const Fixtures = ({ selectedSport , selectedDate}) => {
       .get(`${apiUrl}api/v1/games/`)
       .then((response) => {
         // console.log(response.data)
-        setMatchData(response.data.data);
+        setMatchData(response.data.data.reverse());
         setLoading(false);
       })
       .catch((error) => {
