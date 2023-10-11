@@ -1,8 +1,9 @@
 import React, { useState, useContext } from "react";
 // import axios from "axios";
 import { AuthContext } from "../../contexts/AuthContext";
+import Modal from "react-modal";
 
-function Updatefixtures() {
+const Updatefixtures = ({ isOpen, onRequestClose, gameId }) => {
   const [game, setGame] = useState({
     game_name: "Athletics",
     game_start: "",
@@ -34,16 +35,16 @@ function Updatefixtures() {
   ];
   const { token } = useContext(AuthContext);
 
-  const [gameId, setGameId] = useState(""); // Input field for game_id
+  // const [gameId, setGameId] = useState(""); // Input field for game_id
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setGame({ ...game, [name]: value });
   };
 
-  const handleGameIdChange = (e) => {
-    setGameId(e.target.value);
-  };
+  // const handleGameIdChange = (e) => {
+  //   setGameId(e.target.value);
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -70,10 +71,14 @@ function Updatefixtures() {
   };
 
   return (
-    <div>
+    <Modal
+      isOpen={isOpen}
+      onRequestClose={onRequestClose}
+      contentLabel="Updare item"
+    >
       <h1>Update Game</h1>
       <form onSubmit={handleSubmit} className="fixtureForm">
-        <div>
+        {/* <div>
           <label htmlFor="game_id">Game ID:</label>
           <input
             type="text"
@@ -83,7 +88,7 @@ function Updatefixtures() {
             onChange={handleGameIdChange}
             required
           />
-        </div>
+        </div> */}
         <div>
           <label htmlFor="game_name">Game Name:</label>
           <select
@@ -153,12 +158,13 @@ function Updatefixtures() {
             }
           />
         </div>
+        <button className="submitBtn" onClick={onRequestClose}>Cancel</button>
         <button type="submit" className="submitBtn">
           Update Game
         </button>
       </form>
-    </div>
+    </Modal>
   );
-}
+};
 
 export default Updatefixtures;

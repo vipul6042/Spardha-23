@@ -1,7 +1,8 @@
-import {  useContext,useState } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
+import Modal from "react-modal";
 
-function Fixtures() {
+const AddFixtures = ({ isOpen, onRequestClose }) => {
   const [formData, setFormData] = useState({
     game_name: "Athletics",
     game_start: "",
@@ -11,25 +12,25 @@ function Fixtures() {
     is_completed: false,
   });
   const games = [
-    'Athletics',
-    'Badminton',
-    'Basketball',
-    'Boxing',
-    'Chess',
-    'Cricket',
-    'Cycling',
-    'Football',
-    'Handball',
-    'Hockey',
-    'Kabbadi',
-    'Kho-kho',
-    'Powerlifting',
-    'Squash',
-    'Table Tennis',
-    'Taekwondo',
-    'Tennis',
-    'Volleyball',
-    'Weight Lifting',
+    "Athletics",
+    "Badminton",
+    "Basketball",
+    "Boxing",
+    "Chess",
+    "Cricket",
+    "Cycling",
+    "Football",
+    "Handball",
+    "Hockey",
+    "Kabbadi",
+    "Kho-kho",
+    "Powerlifting",
+    "Squash",
+    "Table Tennis",
+    "Taekwondo",
+    "Tennis",
+    "Volleyball",
+    "Weight Lifting",
   ];
   const { token } = useContext(AuthContext);
   const handleSubmit = async (e) => {
@@ -70,13 +71,22 @@ function Fixtures() {
   };
 
   return (
-    <div>
+    <Modal
+      isOpen={isOpen}
+      onRequestClose={onRequestClose}
+      contentLabel="Delete Confirmation"
+    >
       <h1>Post Game Information</h1>
       <form onSubmit={handleSubmit} className="fixtureForm">
         <label>
           Game Name:
-          <select value={formData.game_name}onChange={handleChange}required  name="game_name" >
-            {games.map((data) =>(
+          <select
+            value={formData.game_name}
+            onChange={handleChange}
+            required
+            name="game_name"
+          >
+            {games.map((data) => (
               <option value={data}>{data}</option>
             ))}
           </select>
@@ -121,12 +131,13 @@ function Fixtures() {
             required
           />
         </label>
+        <button onClick={onRequestClose}>Cancel</button>
         <button type="submit" className="submitBtn">
           Submit
         </button>
       </form>
-    </div>
+    </Modal>
   );
-}
+};
 
-export default Fixtures;
+export default AddFixtures;

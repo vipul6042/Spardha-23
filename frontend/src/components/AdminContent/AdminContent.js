@@ -99,7 +99,7 @@ const Admin = () => {
                 All Games
               </NavLink>
             </NavItem>
-            <NavItem className="item_nav">
+            {/* <NavItem className="item_nav">
               <NavLink
                 tag={Link}
                 //   to={'/allGames'}
@@ -107,7 +107,7 @@ const Admin = () => {
                   setPage('fixtures');
                 }}
               >
-                {/* <FontAwesomeIcon icon={faImage} className="mr-2 icon_bar" /> */}
+                {/* <FontAwesomeIcon icon={faImage} className="mr-2 icon_bar" /> *
                 <MdPostAdd />
                 Add Fixtures
               </NavLink>
@@ -123,7 +123,7 @@ const Admin = () => {
                 <MdPostAdd />
                 Delete and Update Fixtures
               </NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem className="item_nav">
               <NavLink
                 tag={Link}
@@ -133,7 +133,7 @@ const Admin = () => {
                 }}
               >
                 <MdPostAdd />
-                Show Fixtures
+                Fixtures
               </NavLink>
             </NavItem>
            
