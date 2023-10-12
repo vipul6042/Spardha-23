@@ -60,7 +60,16 @@ const Fixtures = ({ selectedSport, selectedDate }) => {
   return (
     <div className="Supreme">
       <div>
-        <button onClick={openAdd}>add</button>
+        <button 
+          onClick={openAdd}   
+            style={{
+              backgroundColor: 'cornflowerblue',
+              borderRadius: '9px',
+              color: 'white', // You might want to set the text color
+              padding: '15px', // Add some padding for a better visual appearance
+              margin: '5px'
+            }}
+        >Add</button>
         <AddFixtures isOpen={isAddOpen} onRequestClose={closeAdd} />
       </div>
       {loading ? (
@@ -95,8 +104,22 @@ const Fixtures = ({ selectedSport, selectedDate }) => {
                   <td>{data.team1}</td>
                   <td>{data.team2}</td>
                   <td style={{gap:'10px',display:'flex'}}>
-                    <button onClick={openDelete}>delete</button>
-                    <button onClick={openUpdate}>Edit</button>
+                    <button 
+                      onClick={openDelete}
+                      style={{
+                        backgroundColor: 'red',
+                        borderRadius: '9px',
+                        color: 'white', // You might want to set the text color
+                        padding: '15px', // Add some padding for a better visual appearance
+                        }}>Delete</button>
+                    <button 
+                      onClick={openUpdate}
+                      style={{
+                        backgroundColor: 'green',
+                        borderRadius: '9px',
+                        color: 'white', // You might want to set the text color
+                        padding: '15px', // Add some padding for a better visual appearance
+                      }}>Edit</button>
                   </td>
                   <DeleteGame
                     isOpen={isDeleteOpen}

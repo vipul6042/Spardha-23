@@ -57,6 +57,10 @@ const AddFixtures = ({ isOpen, onRequestClose }) => {
           team2: "",
           is_completed: false,
         });
+
+        // Automatically refresh the page
+      window.location.reload();
+
       } else {
         alert("Failed to post game information.");
       }
@@ -75,8 +79,15 @@ const AddFixtures = ({ isOpen, onRequestClose }) => {
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Delete Confirmation"
-    >
-      <h1>Post Game Information</h1>
+      style={{
+        overlay:{},
+        content:{
+          inset: 'auto',
+          marginLeft: '35vw',
+          marginTop: '12vh'
+        }
+      }}
+    >      <h1>Post Game Information</h1>
       <form onSubmit={handleSubmit} className="fixtureForm">
         <label>
           Game Name:
@@ -131,10 +142,14 @@ const AddFixtures = ({ isOpen, onRequestClose }) => {
             required
           />
         </label>
-        <button onClick={onRequestClose}>Cancel</button>
-        <button type="submit" className="submitBtn">
-          Submit
-        </button>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'row',
+          gap: '20px'
+        }}>
+        <button onClick={onRequestClose} className="submitBtn">Cancel</button>
+        <button type="submit" className="submitBtn">Submit</button>
+        </div>
       </form>
     </Modal>
   );

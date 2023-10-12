@@ -27,6 +27,8 @@ const DeleteGame = ({ isOpen, onRequestClose, gameId }) => {
       });
 
       alert(`Game deleted successfully: ${response.data}`);
+      // Automatically refresh the page
+      window.location.reload();
     } catch (error) {
       alert("Error deleting game");
     }
@@ -37,6 +39,14 @@ const DeleteGame = ({ isOpen, onRequestClose, gameId }) => {
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Delete Confirmation"
+      style={{
+        overlay:{},
+        content:{
+          inset: 'auto',
+          marginLeft: '35vw',
+          marginTop: '30vh'
+        }
+      }}
     >
       <h1>Delete Fixture</h1>
       {/* <form onSubmit={handleDelete}>
@@ -55,8 +65,15 @@ const DeleteGame = ({ isOpen, onRequestClose, gameId }) => {
         </button>
       </form> */}
       <p>Are you sure you want to delete this item?</p>
-      <button onClick={handleDelete}>Delete</button>
-      <button onClick={onRequestClose}>Cancel</button>
+      <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        gap: '20px',
+        justifyContent: 'center'
+      }}>
+      <button onClick={handleDelete} className="submitBtn">Delete</button>
+      <button onClick={onRequestClose} className="submitBtn">Cancel</button>
+      </div>
     </Modal>
   );
 };

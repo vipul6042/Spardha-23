@@ -62,6 +62,8 @@ const Updatefixtures = ({ isOpen, onRequestClose, gameId }) => {
       });
       if (response.ok) {
         alert("Game information updated successfully!");
+        // Automatically refresh the page
+      window.location.reload();
       } else {
         alert("Failed to update game information.");
       }
@@ -75,6 +77,14 @@ const Updatefixtures = ({ isOpen, onRequestClose, gameId }) => {
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Updare item"
+      style={{
+        overlay:{},
+        content:{
+          inset: 'auto',
+          marginLeft: '38vw',
+          marginTop: '10vh'
+        }
+      }}
     >
       <h1>Update Game</h1>
       <form onSubmit={handleSubmit} className="fixtureForm">
@@ -158,10 +168,14 @@ const Updatefixtures = ({ isOpen, onRequestClose, gameId }) => {
             }
           />
         </div>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'row',
+          gap: '20px'
+        }}>
         <button className="submitBtn" onClick={onRequestClose}>Cancel</button>
-        <button type="submit" className="submitBtn">
-          Update Game
-        </button>
+        <button type="submit" className="submitBtn">Update Game</button>
+        </div>
       </form>
     </Modal>
   );
