@@ -23,7 +23,7 @@ function App() {
           </div>
           <div>
             {/*<Foot />*/}
-            <CountdownTimer/>
+            {/* <CountdownTimer/> */}
           </div>
         </div>
       </div>
