@@ -30,9 +30,9 @@ const Matches = () => {
   ];
   const [selectedDate, setSelectedDate] = useState('2023-10-13'); 
   const [selectedSport, setSelectedSport] = useState('All');
-  // const handleDateChange = (event) => {
-  //   setSelectedDate(event.target.value);
-  // };
+  const handleDateChange = (event) => {
+    setSelectedDate(event.target.value);
+  };
   const scrollNavbar = (direction) => {
     const navbar = document.getElementById('navbar');
     const step = 200; // Adjust the scroll step as needed
@@ -137,7 +137,7 @@ const Matches = () => {
             </div>
             <div className={`${styles.date}`}>
               {/* <label htmlFor="dateSelect">Select a Date:</label> */}
-              {/* <select
+              <select
                 id="dateSelect"
                 value={selectedDate}
                 onChange={handleDateChange}
