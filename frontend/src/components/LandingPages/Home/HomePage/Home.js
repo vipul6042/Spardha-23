@@ -4,6 +4,7 @@ import './Home.css';
 import Mid from '../MiddleSection/MiddleSection';
 import Carousel from '../Carousel/Carouselhp';
 /*import Foot from '../HomeBottom/HomeBottom';*/
+import Footer from '../Footer/Footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           
           <div>
             <Mid />
+            <Footer/>
           </div>
           <div>
             {/*<Foot />*/}
