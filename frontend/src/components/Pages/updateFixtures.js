@@ -1,8 +1,9 @@
 import React, { useState, useContext } from "react";
 // import axios from "axios";
 import { AuthContext } from "../../contexts/AuthContext";
+import Modal from "react-modal";
 
-function Updatefixtures() {
+const Updatefixtures = ({ isOpen, onRequestClose, gameId }) => {
   const [game, setGame] = useState({
     game_name: "Athletics",
     game_start: "",
@@ -34,16 +35,16 @@ function Updatefixtures() {
   ];
   const { token } = useContext(AuthContext);
 
-  const [gameId, setGameId] = useState(""); // Input field for game_id
+  // const [gameId, setGameId] = useState(""); // Input field for game_id
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setGame({ ...game, [name]: value });
   };
 
-  const handleGameIdChange = (e) => {
-    setGameId(e.target.value);
-  };
+  // const handleGameIdChange = (e) => {
+  //   setGameId(e.target.value);
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -61,6 +62,8 @@ function Updatefixtures() {
       });
       if (response.ok) {
         alert("Game information updated successfully!");
+        // Automatically refresh the page
+      window.location.reload();
       } else {
         alert("Failed to update game information.");
       }
@@ -70,10 +73,22 @@ function Updatefixtures() {
   };
 
   return (
-    <div>
+    <Modal
+      isOpen={isOpen}
+      onRequestClose={onRequestClose}
+      contentLabel="Updare item"
+      style={{
+        overlay:{},
+        content:{
+          inset: 'auto',
+          marginLeft: '38vw',
+          marginTop: '10vh'
+        }
+      }}
+    >
       <h1>Update Game</h1>
       <form onSubmit={handleSubmit} className="fixtureForm">
-        <div>
+        {/* <div>
           <label htmlFor="game_id">Game ID:</label>
           <input
             type="text"
@@ -83,82 +98,83 @@ function Updatefixtures() {
             onChange={handleGameIdChange}
             required
           />
-        </div>
-        <div>
-          <label htmlFor="game_name">Game Name:</label>
+        </div> */}
+        <label className="label">
+          <b>Game Name:</b>
           <select
             value={game.game_name}
             onChange={handleChange}
             required
             name="game_name"
+            style={{width:185}}
           >
             {games.map((data) => (
               <option value={data}>{data}</option>
             ))}
           </select>
-        </div>
-        <div>
-          <label htmlFor="game_start">Game Start:</label>
+        </label>
+        <label className="label">
+          <b>Game Start:</b>
           <input
             type="datetime-local"
-            id="game_start"
             name="game_start"
             value={game.game_start}
             onChange={handleChange}
             required
           />
-        </div>
-        <div>
-          <label htmlFor="game_venue">Game Venue:</label>
+        </label>
+        <label className="label">
+        <b>Game Venue:</b>
           <input
             type="text"
-            id="game_venue"
             name="game_venue"
             value={game.game_venue}
             onChange={handleChange}
             required
           />
-        </div>
-        <div>
-          <label htmlFor="team1">Team 1:</label>
+        </label>
+        <label className="label">
+        <b>Team 1:</b>
           <input
             type="text"
-            id="team1"
             name="team1"
             value={game.team1}
             onChange={handleChange}
             required
           />
-        </div>
-        <div>
-          <label htmlFor="team2">Team 2:</label>
+        </label>
+        <label className="label">
+        <b>Team 2:</b>
           <input
             type="text"
-            id="team2"
             name="team2"
             value={game.team2}
             onChange={handleChange}
             required
           />
-        </div>
-        <div>
-          <label htmlFor="is_completed">Is Completed:</label>
+        </label>
+        <label className="label"><b>Is Completed:
           <input
             type="checkbox"
             id="is_completed"
             name="is_completed"
+            style={{marginLeft:10}}
             checked={game.is_completed}
             onChange={() =>
               setGame({ ...game, is_completed: !game.is_completed })
             }
-          />
+          /></b></label>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'row',
+          gap: '20px'
+        }}>
+        <button className="submitBtn" onClick={onRequestClose}>Cancel</button>
+        <button type="submit" className="submitBtn">Update Game</button>
         </div>
-        <button type="submit" className="submitBtn">
-          Update Game
-        </button>
       </form>
-    </div>
+    </Modal>
   );
-}
+};
 
 export default Updatefixtures;

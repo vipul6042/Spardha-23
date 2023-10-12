@@ -1,7 +1,8 @@
-import {  useContext,useState } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
-
-function Fixtures() {
+import Modal from "react-modal";
+import "./Styles.css"
+const AddFixtures = ({ isOpen, onRequestClose }) => {
   const [formData, setFormData] = useState({
     game_name: "Athletics",
     game_start: "",
@@ -11,25 +12,25 @@ function Fixtures() {
     is_completed: false,
   });
   const games = [
-    'Athletics',
-    'Badminton',
-    'Basketball',
-    'Boxing',
-    'Chess',
-    'Cricket',
-    'Cycling',
-    'Football',
-    'Handball',
-    'Hockey',
-    'Kabbadi',
-    'Kho-kho',
-    'Powerlifting',
-    'Squash',
-    'Table Tennis',
-    'Taekwondo',
-    'Tennis',
-    'Volleyball',
-    'Weight Lifting',
+    "Athletics",
+    "Badminton",
+    "Basketball",
+    "Boxing",
+    "Chess",
+    "Cricket",
+    "Cycling",
+    "Football",
+    "Handball",
+    "Hockey",
+    "Kabbadi",
+    "Kho-kho",
+    "Powerlifting",
+    "Squash",
+    "Table Tennis",
+    "Taekwondo",
+    "Tennis",
+    "Volleyball",
+    "Weight Lifting",
   ];
   const { token } = useContext(AuthContext);
   const handleSubmit = async (e) => {
@@ -56,6 +57,10 @@ function Fixtures() {
           team2: "",
           is_completed: false,
         });
+
+        // Automatically refresh the page
+      window.location.reload();
+
       } else {
         alert("Failed to post game information.");
       }
@@ -70,19 +75,36 @@ function Fixtures() {
   };
 
   return (
-    <div>
-      <h1>Post Game Information</h1>
+    <Modal
+      isOpen={isOpen}
+      onRequestClose={onRequestClose}
+      contentLabel="Delete Confirmation"
+      style={{
+        overlay:{},
+        content:{
+          inset: 'auto',
+          marginLeft: '35vw',
+          marginTop: '12vh'
+        }
+      }}
+    >      <h1>Add Game Information</h1>
       <form onSubmit={handleSubmit} className="fixtureForm">
-        <label>
-          Game Name:
-          <select value={formData.game_name}onChange={handleChange}required  name="game_name" >
-            {games.map((data) =>(
+        <label className="label">
+          <b>Game Name :-</b>
+          <select
+            value={formData.game_name}
+            onChange={handleChange}
+            required
+            name="game_name"
+            style={{width:185}}
+          >
+            {games.map((data) => (
               <option value={data}>{data}</option>
             ))}
           </select>
         </label>
-        <label>
-          Game Start:
+        <label className="label">
+          <b>Game Start :-</b>
           <input
             type="datetime-local"
             name="game_start"
@@ -91,8 +113,8 @@ function Fixtures() {
             required
           />
         </label>
-        <label>
-          Game Venue:
+        <label className="label">
+        <b>Game Venue :-</b>
           <input
             type="text"
             name="game_venue"
@@ -101,8 +123,8 @@ function Fixtures() {
             required
           />
         </label>
-        <label>
-          Team 1:
+        <label className="label">
+        <b>Team 1 :-</b>
           <input
             type="text"
             name="team1"
@@ -111,8 +133,8 @@ function Fixtures() {
             required
           />
         </label>
-        <label>
-          Team 2:
+        <label className="label">
+        <b>Team 2 :-</b>
           <input
             type="text"
             name="team2"
@@ -121,12 +143,17 @@ function Fixtures() {
             required
           />
         </label>
-        <button type="submit" className="submitBtn">
-          Submit
-        </button>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'row',
+          gap: '20px'
+        }}>
+        <button onClick={onRequestClose} className="submitBtn">Cancel</button>
+        <button type="submit" className="submitBtn">Submit</button>
+        </div>
       </form>
-    </div>
+    </Modal>
   );
-}
+};
 
-export default Fixtures;
+export default AddFixtures;

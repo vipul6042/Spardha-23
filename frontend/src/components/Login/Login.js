@@ -265,6 +265,7 @@ function Login() {
               color="success"
               className={`${styles["btn-block"]}`}
               onClick={submitHandler}
+              type="submit"
             >
               {/* <FaPaperPlane
 							color="white"
