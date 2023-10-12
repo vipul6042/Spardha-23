@@ -48,7 +48,7 @@ const DeleteGame = ({ isOpen, onRequestClose, gameId }) => {
         }
       }}
     >
-      <h1>Delete Fixture</h1>
+      <h1 style={{textAlign:'center'}}>Delete Fixture</h1>
       {/* <form onSubmit={handleDelete}>
         <div>
           <label htmlFor="gameId">Game ID:</label>

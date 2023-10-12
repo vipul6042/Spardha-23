@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 import Modal from "react-modal";
-
+import "./Styles.css"
 const AddFixtures = ({ isOpen, onRequestClose }) => {
   const [formData, setFormData] = useState({
     game_name: "Athletics",
@@ -87,23 +87,24 @@ const AddFixtures = ({ isOpen, onRequestClose }) => {
           marginTop: '12vh'
         }
       }}
-    >      <h1>Post Game Information</h1>
+    >      <h1>Add Game Information</h1>
       <form onSubmit={handleSubmit} className="fixtureForm">
-        <label>
-          Game Name:
+        <label className="label">
+          <b>Game Name :-</b>
           <select
             value={formData.game_name}
             onChange={handleChange}
             required
             name="game_name"
+            style={{width:185}}
           >
             {games.map((data) => (
               <option value={data}>{data}</option>
             ))}
           </select>
         </label>
-        <label>
-          Game Start:
+        <label className="label">
+          <b>Game Start :-</b>
           <input
             type="datetime-local"
             name="game_start"
@@ -112,8 +113,8 @@ const AddFixtures = ({ isOpen, onRequestClose }) => {
             required
           />
         </label>
-        <label>
-          Game Venue:
+        <label className="label">
+        <b>Game Venue :-</b>
           <input
             type="text"
             name="game_venue"
@@ -122,8 +123,8 @@ const AddFixtures = ({ isOpen, onRequestClose }) => {
             required
           />
         </label>
-        <label>
-          Team 1:
+        <label className="label">
+        <b>Team 1 :-</b>
           <input
             type="text"
             name="team1"
@@ -132,8 +133,8 @@ const AddFixtures = ({ isOpen, onRequestClose }) => {
             required
           />
         </label>
-        <label>
-          Team 2:
+        <label className="label">
+        <b>Team 2 :-</b>
           <input
             type="text"
             name="team2"
