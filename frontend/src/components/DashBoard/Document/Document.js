@@ -3,8 +3,9 @@ import './Document.css';
 import axios from 'axios';
 
 const Document = () => {
-    const [documentData, setDocumentData] = useState({document:{field:"Value"}});
+    const [documentData, setDocumentData] = useState({ document: { field: "Value" } });
     const [documentUploaded, setDocumentUploaded] = useState(false); // State to track document upload status
+    const role = localStorage.getItem('role');
 
     useEffect(() => {
         const token = localStorage.getItem('token');
@@ -26,18 +27,25 @@ const Document = () => {
         <div className="user-dashboard3 profile_Pad">
             <div className="row_dbProfile">
                 <div>
-                    <div className="doc_upper_content">
-                        {documentUploaded ? (
-                            // UI 2: Display document data and comment if document is uploaded
-                            <UploadedDocumentUI doc={documentData} />
-                        ) : (
-                            // UI 1: Display input field and upload button if document is not uploaded
-                                <NotUploadedDocumentUI setDocumentUploaded={setDocumentUploaded}/>
-                        )}
-                    </div>
-                    <br />
-                    <br />
-                    <br />
+                    {
+                        role === "staff" || role === "admin" ?
+                            <h3 style={{marginTop: "30px"}}> Staff and Admins can't upload documents  </h3>
+                            :
+                            <>
+                                <div className="doc_upper_content">
+                                    {documentUploaded ? (
+                                        // UI 2: Display document data and comment if document is uploaded
+                                        <UploadedDocumentUI doc={documentData} />
+                                    ) : (
+                                        // UI 1: Display input field and upload button if document is not uploaded
+                                        <NotUploadedDocumentUI setDocumentUploaded={setDocumentUploaded} />
+                                    )}
+                                </div>
+                                <br />
+                                <br />
+                                <br />
+                            </>
+                    }
                 </div>
             </div>
         </div>
@@ -46,7 +54,7 @@ const Document = () => {
 
 export default Document;
 //UI2
-const UploadedDocumentUI = ({doc}) => {
+const UploadedDocumentUI = ({ doc }) => {
     const [inputValue, setInputValue] = useState(doc.document[Object.keys(doc.document).at(0)]);
     const docId = doc.id;
 
@@ -73,17 +81,14 @@ const UploadedDocumentUI = ({doc}) => {
     };
 
     let verifVerdict;
-    if(doc.is_verified && doc.is_rejected){
-        verifVerdict="Error from PR team!"//both cannot be simultaneously true
+    if (doc.status === 2) {
+        verifVerdict = "Verfied Successfully!"
     }
-    if (doc.is_verified && !doc.is_rejected) {
-    verifVerdict="Verfied Successfully!"
+    else if (doc.status === 1) {
+        verifVerdict = "Rejected. Please read the comments."
     }
-    if (!doc.is_verified && doc.is_rejected) {
-        verifVerdict="Rejected. Please read the comments."
-    }
-    if (!doc.is_verified && !doc.is_rejected) {
-        verifVerdict="Pending..."
+    else {
+        verifVerdict = "Pending..."
     }
 
     return (
@@ -98,17 +103,17 @@ const UploadedDocumentUI = ({doc}) => {
                     placeholder="Input"
                     value={inputValue}
                     onChange={handleInputChange}
-                    disabled={doc.is_verified}
+                    disabled={doc.status === 2}
                 />
                 <br />
-                <div style={{display: "flex" }}>
-                    <button type="button" className="btn btn-outline-success" id="buttonn" onClick={handleMadeChanges} disabled={doc.is_verified}>I have made Changes</button>
+                <div style={{ display: "flex" }}>
+                    <button type="button" className="btn btn-outline-success" id="buttonn" onClick={handleMadeChanges} disabled={doc.status === 2}>I have made Changes</button>
                 </div>
             </div>
             <div className="comment">
                 <br /><br />
                 <h6>Comments:</h6>
-                <h6>{doc.comments ? doc.comments : "No Comments"}</h6>
+                <h6>{doc.description ? doc.description : "No Comments"}</h6>
             </div>
             <div className="doc_lower_content">
                 <div className="status">
@@ -119,7 +124,7 @@ const UploadedDocumentUI = ({doc}) => {
     );
 };
 //UI1
-const NotUploadedDocumentUI = ({setDocumentUploaded}) => {
+const NotUploadedDocumentUI = ({ setDocumentUploaded }) => {
     const [inputValue, setInputValue] = useState('');
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
@@ -129,7 +134,7 @@ const NotUploadedDocumentUI = ({setDocumentUploaded}) => {
         e.preventDefault();
         const token = localStorage.getItem('token');
         await axios.post(process.env.REACT_APP_BASE_URL + "documents/", {
-            document:{
+            document: {
                 link: inputValue
             }
         }, {
@@ -139,7 +144,7 @@ const NotUploadedDocumentUI = ({setDocumentUploaded}) => {
         });
         setDocumentUploaded(true);
     };
-    
+
     return (
         <>
             <div className="mb-3">
