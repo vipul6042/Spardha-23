@@ -1,7 +1,8 @@
 import React from 'react'
 import './MiddleSection.css'
 import { NavHashLink } from 'react-router-hash-link';
-import Date1 from '../DaysLeft/DaysLeft';
+// import Date1 from '../DaysLeft/DaysLeft';
+import Day_remaining from '../Images/whatsappimage3.png';
 function Mid() {
   return (
     <div>
@@ -18,14 +19,17 @@ function Mid() {
 
 
         
-<NavHashLink   to="/events#events">    <button className="btn2">MATCHES</button></NavHashLink>
+<NavHashLink   to="/matches">    <button className="btn2">MATCHES</button></NavHashLink>
 
           </div>
         </div>
         <div className="right-box">
           <div className='card'>
-            <div className='cdate'>{Date1()}</div>
-            <div className='ctext'>Days Remaining</div>
+            {/* <div className='cdate'>{Date1()}</div> */}
+            <div className='cdate'>
+            <img src={Day_remaining} className='day_remaining_image' alt="Day_remaining" />
+            </div>
+            {/* <div className='ctext'>Day Remaining</div> */}
           </div>
         </div>
       </div>

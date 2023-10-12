@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './ResultFixture.css';
+import versus from './icon/vs.png'
 // import cricket_img from '../Events/image/crickethover.png';
 // import badminton_img from '../Events/image/badmintonhover.png';
-const Fixtures = ({ selectedSport }) => {
+const Fixtures = ({ selectedSport , selectedDate}) => {
   const [matchData, setMatchData] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const apiUrl = process.env.REACT_APP_MICROSERVICE_URL;
     axios
-      .get(`${apiUrl}api/v1/games/`)
+      .get(`${apiUrl}/api/v1/games/`)
       .then((response) => {
         // console.log(response.data)
-        setMatchData(response.data.data);
+        setMatchData(response.data.data.reverse());
         setLoading(false);
       })
       .catch((error) => {
@@ -22,10 +23,15 @@ const Fixtures = ({ selectedSport }) => {
       });
   }, []);
 
-  const filteredMatches =
+    const filterMatches =
     selectedSport === 'All'
       ? matchData
       : matchData.filter((match) => match.game_name === selectedSport);
+
+  const filteredMatches =
+    selectedDate === 'All'
+      ? filterMatches
+      : filterMatches.filter((match) => match.game_start.slice(0,10) === selectedDate);
 
   return (
     <div className="Supreme">
@@ -43,21 +49,23 @@ const Fixtures = ({ selectedSport }) => {
                 /> */}
                 {data.game_name}
               </div>
-              {data.game_start}
+              Time:&nbsp;{data.game_start.slice(11,16)}
             </div>
-            <div className="row2">
+            <div className="row2">Venue:&nbsp;
               {data.game_venue}
               {/* | Round {data.round }*/}
             </div>
 
             <div className="row3" style={{ color: 'black' }}>
               <div className="row4">
-                <div className="rectangle"></div>
+                {/* <div className="rectangle"></div> */}
                 {data.team1}
               </div>
-              <span className="x">X</span>
+              <span className="x">
+                <img src={versus} alt='vs'/>
+              </span>
               <div className="row4">
-                <div className="rectangle"></div>
+                {/* <div className="rectangle"></div> */}
                 {data.team2}
               </div>
             </div>

@@ -63,6 +63,8 @@ const Home = React.lazy(() => import('./components/DashBoard/Home/Home'));
 const Registration = React.lazy(() =>
   import('./components/DashBoard/Registration/Registration')
 );
+const Document = React.lazy(() => import('./components/DashBoard/Document/Document'));
+
 const Profile = React.lazy(() =>
   import('./components/DashBoard/Profile/Profile')
 );
@@ -317,6 +319,14 @@ function App() {
             element={
               <Suspense fallback={<Spinner />}>
                 <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            path="Document"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <Document />
               </Suspense>
             }
           />

@@ -10,6 +10,7 @@ import './SideBar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaTasks } from 'react-icons/fa';
 import { FaUserAlt } from 'react-icons/fa';
+import { FaFile } from 'react-icons/fa';
 import { FaHome } from 'react-icons/fa';
 import { FaSignOutAlt } from 'react-icons/fa';
 import { isMobile } from 'react-device-detect';
@@ -40,6 +41,7 @@ const SideBar = ({ isOpen, toggle }) => {
     }
 
     localStorage.removeItem('token');
+    localStorage.removeItem('role');
     // window.location.href = '/';
   };
 
@@ -77,11 +79,11 @@ const SideBar = ({ isOpen, toggle }) => {
                 handleClick();
               }}
             >
-              {/* <FontAwesomeIcon icon={faHome} className="mr-2 icon_bar" /> */}
               <FaHome className="mr-2 icon_bar" />
               Home
             </NavLink>
           </NavItem>
+          
           <NavItem className="item_nav">
             <NavLink
               tag={Link}
@@ -95,6 +97,20 @@ const SideBar = ({ isOpen, toggle }) => {
               Registrations
             </NavLink>
           </NavItem>
+
+          <NavItem className="item_nav">
+            <NavLink
+              tag={Link}
+              to={'/dashboard/Document'}
+              onClick={() => {
+                handleClick();
+              }}
+            >
+              <FaFile className="mr-2 icon_bar" />
+              Document
+            </NavLink>
+          </NavItem>
+
           {/* <SubMenu title="Pages" icon={faCopy} items={submenus[1]} /> */}
           <NavItem className="item_nav">
             <NavLink

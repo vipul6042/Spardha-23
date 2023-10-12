@@ -70,7 +70,7 @@ class CountdownTimer extends Component {
               <div class="time">
                   <div>{Math.floor((seconds < 10 ? `0${this.state.seconds}` : this.state.seconds)/10)}</div>
                   <div>{(seconds < 10 ? `0${this.state.seconds}` : this.state.seconds)%10}</div>
-              </div> 
+              </div>
               <div class="value">SECONDS</div>
             </span>
           </div>
